@@ -1,0 +1,35 @@
+# Operating system files
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Editor / IDE
+.vscode/
+.idea/
+*.sublime-project
+*.sublime-workspace
+
+# Temporary files
+*.tmp
+*.temp
+*.log
+*.bak
+
+# Build / dependency folders (not needed for this static site)
+node_modules/
+dist/
+build/
+
+# Personal / backup folders
+versions/
+*.zip
+*.bak
+
+# Notes and scratch files (optional to ignore)
+FUTURE_PLAN.md
+rewrite-*.txt
+nail services text.txt
+other services text.txt
+
+# Keep AGENTS.md if you want project notes versioned
+# AGENTS.md

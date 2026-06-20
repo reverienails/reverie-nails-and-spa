@@ -1,0 +1,1375 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu • Reverie Nails and Spa | Full Service List</title>
+    <meta name="description" content="Full menu of pedicures, manicures, gel nails, dipping powder, acrylics, builder gel, waxing, and complimentary drinks at Reverie Nails and Spa in Saginaw, TX.">
+    <link rel="icon" href="assets/logo.png" type="image/png">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link href="https://api.fontshare.com/v2/css?f[]=satoshi@300,400,500,700&amp;display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600&amp;family=Dancing+Script:wght@400;500;600&amp;display=swap" rel="stylesheet">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600&amp;family=Dancing+Script:wght@400;500;600&amp;display=swap');
+
+        :root {
+            --bg: #EDE9E3;
+            --accent-pink: #E85A9C;
+            --rose-gold: #B89A94;
+            --charcoal: #2C2824;
+            --warm-taupe: #756A62;
+            --soft-gold: #C9A57E;
+        }
+
+        body {
+            font-family: 'Satoshi', system_ui, -apple-system, sans-serif;
+            background-color: #EDE9E3;
+            color: #2C2824;
+        }
+
+        .heading-serif {
+            font-family: 'Playfair Display', Georgia, serif;
+            font-weight: 500;
+            letter-spacing: -0.02em;
+        }
+
+        .section-title {
+            font-family: 'Playfair Display', Georgia, serif;
+            font-weight: 500;
+            letter-spacing: -0.03em;
+            line-height: 1.05;
+        }
+
+        /* Menu category headings (h2) made even darker and stronger (bolder weight + deeper color)
+           so they pop more now that the boxes are transparent and text is floating. */
+        #full-menu h2 {
+            font-weight: 600;
+            color: #1C1916;
+        }
+
+        .nav-link {
+            transition: color 0.2s ease;
+        }
+        .nav-link:hover {
+            color: #E85A9C;
+        }
+
+        /* Ensure section titles (h2) are visible below sticky logo/nav + Book Now area + category sub-nav when jumping from external links like homepage "See full..." buttons */
+        #full-menu > div[id] {
+            scroll-margin-top: 200px;
+        }
+
+        .service-item {
+            transition: all 0.2s ease;
+        }
+
+        .service-item:hover {
+            background-color: #F2EDE6;
+        }
+
+        .gold-text {
+            background: linear-gradient(
+                135deg,
+                #f5e8a3 0%,
+                #d4af37 22%,
+                #b8860b 50%,
+                #d4af37 78%,
+                #f5e8a3 100%
+            );
+            background-size: 200% 200%;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            text-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+        }
+
+        /* ============================================
+           DRINKS REALM SHIFT
+           As visitors scroll past practical services into the
+           drinks area, the page slowly transforms from "menu
+           of information" into a warmer, more indulgent realm
+           that showcases how Reverie enhances the full experience.
+           Triggered at Non-Alcoholic; stays for Alcohol + all
+           cocktails. Purely visual/atmospheric — menu data and
+           structure untouched.
+
+           The background now uses a scroll-driven gradient that
+           begins changing right at "Non-Alcoholic". As you scroll
+           deeper through the drinks, the lower portion gradually
+           darkens toward the footer color (#2C2824). At the very
+           end (bottom of Signature Cocktails) the page background
+           and footer become the same color for a seamless blend.
+           ============================================ */
+        :root {
+            --drinks-progress: 0;
+            --gold-progress: 0;
+            --text-progress: 0;
+            --decor-intensity: 0;
+            --black-start: 100vh;
+        }
+
+        body.drinks-realm {
+            background-color: #EDE9E3;
+            background-image: none;
+        }
+
+        /* Full webpage background turns solid black from the 'Complimentary Drinks' divider downward.
+           The fixed overlay starts exactly at the divider's current position on screen (right above the cursive text)
+           and covers everything below it (full viewport width, including sides/margins).
+           Upper part of the page stays the normal light background.
+           Text, words, and animations (fireflies, orbs, right-side decor) remain visible on top of the black.
+           This is updated live on scroll via --black-start set in JS. */
+        body.drinks-realm::after {
+            content: '';
+            position: fixed;
+            left: 0;
+            right: 0;
+            top: var(--black-start, 100vh);
+            bottom: 0;
+            background-color: #000;
+            z-index: -1;
+            pointer-events: none;
+        }
+
+        /* Full page turns black from the 'Complimentary Drinks' divider downward.
+           The fixed ::after overlay starts at the divider's screen position and covers
+           everything below with solid black, so the entire webpage below that point
+           (including sides) is black, while text/words and animations remain visible on top.
+           Upper part of page (above divider) stays the light background. */
+        body.drinks-realm::after {
+            content: '';
+            position: fixed;
+            left: 0;
+            right: 0;
+            top: var(--black-start, 100vh);
+            bottom: 0;
+            background-color: #000;
+            z-index: -1;
+            pointer-events: none;
+        }
+
+        .drinks-realm-zone {
+            position: relative;
+            overflow: visible;
+        }
+
+        /* Icon circles (the small containers next to every category heading)
+           now have transparent background in the realm (like the text boxes),
+           so the realm background shows directly behind the icons too.
+           Applied to ALL categories. */
+        .drinks-realm #full-menu .w-10.h-10 {
+            background: transparent !important;
+            box-shadow: none !important;
+            transition: all 700ms ease;
+        }
+
+        /* Headings use a bright gold that matches your reference image (the
+           shiny metallic gold foil / treasure chest gold). The color and
+           gleam effect ramp aggressively with --gold-progress so the final
+           heading (Signature Cocktails) looks like polished bright gold
+           when the background is fully dark. Uses the exact tones from
+           your gold swatch via the .gold-text gradient colors for accuracy. */
+        .drinks-realm .drinks-realm-zone h2 {
+            color: color-mix(in srgb, #2C2824 calc(100% - var(--gold-progress)*100%), #D4AF37);
+            letter-spacing: -0.01em;
+            background: linear-gradient(
+                135deg,
+                #f5e8a3 0%,
+                #d4af37 22%,
+                #b8860b 50%,
+                #d4af37 78%,
+                #f5e8a3 100%
+            );
+            background-size: 200% 200%;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            text-shadow: 0 1px 3px rgba(0,0,0,0.3),
+                         0 0 calc(var(--gold-progress) * 8px) rgba(212, 175, 55, calc(var(--gold-progress) * 0.6)),
+                         0 0 calc(var(--gold-progress) * 18px) rgba(245, 232, 163, calc(var(--gold-progress) * 0.5));
+            transition: color 80ms linear, text-shadow 80ms linear, letter-spacing 700ms ease;
+        }
+
+        /* Icons (the glyphs inside the circles) shift to gold for all categories
+           in the realm for consistency. */
+        .drinks-realm #full-menu .w-10.h-10 i {
+            color: color-mix(in srgb, #E85A9C calc(100% - var(--gold-progress)*100%), #D4AF37);
+            text-shadow: 0 0 calc(var(--gold-progress) * 6px) rgba(245, 232, 163, calc(var(--gold-progress) * 0.55));
+        }
+
+        /* Black background for the menu starting right above the 'Complimentary Drinks' divider
+           and for all text boxes in the drinks sections (gradient area).
+           Black bg on the outer containers and on the inner rows so only the words show
+           against solid black. */
+        .drinks-realm #full-menu #complimentary-drinks-divider,
+        .drinks-realm #full-menu #complimentary-drinks-divider ~ div.mb-12 {
+            background-color: #000 !important;
+        }
+
+        .drinks-realm #full-menu > div.drinks-realm-zone .bg-white {
+            background-color: #000 !important;
+            border: none !important;
+            border-radius: 0 !important;
+            box-shadow: none !important;
+        }
+
+        .drinks-realm #full-menu > div.drinks-realm-zone .bg-white > div.flex,
+        .drinks-realm #full-menu > div.drinks-realm-zone .bg-white > div.flex:hover {
+            background-color: #000 !important;
+            border: none !important;
+            border-bottom: none !important;
+        }
+
+        /* Make the descriptive text (the smaller description lines under each item name)
+           stand out better on the floating/transparent background by using a darker,
+           stronger color that matches the new heading strength. */
+        #full-menu > div.mb-12 .text-\[\#655C54\] {
+            color: #1C1916;
+        }
+
+        /* Icon containers are now transparent for all (no fade on the glyphs themselves
+           so the icons remain visible, matching the suspended text look). */
+
+        /* Readable text for the entire menu in realm: starts as the same gold
+           as the headings and transitions to white as the background darkens.
+           Applies to all categories now. */
+        .drinks-realm #full-menu > div.mb-12 .bg-white .font-medium {
+            color: color-mix(in srgb, #D4AF37 calc(100% - var(--text-progress)*98%), #FFFFFF);
+        }
+        .drinks-realm #full-menu > div.mb-12 .bg-white .text-\[\#655C54\] {
+            color: color-mix(in srgb, #D4AF37 calc(100% - var(--text-progress)*90%), #FFFFFF);
+        }
+        .drinks-realm #full-menu > div.mb-12 .bg-white .font-semibold {
+            color: color-mix(in srgb, #D4AF37 calc(100% - var(--text-progress)*98%), #FFFFFF);
+        }
+
+        /* Lighten the category headings for non-drink items (the ones without the
+           special gold treatment) so they stay readable against the dark realm
+           background when the menu boxes are transparent. */
+        .drinks-realm #full-menu > div.mb-12:not(.drinks-realm-zone) h2 {
+            color: color-mix(in srgb, #1C1916 calc(100% - var(--text-progress)*90%), #FFFFFF);
+        }
+
+        /* Double space above the Complimentary Drinks divider and create a
+           background color transition starting right below it: from the
+           existing light background to the footer dark color (#2C2824).
+           The ::after covers the content below the divider with the gradient,
+           so the transition "starts" visually right below the text as you scroll. */
+        .drinks-realm #complimentary-drinks-divider {
+            position: relative;
+        }
+        .drinks-realm #complimentary-drinks-divider::after {
+            content: '';
+            position: absolute;
+            left: 0;
+            right: 0;
+            top: 100%;
+            height: 300vh;
+            background: linear-gradient(to bottom, #EDE9E3, #2C2824);
+            z-index: -1;
+            pointer-events: none;
+        }
+
+        /* Discrete gold sparks / fireflies emitted from the drink headings.
+           Subtle, elegant, treasure-gold colored. Single or small clusters
+           shoot outward over a 10x larger area of effect (wider spawn region
+           and travel distance) fluidly with slight random wobble, then slowly
+           fade and drift away. Only active in the drinks realm and tied to the
+           gold headings. */
+        .gold-spark {
+            position: absolute;
+            border-radius: 50%;
+            pointer-events: none;
+            z-index: 30;
+            will-change: transform, opacity, left, top;
+            background: #D4AF37;
+            box-shadow: 0 0 4px #F5E8A3, 0 0 8px rgba(212, 175, 55, 0.4);
+        }
+        .gold-spark.bright {
+            background: #F5E8A3;
+            box-shadow: 0 0 5px #D4AF37, 0 0 11px rgba(245, 232, 163, 0.5);
+        }
+
+        /* Subtle slow-floating orbs — soft effervescence / light
+           motes. Appear as part of the realm shift (only when
+           .drinks-realm is active on body). Very low opacity,
+           long 26s period, tasteful and non-distracting. */
+        .realm-orb {
+            position: absolute;
+            border-radius: 9999px;
+            pointer-events: none;
+            z-index: 0;
+            opacity: 0;
+            transition: opacity 600ms ease;
+        }
+        body.drinks-realm .realm-orb {
+            background: radial-gradient(circle at 35% 30%, rgba(232,90,156,0.07), rgba(201,165,126,0.04) 45%, transparent 72%);
+            animation: realm-float 26s ease-in-out infinite;
+            will-change: transform, opacity;
+            mix-blend-mode: multiply;
+            opacity: 1;
+        }
+
+        @keyframes realm-float {
+            0%, 100% { transform: translate3d(0, 0, 0) scale(1); }
+            25% { transform: translate3d(9px, -11px, 0) scale(1.015); }
+            50% { transform: translate3d(-7px, 13px, 0) scale(0.985); }
+            75% { transform: translate3d(5px, -6px, 0) scale(1.01); }
+        }
+
+        /* Hover states for drink rows in realm - forced transparent to blend with gradient */
+        .drinks-realm #full-menu > div.drinks-realm-zone .bg-white > div.flex {
+            transition: background-color 0.2s ease;
+        }
+        .drinks-realm #full-menu > div.drinks-realm-zone .bg-white > div.flex:hover {
+            background: transparent !important;
+        }
+
+        /* The category sub-nav warms in sympathy with the realm */
+        body.drinks-realm #full-menu > div.sticky {
+            background-color: #F5F0E8;
+            transition: background-color 700ms ease;
+        }
+
+        /* Right side illustration: drink being poured from a shaker.
+           Only visible once the gradient transition starts (Non-Alcoholic / .drinks-realm).
+           Fades out as you scroll down through the drinks (using --decor-opacity).
+           Color intensity (saturation/brightness) increases initially with --decor-intensity. */
+        #menu-illustrations {
+            position: fixed;
+            right: 32px;
+            top: 28vh;
+            width: 210px;
+            pointer-events: none;
+            z-index: 5;
+            display: none;
+            opacity: var(--decor-opacity, 0);
+        }
+        .drinks-realm #menu-illustrations {
+            display: block;
+        }
+
+        #shaker-pour {
+            width: 100%;
+            height: auto;
+            display: block;
+            color: #D4AF37;
+            filter: saturate( calc(0.7 + var(--decor-intensity, 0) * 2) )
+                    brightness( calc(0.85 + var(--decor-intensity, 0) * 0.4) );
+        }
+
+        /* Shaker tilt + pour animation */
+        #shaker-pour .shaker {
+            animation: shaker-tilt 3.2s ease-in-out infinite;
+            transform-origin: 95px 58px;
+        }
+        @keyframes shaker-tilt {
+            0%, 100% { transform: rotate(0deg); }
+            28% { transform: rotate(-24deg); }
+            52% { transform: rotate(0deg); }
+        }
+
+        /* Animated pour drops - staggered for fluid look */
+        #shaker-pour .drop {
+            animation: drop-fall 1.35s linear infinite;
+            opacity: 0.55;
+        }
+        #shaker-pour .drop.d2 { animation-delay: -0.45s; }
+        #shaker-pour .drop.d3 { animation-delay: -0.9s; }
+        #shaker-pour .drop.d4 { animation-delay: -0.25s; }
+
+        @keyframes drop-fall {
+            0% { transform: translate(0, 0); opacity: 0.65; }
+            100% { transform: translate(-12px, 78px); opacity: 0; }
+        }
+    </style>
+
+    <!-- AI-Friendly Structured Data for Menu & Services -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "WebPage",
+      "name": "Menu • Reverie Nails and Spa",
+      "description": "Complete menu of pedicures, manicures, gel nails, dipping powder, solar sets, acrylics, builder gel, gel-x, waxing, and complimentary drinks.",
+      "mainEntity": {
+        "@type": "OfferCatalog",
+        "name": "Reverie Nails and Spa Full Menu",
+        "itemListElement": [
+          {
+            "@type": "OfferCatalog",
+            "name": "Pedicures",
+            "itemListElement": [
+              {
+                "@type": "Offer",
+                "itemOffered": {
+                  "@type": "Service",
+                  "name": "THE CLASSIC",
+                  "description": "Standard pedicure with nail care, cuticle and callus removal, and relaxing hot towels."
+                },
+                "price": "30",
+                "priceCurrency": "USD"
+              },
+              {
+                "@type": "Offer",
+                "itemOffered": {
+                  "@type": "Service",
+                  "name": "THE PEPPERMINT",
+                  "description": "Refreshing peppermint pedicure with hydrating leg masque and paraffin wax."
+                },
+                "price": "38",
+                "priceCurrency": "USD"
+              },
+              {
+                "@type": "Offer",
+                "itemOffered": {
+                  "@type": "Service",
+                  "name": "THE LAVENDER",
+                  "description": "Relaxing pedicure with sugar scrub, leg masque, paraffin, and hot stones."
+                },
+                "price": "48",
+                "priceCurrency": "USD"
+              },
+              {
+                "@type": "Offer",
+                "itemOffered": {
+                  "@type": "Service",
+                  "name": "ROSÉ ALL DAY",
+                  "description": "Luxury pedicure with pink jelly soak, rose petals, and a glass of rosé."
+                },
+                "price": "75",
+                "priceCurrency": "USD"
+              }
+            ]
+          },
+          {
+            "@type": "OfferCatalog",
+            "name": "Manicures & Gel Nails",
+            "itemListElement": [
+              {
+                "@type": "Offer",
+                "itemOffered": {
+                  "@type": "Service",
+                  "name": "Classic Gel Manicure",
+                  "description": "Long-lasting gel polish manicure that typically lasts up to two weeks."
+                },
+                "price": "38",
+                "priceCurrency": "USD"
+              },
+              {
+                "@type": "Offer",
+                "itemOffered": {
+                  "@type": "Service",
+                  "name": "Reverie Organic Gel Manicure",
+                  "description": "Organic gel manicure with arm exfoliation and collagen treatment that typically lasts up to two weeks."
+                },
+                "price": "58",
+                "priceCurrency": "USD"
+              }
+            ]
+          },
+          {
+            "@type": "OfferCatalog",
+            "name": "Dipping Powder",
+            "itemListElement": [
+              {
+                "@type": "Offer",
+                "itemOffered": {
+                  "@type": "Service",
+                  "name": "Color Set",
+                  "description": "Dipping powder color set. Adding Tips $5 extra."
+                },
+                "price": "40",
+                "priceCurrency": "USD"
+              },
+              {
+                "@type": "Offer",
+                "itemOffered": {
+                  "@type": "Service",
+                  "name": "Classic Dip Manicure",
+                  "description": "Classic dipping powder manicure."
+                },
+                "price": "52",
+                "priceCurrency": "USD"
+              },
+              {
+                "@type": "Offer",
+                "itemOffered": {
+                  "@type": "Service",
+                  "name": "Aloe Vera Dip Manicure",
+                  "description": "Aloe Vera dipping powder manicure."
+                },
+                "price": "60",
+                "priceCurrency": "USD"
+              },
+              {
+                "@type": "Offer",
+                "itemOffered": {
+                  "@type": "Service",
+                  "name": "Reverie Organic Dip Manicure",
+                  "description": "Reverie Organic dipping powder manicure."
+                },
+                "price": "68",
+                "priceCurrency": "USD"
+              },
+              {
+                "@type": "Offer",
+                "itemOffered": {
+                  "@type": "Service",
+                  "name": "Dip Ombre",
+                  "description": "Dipping powder ombre."
+                },
+                "price": "55",
+                "priceCurrency": "USD"
+              }
+            ]
+          },
+          {
+            "@type": "OfferCatalog",
+            "name": "Acrylic Powder",
+            "itemListElement": [
+              {
+                "@type": "Offer",
+                "itemOffered": {
+                  "@type": "Service",
+                  "name": "Full Sets (with regular polish)",
+                  "description": "Acrylic powder full sets with regular polish."
+                },
+                "price": "40",
+                "priceCurrency": "USD"
+              },
+              {
+                "@type": "Offer",
+                "itemOffered": {
+                  "@type": "Service",
+                  "name": "Fills w/ polish",
+                  "description": "Acrylic powder fills with polish."
+                },
+                "price": "35",
+                "priceCurrency": "USD"
+              },
+              {
+                "@type": "Offer",
+                "itemOffered": {
+                  "@type": "Service",
+                  "name": "Full Sets w/ Gel",
+                  "description": "Acrylic powder full sets with gel polish."
+                },
+                "price": "55",
+                "priceCurrency": "USD"
+              },
+              {
+                "@type": "Offer",
+                "itemOffered": {
+                  "@type": "Service",
+                  "name": "Fill w/ Gel",
+                  "description": "Acrylic powder fills with gel polish."
+                },
+                "price": "50",
+                "priceCurrency": "USD"
+              }
+            ]
+          },
+          {
+            "@type": "OfferCatalog",
+            "name": "Waxing",
+            "itemListElement": [
+              {
+                "@type": "Offer",
+                "itemOffered": {
+                  "@type": "Service",
+                  "name": "Eyebrows",
+                  "description": "Eyebrow waxing."
+                },
+                "price": "12",
+                "priceCurrency": "USD"
+              },
+              {
+                "@type": "Offer",
+                "itemOffered": {
+                  "@type": "Service",
+                  "name": "Lip",
+                  "description": "Upper lip waxing."
+                },
+                "price": "10",
+                "priceCurrency": "USD"
+              },
+              {
+                "@type": "Offer",
+                "itemOffered": {
+                  "@type": "Service",
+                  "name": "Full Face",
+                  "description": "Full face waxing."
+                },
+                "price": "40",
+                "priceCurrency": "USD"
+              },
+              {
+                "@type": "Offer",
+                "itemOffered": {
+                  "@type": "Service",
+                  "name": "Full Legs",
+                  "description": "Full legs waxing."
+                },
+                "price": "55",
+                "priceCurrency": "USD"
+              },
+              {
+                "@type": "Offer",
+                "itemOffered": {
+                  "@type": "Service",
+                  "name": "Full Back",
+                  "description": "Full back waxing."
+                },
+                "price": "55",
+                "priceCurrency": "USD"
+              }
+            ]
+          },
+          {
+            "@type": "OfferCatalog",
+            "name": "Complimentary Cocktails & Beverages",
+            "itemListElement": [
+              {
+                "@type": "Offer",
+                "itemOffered": {
+                  "@type": "Service",
+                  "name": "Wide Range of Complimentary Cocktails",
+                  "description": "Complimentary cocktails, mocktails, wine, and other beverages included with services. Wide selection available."
+                }
+              }
+            ]
+          }
+        ]
+      }
+    }
+    </script>
+</head>
+<body class="bg-[#EDE9E3] text-[#2C2824]">
+
+    <!-- Navigation -->
+    <nav class="bg-[#EDE9E3]/95 backdrop-blur-lg sticky top-0 z-50 border-b border-[#D9D4CC]">
+        <div class="max-w-6xl mx-auto px-6">
+            <div class="flex justify-between items-center h-20">
+                
+                <!-- Logo -->
+                <a href="index.html" class="flex items-center gap-x-3">
+                    <img src="assets/logo.png" alt="Reverie Nails and Spa Logo" class="h-[42px] w-auto object-contain">
+                    <div>
+                        <div class="font-semibold tracking-tight text-xl">Reverie</div>
+                        <div class="text-[10px] text-[#756A62] -mt-1 tracking-[1px]">NAILS AND SPA</div>
+                    </div>
+                </a>
+
+                <!-- Desktop Nav -->
+                <div class="hidden md:flex items-center gap-x-8 text-sm font-medium">
+                    <a href="index.html#experience" class="nav-link">The Experience</a>
+                    <a href="index.html#services" class="nav-link">Services</a>
+                    <a href="index.html#gallery" class="nav-link">Gallery</a>
+                    <a href="index.html#testimonials" class="nav-link">Community</a>
+                    <a href="index.html#booking" class="nav-link">Book</a>
+                </div>
+
+                <div class="flex items-center gap-x-3">
+                    <a href="index.html#booking" 
+                       class="px-6 py-2.5 text-sm font-medium rounded-full bg-[#2C2824] text-white hover:bg-[#B89A94] hover:text-[#2C2824] transition-all">
+                        Book Now (Coming Soon)
+                    </a>
+                    
+                    <!-- Mobile Menu -->
+                    <button id="mobile-menu-btn"
+                            class="md:hidden w-10 h-10 flex items-center justify-center text-[#2C2824]">
+                        <i class="fa-solid fa-bars text-xl"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Mobile Menu -->
+    <div id="mobile-menu" class="hidden md:hidden bg-white border-b">
+        <div class="px-6 py-5 flex flex-col gap-y-4 text-sm font-medium">
+            <a href="index.html#experience" class="py-1">The Experience</a>
+            <a href="index.html#services" class="py-1">Services</a>
+            <a href="index.html#gallery" class="py-1">Gallery</a>
+            <a href="index.html#testimonials" class="py-1">Community</a>
+            <a href="index.html#booking" class="py-1">Book Appointment</a>
+            <div class="pt-2">
+                <a href="index.html#booking" 
+                   class="block w-full text-center px-6 py-3 rounded-full bg-[#2C2824] text-white text-sm font-medium">
+                    Book Now (Coming Soon)
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Menu Header -->
+    <section class="pt-12 pb-8 bg-white border-b border-[#E5DFD6]">
+        <div class="max-w-6xl mx-auto px-6 text-center">
+            <div class="uppercase tracking-[2px] text-xs font-medium text-[#E85A9C] mb-2">Reverie Nails and Spa</div>
+            <h1 class="section-title text-5xl md:text-6xl tracking-tight mb-4">Our Full Menu</h1>
+            <p class="text-lg text-[#655C54] max-w-md mx-auto">
+                Thoughtful care for every service. All prices are starting points and may vary based on your needs.
+            </p>
+            <div class="mt-6 flex justify-center gap-3">
+                <a href="index.html#booking" class="px-6 py-3 text-sm font-medium rounded-full bg-[#2C2824] text-white hover:bg-[#B89A94] hover:text-[#2C2824] transition-all">
+                    Book Now (Coming Soon)
+                </a>
+                <a href="tel:6822245688" class="px-6 py-3 text-sm font-medium rounded-full border border-[#D4C9BD] hover:bg-white transition-colors">
+                    Call (682) 224-5688
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Menu Content -->
+    <div class="max-w-6xl mx-auto px-6 py-12" id="full-menu">
+        <!-- Populated by JavaScript from menu-data.js -->
+    </div>
+
+    <footer class="bg-[#2C2824] text-[#EDE9E3] py-8">
+        <div class="max-w-6xl mx-auto px-6 text-center text-sm">
+            <p>Reverie Nails and Spa • Saginaw, TX • <a href="tel:6822245688" class="hover:text-white transition-colors">(682) 224-5688</a></p>
+            <p class="mt-1 text-[#A8A09A]">Prices and services subject to change. Please call for the most up-to-date information.</p>
+            <div class="mt-4 flex justify-center gap-x-5 text-lg">
+                <a href="https://www.instagram.com/reverienailspa?igsh=emgwNTVnZmV0eHlm&utm_source=qr" target="_blank" rel="noopener noreferrer" class="hover:text-white transition-colors" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+                <a href="https://www.facebook.com/reverienailandspa/" target="_blank" rel="noopener noreferrer" class="hover:text-white transition-colors" aria-label="Facebook"><i class="fa-brands fa-facebook"></i></a>
+                <a href="https://www.google.com/maps/search/?api=1&query=Reverie+Nail+and+Spa%2C+4613+West+Bailey+Boswell+Rd%2C+Saginaw%2C+TX+76179" target="_blank" rel="noopener noreferrer" class="hover:text-white transition-colors" aria-label="Google"><i class="fa-brands fa-google"></i></a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Right-side decorative illustrations for the menu.
+         Phantom gold nail-filing outline at top, animated drink pour from shaker below.
+         Visual intensity (saturation/brightness/opacity) increases lower on the page. -->
+    <div id="menu-illustrations">
+        <!-- Drink being poured from a shaker (appears when gradient transition starts at Non-Alcoholic, fades out as you scroll down) -->
+        <svg id="shaker-pour" width="175" height="235" viewBox="0 0 175 235" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <!-- Shaker (tilting group) -->
+            <g class="shaker">
+                <!-- shaker body -->
+                <rect x="52" y="28" width="52" height="75" rx="7" stroke="currentColor" stroke-width="3.2" fill="none"/>
+                <!-- lid / cap -->
+                <rect x="58" y="8" width="40" height="26" rx="5" stroke="currentColor" stroke-width="3" fill="none"/>
+                <!-- metal highlight lines -->
+                <line x1="65" y1="35" x2="65" y2="95" stroke="currentColor" stroke-width="1.2" opacity="0.35"/>
+                <!-- spout -->
+                <path d="M102 52 Q118 58 112 78" stroke="currentColor" stroke-width="2.8" fill="none"/>
+            </g>
+
+            <!-- Receiving glass -->
+            <path d="M48 138 L128 138 L110 205 L66 205 Z" stroke="currentColor" stroke-width="3" fill="none"/>
+            <!-- liquid in glass (base level) -->
+            <path class="liquid" d="M55 172 L122 172 L110 198 L67 198 Z" fill="currentColor" opacity="0.22"/>
+
+            <!-- Pour drops / stream (animated) -->
+            <circle class="drop d1" cx="115" cy="88" r="3.8" fill="currentColor"/>
+            <circle class="drop d2" cx="120" cy="108" r="3.2" fill="currentColor"/>
+            <circle class="drop d3" cx="113" cy="128" r="2.9" fill="currentColor"/>
+            <circle class="drop d4" cx="118" cy="95" r="2.6" fill="currentColor"/>
+        </svg>
+    </div>
+
+    <script src="assets/menu-data.js"></script>
+    <script>
+        // Render full menu
+        function renderFullMenu() {
+            const container = document.getElementById('full-menu');
+            if (!container || typeof menuData === 'undefined') {
+                container.innerHTML = '<p class="text-center text-[#756A62]">Menu data loading...</p>';
+                return;
+            }
+
+            let html = '';
+
+            const drinksIds = ['non-alcoholic', 'alcohol', 'speciality-cocktails', 'signature-cocktails'];
+
+            menuData.categories.forEach(category => {
+                const isDrinks = drinksIds.includes(category.id);
+                html += `
+                    <div class="mb-12${isDrinks ? ' drinks-realm-zone' : ''}" id="${category.id}">
+                        <div class="flex items-center gap-x-4 mb-6">
+                            <div class="w-10 h-10 flex items-center justify-center bg-[#F2EDE6] rounded-2xl">
+                                <i class="fa-solid ${category.icon || 'fa-list'} text-[#E85A9C] text-2xl"></i>
+                            </div>
+                            <h2 class="section-title text-3xl tracking-tight">${category.name}</h2>
+                        </div>
+                        
+                        <div class="bg-white rounded-3xl border border-[#E5DFD6] overflow-hidden">
+                `;
+
+                category.services.forEach((service, index) => {
+                    const priceDisplay = typeof service.price === 'number' ? '$' + service.price : service.price;
+                    const duration = service.duration ? `<span class="text-[#756A62] text-sm"> • ${service.duration}</span>` : '';
+
+                    html += `
+                        <div class="flex justify-between items-start px-6 py-5">
+                            <div class="flex-1 pr-4">
+                                <div class="font-medium text-lg">${service.name}</div>
+                                ${service.description ? `<div class="text-[#655C54] text-sm mt-1 leading-relaxed">${service.description}</div>` : ''}
+                            </div>
+                            <div class="text-right flex-shrink-0">
+                                ${priceDisplay ? `<div class="font-semibold text-lg">${priceDisplay}</div>` : ''}
+                                ${duration}
+                                ${service.massage ? `<div class="text-[#756A62] text-xs mt-0.5">${service.massage}</div>` : ''}
+                            </div>
+                        </div>
+                    `;
+                });
+
+                html += `
+                        </div>
+                    </div>
+                `;
+
+                if (category.id === 'waxing') {
+                    // Large cursive divider before drinks section
+                    html += `
+                        <div id="complimentary-drinks-divider" class="mt-24 mb-12 text-center">
+                            <span class="gold-text text-6xl md:text-7xl tracking-tight" style="font-family: 'Dancing Script', cursive;">Complimentary Drinks</span>
+                        </div>
+                    `;
+                }
+            });
+
+            // Build category nav first so it's in the initial DOM for proper hash/anchor scrolling
+            let navHtml = `<div class="sticky top-[80px] bg-[#EDE9E3] z-40 py-4 mb-8 border-b border-[#E5DFD6] -mx-6 px-6">
+                <div class="flex flex-wrap gap-2 max-w-6xl mx-auto">
+                    <a href="#full-menu" class="px-4 py-1.5 text-sm rounded-full bg-white border border-[#E5DFD6] hover:bg-[#F2EDE6] transition-colors">All</a>`;
+
+            menuData.categories.forEach(cat => {
+                navHtml += `<a href="#${cat.id}" class="px-4 py-1.5 text-sm rounded-full bg-white border border-[#E5DFD6] hover:bg-[#F2EDE6] transition-colors">${cat.name}</a>`;
+            });
+
+            navHtml += `</div></div>`;
+
+            container.innerHTML = navHtml + html;
+
+            // Activate the drinks realm shift (bg warm + orbs + icon/hover luxuries)
+            // once the content is live in the DOM.
+            if (typeof setupDrinksRealmShift === 'function') {
+                setupDrinksRealmShift();
+            }
+        }
+
+        // Initialize
+        document.addEventListener('DOMContentLoaded', () => {
+            renderFullMenu();
+            // addCategoryNav(); // now handled inside renderFullMenu so nav is present in initial DOM for anchor jumps
+
+            // Mobile menu
+            const mobileBtn = document.getElementById('mobile-menu-btn');
+            const mobileMenu = document.getElementById('mobile-menu');
+            
+            if (mobileBtn && mobileMenu) {
+                mobileBtn.addEventListener('click', () => {
+                    mobileMenu.classList.toggle('hidden');
+                    const icon = mobileBtn.querySelector('i');
+                    if (icon) {
+                        icon.classList.toggle('fa-bars');
+                        icon.classList.toggle('fa-times');
+                    }
+                });
+            }
+
+            // Handle initial deep link / hash from external buttons (e.g. homepage "See full ... menu")
+            // This ensures the section title (h2) is visible below sticky logo/nav + book area + category subnav.
+            // Run after render and nav insertion. Offset is calculated to match current sticky heights + gap.
+            function scrollToHashWithOffset() {
+                if (!window.location.hash) return;
+                const target = document.querySelector(window.location.hash);
+                if (!target) return;
+
+                // Use a small timeout to let layout fully settle (stickies, fonts, etc.)
+                setTimeout(() => {
+                    const mainNav = document.querySelector('nav.sticky');
+                    const catNav = document.querySelector('#full-menu > div.sticky');
+                    let offset = 160; // fallback
+                    if (mainNav) offset += mainNav.offsetHeight;
+                    if (catNav) offset += catNav.offsetHeight;
+                    offset += 20; // small extra gap so title is comfortably visible (not butted against the bar)
+                    const rect = target.getBoundingClientRect();
+                    const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+                    const top = rect.top + scrollTop - offset;
+                    window.scrollTo({
+                        top: Math.max(0, top),
+                        behavior: 'auto'  // instant for initial load from link
+                    });
+                }, 120);
+            }
+
+            scrollToHashWithOffset();
+
+            // Enhance category sub-nav links (the sticky "All / Pedicures / ..." bar) for smooth scroll with proper offset
+            // so titles aren't covered by the sticky logo + Book Now + category bar itself.
+            const catLinks = document.querySelectorAll('#full-menu > div.sticky a[href^="#"]');
+            catLinks.forEach(link => {
+                link.addEventListener('click', function(e) {
+                    const hash = this.getAttribute('href');
+                    if (!hash) return;
+                    const target = document.querySelector(hash);
+                    if (target) {
+                        e.preventDefault();
+                        const mainNav = document.querySelector('nav.sticky');
+                        const catNav = document.querySelector('#full-menu > div.sticky');
+                        let offset = 160;
+                        if (mainNav) offset += mainNav.offsetHeight;
+                        if (catNav) offset += catNav.offsetHeight;
+                        offset += 20; // extra gap so the h2 title is comfortably visible
+                        const top = target.getBoundingClientRect().top + window.scrollY - offset;
+                        window.scrollTo({ top: Math.max(0, top), behavior: 'smooth' });
+                    }
+                });
+            });
+        });
+
+        // =====================================================
+        // setupDrinksRealmShift
+        // Called after renderFullMenu populates #full-menu.
+        // Uses IntersectionObserver + direct-hash + visibility
+        // checks so the page visually shifts (warmer bg, icon
+        // treatment, richer hovers, slow floating orbs) exactly
+        // as the user enters the drinks section — turning the
+        // "prices & info" part of the menu into the "enhance
+        // your experience" realm without changing any content,
+        // structure, or data.
+        // =====================================================
+        function setupDrinksRealmShift() {
+            const drinksIds = ['non-alcoholic', 'alcohol', 'speciality-cocktails', 'signature-cocktails'];
+            const zones = drinksIds
+                .map(id => document.getElementById(id))
+                .filter(Boolean);
+
+            if (zones.length === 0) return;
+
+            // Ensure classes present (render already added most)
+            zones.forEach(z => z.classList.add('drinks-realm-zone'));
+
+            // Inject 5 subtle, slow-moving orbs inside each drinks section.
+            // They create a gentle, luxurious "atmosphere" — like soft
+            // light through effervescence or candle flicker. Non-interactive.
+            zones.forEach((zone, zi) => {
+                for (let i = 0; i < 5; i++) {
+                    const orb = document.createElement('div');
+                    orb.className = 'realm-orb';
+                    const size = 52 + ((zi + i) % 5) * 17;
+                    orb.style.width = size + 'px';
+                    orb.style.height = size + 'px';
+                    orb.style.left = (10 + ((zi * 11 + i * 17) % 72)) + '%';
+                    orb.style.top = (6 + ((i * 19 + zi * 5) % 64)) + '%';
+                    orb.style.opacity = (0.032 + (i % 3) * 0.017).toFixed(3);
+                    orb.style.animationDelay = ((zi - i) * 2.1 - 3.5) + 's';
+                    zone.appendChild(orb);
+                }
+            });
+
+            const firstTrigger = document.getElementById('non-alcoholic');
+            if (!firstTrigger) return;
+
+            const lastZone = document.getElementById('signature-cocktails');
+
+            // --- Scroll-driven gradient progress ---
+            // Computes 0 at entry to Non-Alcoholic → 1 at the very bottom of Signature Cocktails.
+            // This drives the background gradient so the dark footer color (#2C2824)
+            // slowly grows upward from the bottom the deeper you scroll in the drinks.
+            let scrollTicking = false;
+
+            function updateDrinksProgress() {
+                if (!document.body.classList.contains('drinks-realm')) return;
+
+                const first = document.getElementById('non-alcoholic');
+                const last = document.getElementById('signature-cocktails');
+                if (!first || !last) return;
+
+                const scrollY = window.scrollY;
+                const vh = window.innerHeight;
+
+                // Progress begins rising right around when Non-Alcoholic enters view.
+                // It reaches ~1.0 when the user has scrolled to the bottom of the last drinks section.
+                const start = first.getBoundingClientRect().top + scrollY - (vh * 0.22);
+                const end = last.getBoundingClientRect().bottom + scrollY - (vh * 0.12);
+
+                let p = (scrollY - start) / Math.max(120, (end - start));
+                p = Math.max(0, Math.min(1, p));
+
+                // Background easing stays relatively slow (creeps the dark up gradually).
+                const drinksEased = Math.pow(p, 2.65);
+                document.documentElement.style.setProperty('--drinks-progress', drinksEased.toFixed(4));
+
+                // Gold progress is much more aggressive: stays low/subtle for most of the
+                // drinks area, then ramps HARD near the very end so the final heading
+                // (Signature Cocktails) becomes almost gleaming when the bg is fully dark.
+                const goldEased = Math.pow(p, 4.0);
+                document.documentElement.style.setProperty('--gold-progress', goldEased.toFixed(4));
+
+                // Text whitening needs to happen WAY faster than the background or gold.
+                // Lower exponent = quicker rise even in the early/mid part of the drinks area.
+                const textEased = Math.pow(p, 0.75);
+                document.documentElement.style.setProperty('--text-progress', textEased.toFixed(4));
+
+                // Decor for the shaker pour illustration:
+                // - Appears when gradient transition starts (realm / low drinksEased)
+                // - Disappears as we scroll down (higher drinksEased)
+                // - Color intensity ramps up a bit as it becomes visible
+                const decorVis = Math.max(0, 1 - drinksEased * 1.6);
+                document.documentElement.style.setProperty('--decor-opacity', decorVis.toFixed(4));
+                const decorInt = Math.min(1, drinksEased * 1.2);
+                document.documentElement.style.setProperty('--decor-intensity', decorInt.toFixed(4));
+
+                // Make the entire webpage background black from the 'Complimentary Drinks' divider downward.
+                // The fixed ::after on body starts at the divider's current viewport top position.
+                // This ensures everything below (full width) is black, while text and animations stay on top.
+                // Upper page (above divider) remains the light background color.
+                const divider = document.getElementById('complimentary-drinks-divider');
+                if (divider) {
+                    const rect = divider.getBoundingClientRect();
+                    // black starts right at the top of the divider (right above the cursive heading)
+                    document.documentElement.style.setProperty('--black-start', rect.top + 'px');
+                }
+            }
+
+            // Passive rAF-throttled scroll listener (very light).
+            window.addEventListener('scroll', () => {
+                if (!scrollTicking) {
+                    scrollTicking = true;
+                    requestAnimationFrame(() => {
+                        updateDrinksProgress();
+                        scrollTicking = false;
+                    });
+                }
+            }, { passive: true });
+
+            // Helper to activate + kick the gradient progress immediately.
+            function activateRealmAndUpdate() {
+                document.body.classList.add('drinks-realm');
+                // Small delay so layout is settled, then drive the gradient from current scroll position.
+                setTimeout(updateDrinksProgress, 40);
+                // Start the subtle gold spark/firefly emissions from the drink headings
+                // after the gold has had time to ramp a little.
+                setTimeout(startGoldSparks, 720);
+            }
+
+            // Primary trigger: when the drinks area (starting at Non-Alcoholic)
+            // scrolls into a comfortable view position, shift the whole page
+            // into the warmer, more indulgent realm + start the gradient.
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting && entry.intersectionRatio > 0.12) {
+                        activateRealmAndUpdate();
+                    } else if (!entry.isIntersecting && entry.boundingClientRect.top > 120) {
+                        // Scrolled back above the drinks gateway — ease back to the
+                        // practical services palette and reset gradients.
+                        document.body.classList.remove('drinks-realm');
+                        document.documentElement.style.setProperty('--drinks-progress', '0');
+                        document.documentElement.style.setProperty('--gold-progress', '0');
+                        document.documentElement.style.setProperty('--text-progress', '0');
+                        document.documentElement.style.setProperty('--decor-opacity', '0');
+                        document.documentElement.style.setProperty('--decor-intensity', '0');
+                        document.documentElement.style.setProperty('--black-start', '100vh');
+                        stopGoldSparks();
+                    }
+                });
+            }, {
+                threshold: [0, 0.12, 0.28, 0.55],
+                rootMargin: '-70px 0px -18% 0px'
+            });
+            observer.observe(firstTrigger);
+
+            // If the user arrived via a direct link (homepage "full menu" buttons
+            // or sub-nav) straight into any drinks category, enter the realm.
+            const initialHash = (window.location.hash || '').replace('#', '');
+            if (drinksIds.includes(initialHash)) {
+                setTimeout(() => {
+                    activateRealmAndUpdate();
+                }, 260);
+            }
+
+            // Safety net for tall viewports or after back/forward nav:
+            // if any part of the first drinks section is already well on screen, activate.
+            setTimeout(() => {
+                const r = firstTrigger.getBoundingClientRect();
+                if (r.top < window.innerHeight * 0.72 && r.bottom > 90) {
+                    activateRealmAndUpdate();
+                }
+            }, 380);
+
+            // Keep the realm alive while the user is browsing the Signature Cocktails
+            // (the pinnacle "enhance" moment). A second observer on the last zone.
+            if (lastZone) {
+                const keepObserver = new IntersectionObserver((entries) => {
+                    entries.forEach(e => {
+                        if (e.isIntersecting && e.intersectionRatio > 0.06) {
+                            activateRealmAndUpdate();
+                        }
+                    });
+                }, { threshold: 0.06, rootMargin: '0px 0px -10% 0px' });
+                keepObserver.observe(lastZone);
+            }
+
+            // ============================================================
+            // Discrete gold sparks / fireflies from the drink headings
+            // Emitted randomly (single or small clusters) in the same
+            // bright treasure gold as the headings. They shoot outward
+            // over a 10x larger area of effect (wider spawn + travel) with
+            // fluid random motion + gentle wobble, then slowly fade and
+            // drift as they move away. Very low frequency so it feels
+            // special and luxurious rather than busy.
+            // ============================================================
+            let goldSparkTimer = null;
+            let goldActiveSparks = [];
+            let goldSparksRAF = null;
+
+            function createGoldSpark(h2, zone) {
+                if (!document.body.classList.contains('drinks-realm')) return;
+
+                const h2Rect = h2.getBoundingClientRect();
+                const zoneRect = zone.getBoundingClientRect();
+
+                const spark = document.createElement('div');
+                spark.className = Math.random() > 0.55 ? 'gold-spark bright' : 'gold-spark';
+
+                const size = (2.2 + Math.random() * 2.8) * 1.5; // slightly larger particles for 5x area visibility
+                spark.style.width = size + 'px';
+                spark.style.height = size + 'px';
+
+                // Spawn from an area of effect 10x larger (linear) centered on the heading text
+                // so the shooting fireflies cover a much wider region around the words.
+                const areaScale = 10;
+                const spawnWidth = Math.max(20, h2Rect.width) * areaScale;
+                const spawnHeight = h2Rect.height * areaScale;
+                const offsetX = h2Rect.left - zoneRect.left - (spawnWidth - h2Rect.width) / 2 + Math.random() * spawnWidth;
+                const offsetY = h2Rect.top - zoneRect.top - (spawnHeight - h2Rect.height) / 2 + Math.random() * spawnHeight;
+
+                spark.style.left = offsetX + 'px';
+                spark.style.top = offsetY + 'px';
+                spark.style.opacity = 0.85 + Math.random() * 0.15;
+
+                zone.appendChild(spark);
+
+                // Initial velocity - fluid outward + slight upward bias, random direction.
+                // Scaled for ~10x travel distance (wider area of effect).
+                const angle = (Math.random() - 0.5) * 2.6;
+                const speed = (0.55 + Math.random() * 1.35) * 7;
+                let vx = Math.cos(angle) * speed;
+                let vy = Math.sin(angle) * speed - (0.35 + Math.random() * 0.45);
+
+                const life = (1450 + Math.random() * 1750) * 6.4;
+                const startTime = Date.now();
+                const wobbleFreq = 0.7 + Math.random() * 1.1;
+                const initialDrag = 0.992 + Math.random() * 0.005;
+
+                goldActiveSparks.push({
+                    el: spark,
+                    x: offsetX,
+                    y: offsetY,
+                    vx: vx,
+                    vy: vy,
+                    life: life,
+                    startTime: startTime,
+                    wobble: wobbleFreq,
+                    drag: initialDrag
+                });
+
+                if (!goldSparksRAF) {
+                    goldSparksRAF = requestAnimationFrame(updateGoldSparks);
+                }
+            }
+
+            // Spawn a splash explosion of gold sparks from the shaker pour impact point.
+            // Positioned relative to the fixed #menu-illustrations container, around the glass.
+            // Uses same particle system for consistent gold firefly effect.
+            function createShakerExplosion() {
+                if (!document.body.classList.contains('drinks-realm')) return;
+
+                const illus = document.getElementById('menu-illustrations');
+                const svg = document.getElementById('shaker-pour');
+                if (!illus || !svg) return;
+
+                const svgRect = svg.getBoundingClientRect();
+
+                // Glass center in viewport coords (from SVG viewBox, glass around x88 y170, scaled to displayed svg)
+                const scaleX = svgRect.width / 175;
+                const scaleY = svgRect.height / 235;
+                const glassCenterX = svgRect.left + (88 * scaleX);
+                const glassCenterY = svgRect.top + (175 * scaleY);
+
+                const count = 6 + Math.floor(Math.random() * 5); // burst on hit
+                for (let i = 0; i < count; i++) {
+                    const spark = document.createElement('div');
+                    spark.className = Math.random() > 0.55 ? 'gold-spark bright' : 'gold-spark';
+
+                    const size = (2.2 + Math.random() * 2.8) * 1.5;
+                    spark.style.width = size + 'px';
+                    spark.style.height = size + 'px';
+
+                    // Start near the glass impact in the animation
+                    // Doubled spread for twice the effect
+                    const offsetX = glassCenterX + (Math.random() - 0.5) * 70;
+                    const offsetY = glassCenterY + (Math.random() - 0.5) * 40;
+
+                    spark.style.position = 'fixed';
+                    spark.style.left = offsetX + 'px';
+                    spark.style.top = offsetY + 'px';
+                    spark.style.opacity = 0.9 + Math.random() * 0.1;
+
+                    // Append to body so fixed positioning works across the whole page
+                    document.body.appendChild(spark);
+
+                    // Explode / shoot leftward (into the page, half way)
+                    // Negative vx to fly from right toward center of the page
+                    const angle = (Math.random() - 0.5) * 2.5; // some spread, biased left
+                    const speed = 8 + Math.random() * 10; // enough speed to cross half the page before fading
+                    let vx = Math.cos(angle) * speed - 12; // strong left component for "half way into the page"
+                    let vy = Math.sin(angle) * speed * 0.6 - 3; // upward-ish for splash explode
+
+                    const life = 2200 + Math.random() * 1800; // long enough to travel halfway
+                    const startTime = Date.now();
+                    const wobbleFreq = 1.2 + Math.random() * 1.0;
+                    const initialDrag = 0.985 + Math.random() * 0.01;
+
+                    goldActiveSparks.push({
+                        el: spark,
+                        x: offsetX,
+                        y: offsetY,
+                        vx: vx,
+                        vy: vy,
+                        life: life,
+                        startTime: startTime,
+                        wobble: wobbleFreq,
+                        drag: initialDrag
+                    });
+                }
+
+                if (!goldSparksRAF) {
+                    goldSparksRAF = requestAnimationFrame(updateGoldSparks);
+                }
+            }
+
+            function updateGoldSparks() {
+                if (goldActiveSparks.length === 0 || !document.body.classList.contains('drinks-realm')) {
+                    // cleanup any stragglers
+                    goldActiveSparks.forEach(p => {
+                        if (p.el && p.el.parentNode) p.el.parentNode.removeChild(p.el);
+                    });
+                    goldActiveSparks = [];
+                    goldSparksRAF = null;
+                    return;
+                }
+
+                const now = Date.now();
+                const nextFrame = [];
+
+                goldActiveSparks.forEach(p => {
+                    const age = now - p.startTime;
+                    if (age > p.life || !p.el.parentNode) {
+                        if (p.el.parentNode) p.el.parentNode.removeChild(p.el);
+                        return;
+                    }
+
+                    const t = age / p.life;
+                    // Slow elegant fade (quadratic at the end for "slowly disappears")
+                    const opacity = Math.max(0.02, (1 - t * t) * 0.92);
+
+                    // Fluid movement with gentle random wobble (firefly feel)
+                    p.x += p.vx;
+                    p.y += p.vy;
+
+                    const wobble = Math.sin(age / 210 * p.wobble) * 0.012;
+                    p.vx += wobble;
+                    p.vy += 0.0025; // very subtle downward drift as it moves away
+
+                    p.vx *= p.drag;
+                    p.vy *= p.drag;
+
+                    p.el.style.left = p.x + 'px';
+                    p.el.style.top = p.y + 'px';
+                    p.el.style.opacity = opacity;
+
+                    // gentle shrink as it fades
+                    const s = 1 - t * 0.35;
+                    p.el.style.transform = `scale(${s})`;
+
+                    nextFrame.push(p);
+                });
+
+                goldActiveSparks = nextFrame;
+
+                if (goldActiveSparks.length > 0) {
+                    goldSparksRAF = requestAnimationFrame(updateGoldSparks);
+                } else {
+                    goldSparksRAF = null;
+                }
+            }
+
+            function startGoldSparks() {
+                stopGoldSparks(); // ensure clean
+
+                const headings = document.querySelectorAll('.drinks-realm-zone h2');
+                if (headings.length === 0 || !document.body.classList.contains('drinks-realm')) return;
+
+                goldSparkTimer = setInterval(() => {
+                    if (!document.body.classList.contains('drinks-realm')) {
+                        stopGoldSparks();
+                        return;
+                    }
+
+                    headings.forEach(h2 => {
+                        const rect = h2.getBoundingClientRect();
+                        if (rect.top > window.innerHeight || rect.bottom < 60) return; // not really visible
+
+                        const goldP = parseFloat(getComputedStyle(document.documentElement).getPropertyValue('--gold-progress')) || 0;
+
+                        // Very discrete base rate, increases only when the gold is strong (deeper in realm)
+                        const baseChance = 0.055 + (goldP * 0.22);
+
+                        if (Math.random() < baseChance) {
+                            const zone = h2.closest('.drinks-realm-zone');
+                            if (!zone) return;
+
+                            // Sometimes single, sometimes a small cluster (firework / firefly burst feel)
+                            // Doubled the effect (more particles) on the words/headings.
+                            const isCluster = Math.random() > 0.68;
+                            const count = isCluster ? (4 + Math.floor(Math.random() * 4)) : 2;
+
+                            for (let i = 0; i < count; i++) {
+                                setTimeout(() => {
+                                    if (document.body.classList.contains('drinks-realm')) {
+                                        createGoldSpark(h2, zone);
+                                    }
+                                }, i * (isCluster ? 55 : 0));
+                            }
+                        }
+                    });
+
+                    // Simulate drops hitting the drink: occasional splash explosions from the shaker
+                    // (creates the same shooting gold fireflies from the impact point in the illustration)
+                    if (Math.random() < 0.45) {
+                        setTimeout(() => {
+                            if (document.body.classList.contains('drinks-realm')) {
+                                createShakerExplosion();
+                            }
+                        }, Math.random() * 300);
+                    }
+                }, 580);
+            }
+
+            function stopGoldSparks() {
+                if (goldSparkTimer) {
+                    clearInterval(goldSparkTimer);
+                    goldSparkTimer = null;
+                }
+                // remove all current sparks
+                goldActiveSparks.forEach(p => {
+                    if (p.el && p.el.parentNode) p.el.parentNode.removeChild(p.el);
+                });
+                goldActiveSparks = [];
+                if (goldSparksRAF) {
+                    cancelAnimationFrame(goldSparksRAF);
+                    goldSparksRAF = null;
+                }
+            }
+
+            // Initial progress sync in case we're already deep on load.
+            setTimeout(updateDrinksProgress, 420);
+        }
+    </script>
+</body>
+</html>
