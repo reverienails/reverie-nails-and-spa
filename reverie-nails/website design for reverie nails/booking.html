@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book Your Appointment • Reverie Nails and Spa</title>
+    <link rel="icon" href="assets/logo.png" type="image/png">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link href="https://api.fontshare.com/v2/css?f[]=satoshi@300,400,500,700&amp;display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600&amp;family=Dancing+Script:wght@400;500;600&amp;display=swap" rel="stylesheet">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600&amp;family=Dancing+Script:wght@400;500;600&amp;display=swap');
+
+        body {
+            font-family: 'Satoshi', system_ui, -apple-system, sans-serif;
+            background-color: #EDE9E3;
+            color: #2C2824;
+        }
+
+        .heading-serif {
+            font-family: 'Playfair Display', Georgia, serif;
+            font-weight: 500;
+            letter-spacing: -0.02em;
+        }
+
+        .section-title {
+            font-family: 'Playfair Display', Georgia, serif;
+            font-weight: 500;
+            letter-spacing: -0.03em;
+            line-height: 1.05;
+        }
+
+        .nav-link {
+            transition: color 0.2s ease;
+        }
+        .nav-link:hover {
+            color: #E85A9C;
+        }
+    </style>
+</head>
+<body class="bg-[#EDE9E3] text-[#2C2824]">
+
+    <!-- Navigation -->
+    <nav class="bg-[#EDE9E3]/95 backdrop-blur-lg sticky top-0 z-50 border-b border-[#D9D4CC]">
+        <div class="max-w-6xl mx-auto px-6">
+            <div class="flex justify-between items-center h-20">
+                
+                <!-- Logo -->
+                <a href="index.html" class="flex items-center gap-x-3">
+                    <img src="assets/logo.png" alt="Reverie Nails and Spa Logo" class="h-[42px] w-auto object-contain">
+                    <div>
+                        <div class="font-semibold tracking-tight text-xl">Reverie</div>
+                        <div class="text-[10px] text-[#756A62] -mt-1 tracking-[1px]">NAILS AND SPA</div>
+                    </div>
+                </a>
+
+                <!-- Desktop Nav -->
+                <div class="hidden md:flex items-center gap-x-8 text-sm font-medium">
+                    <a href="index.html#experience" class="nav-link">The Experience</a>
+                    <a href="index.html#services" class="nav-link">Services</a>
+                    <a href="index.html#gallery" class="nav-link">Gallery</a>
+                    <a href="index.html#testimonials" class="nav-link">Community</a>
+                </div>
+
+                <div class="flex items-center gap-x-3">
+                    <a href="index.html" 
+                       class="px-5 py-2.5 text-sm font-medium rounded-full border border-[#D4C9BD] hover:bg-white transition-colors">
+                        Back to Home
+                    </a>
+                    
+                    <!-- Mobile Menu -->
+                    <button id="mobile-menu-btn"
+                            class="md:hidden w-10 h-10 flex items-center justify-center text-[#2C2824]">
+                        <i class="fa-solid fa-bars text-xl"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Mobile Menu -->
+    <div id="mobile-menu" class="hidden md:hidden bg-white border-b">
+        <div class="px-6 py-5 flex flex-col gap-y-4 text-sm font-medium">
+            <a href="index.html#experience" class="py-1">The Experience</a>
+            <a href="index.html#services" class="py-1">Services</a>
+            <a href="index.html#gallery" class="py-1">Gallery</a>
+            <a href="index.html#testimonials" class="py-1">Community</a>
+            <div class="pt-2">
+                <a href="index.html" 
+                   class="block w-full text-center px-6 py-3 rounded-full border border-[#D4C9BD] text-sm font-medium">
+                    Back to Home
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Main Content -->
+    <div class="max-w-2xl mx-auto px-6 py-16 text-center">
+        <div class="mb-8">
+            <div class="w-16 h-16 bg-[#E85A9C] rounded-full flex items-center justify-center mx-auto mb-6">
+                <i class="fa-solid fa-phone text-white text-3xl"></i>
+            </div>
+            <h1 class="section-title text-4xl md:text-5xl tracking-tight mb-4">
+                Online Booking Coming Soon
+            </h1>
+            <p class="text-xl text-[#655C54] mb-8">
+                For now, please call to book your appointment.<br>
+                Our team is happy to help you find the perfect time.
+            </p>
+        </div>
+
+        <!-- Phone Number -->
+        <div class="bg-white rounded-3xl border border-[#E5DFD6] p-8 mb-8">
+            <div class="text-sm uppercase tracking-wider text-[#B89A94] mb-2">Call Us Today</div>
+            <a href="tel:6822245688" class="block text-4xl md:text-5xl font-semibold text-[#2C2824] hover:text-[#E85A9C] transition-colors mb-2">
+                (682) 224-5688
+            </a>
+            <p class="text-[#756A62]">We're here to help you book the perfect appointment.</p>
+        </div>
+
+        <!-- Contact Info -->
+        <div class="bg-white rounded-3xl border border-[#E5DFD6] p-8 mb-8 text-left">
+            <h2 class="font-semibold text-xl mb-4 text-center">Contact Information</h2>
+            
+            <div class="space-y-4">
+                <div class="flex items-start gap-4">
+                    <i class="fa-solid fa-map-marker-alt text-[#E85A9C] mt-1 w-5"></i>
+                    <div>
+                        <div class="font-medium">Reverie Nails and Spa</div>
+                        <div class="text-[#655C54]">4613 West Bailey Boswell Rd<br>Ste 101<br>Saginaw, TX 76179</div>
+                    </div>
+                </div>
+
+                <div class="flex items-center gap-4">
+                    <i class="fa-solid fa-phone text-[#E85A9C] w-5"></i>
+                    <a href="tel:6822245688" class="font-medium hover:text-[#E85A9C] transition-colors">(682) 224-5688</a>
+                </div>
+
+                <div class="flex items-center gap-4 pt-1">
+                    <i class="fa-solid fa-share-alt text-[#E85A9C] w-5"></i>
+                    <div>
+                        <div class="font-medium mb-1 text-sm">Follow Us</div>
+                        <div class="flex gap-x-4 text-lg text-[#2C2824]">
+                            <a href="https://www.instagram.com/reverienailspa?igsh=emgwNTVnZmV0eHlm&utm_source=qr" target="_blank" rel="noopener noreferrer" class="hover:text-[#E85A9C] transition-colors" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+                            <a href="https://www.facebook.com/reverienailandspa/" target="_blank" rel="noopener noreferrer" class="hover:text-[#E85A9C] transition-colors" aria-label="Facebook"><i class="fa-brands fa-facebook"></i></a>
+                            <a href="https://www.google.com/maps/search/?api=1&query=Reverie+Nail+and+Spa%2C+4613+West+Bailey+Boswell+Rd%2C+Saginaw%2C+TX+76179" target="_blank" rel="noopener noreferrer" class="hover:text-[#E85A9C] transition-colors" aria-label="Google"><i class="fa-brands fa-google"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Hours -->
+        <div class="bg-white rounded-3xl border border-[#E5DFD6] p-8 mb-8">
+            <h2 class="font-semibold text-xl mb-4">Hours</h2>
+            <div class="space-y-1 text-[#655C54]">
+                <div class="flex justify-between"><span>Monday – Friday</span> <span>9:30 AM – 7:30 PM</span></div>
+                <div class="flex justify-between"><span>Saturday</span> <span>9:00 AM – 7:00 PM</span></div>
+                <div class="flex justify-between"><span>Sunday</span> <span>11:00 AM – 6:00 PM</span></div>
+            </div>
+        </div>
+
+        <p class="text-sm text-[#756A62]">
+            We look forward to welcoming you to Reverie.<br>
+            Online booking will be available soon!
+        </p>
+    </div>
+
+    <script>
+        // Mobile menu toggle
+        const mobileBtn = document.getElementById('mobile-menu-btn');
+        const mobileMenu = document.getElementById('mobile-menu');
+        
+        if (mobileBtn && mobileMenu) {
+            mobileBtn.addEventListener('click', () => {
+                mobileMenu.classList.toggle('hidden');
+                const icon = mobileBtn.querySelector('i');
+                if (icon) {
+                    icon.classList.toggle('fa-bars');
+                    icon.classList.toggle('fa-times');
+                }
+            });
+        }
+    </script>
+</body>
+</html>
