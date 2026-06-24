@@ -1,0 +1,2200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reverie Nails and Spa | Luxury Nail Salon in Saginaw, TX</title>
+    <meta name="description" content="Reverie Nails and Spa in Saginaw, TX offers luxury manicures, pedicures, nail art, and relaxing spa services with a warm, community-focused experience. Military, teacher, and student discounts available daily.">
+    <link rel="icon" href="assets/logo.png" type="image/png">
+    <meta name="keywords" content="nail salon Saginaw TX, manicure Saginaw, pedicure near me, luxury nails Texas, nail art Saginaw, spa services Fort Worth area">
+
+    <!-- Open Graph / Social -->
+    <meta property="og:title" content="Reverie Nails and Spa | Saginaw, TX">
+    <meta property="og:description" content="A modern, warm nail and spa experience in Saginaw. Thoughtful care, beautiful results, and complimentary drinks.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://reverienailspa.com">
+    <meta property="og:image" content="assets/logo.png">
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <!-- Satoshi (body) via Fontshare + Playfair Display (headings) -->
+    <link href="https://api.fontshare.com/v2/css?f[]=satoshi@300,400,500,700&amp;display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600&amp;family=Dancing+Script:wght@400;500;600&amp;display=swap" rel="stylesheet">
+    <style>
+        :root {
+            /* Option 5: Inspired by your actual salon interior (gray/blue/cream + warmth) */
+            --bg: #EDE9E3;              /* Soft warm gray (main background) */
+            --accent-blue: #6B7A9E;     /* Muted blue from your LED lighting */
+            --rose-gold: #B89A94;       /* Warm rose-gold to keep it welcoming */
+            --charcoal: #2C2824;        /* Rich dark for text/buttons */
+            --warm-taupe: #7A6F65;      /* Grounding warm gray */
+            --soft-gold: #C9A57E;       /* Subtle gold from chandeliers */
+        }
+        
+        .tail-container {
+            font-family: 'Satoshi', system_ui, -apple-system, sans-serif;
+            font-weight: 400;
+        }
+        
+        .heading-serif {
+            font-family: 'Playfair Display', Georgia, serif;
+            font-weight: 500;
+            letter-spacing: -0.02em;
+        }
+
+        .section-title {
+            font-family: 'Playfair Display', Georgia, serif;
+            font-weight: 500;
+            letter-spacing: -0.03em;
+            line-height: 1.05;
+        }
+
+        /* Better serif pairings for headings */
+        h1, h2, h3, .serif-heading {
+            font-family: 'Playfair Display', Georgia, serif;
+            font-weight: 500;
+            letter-spacing: -0.02em;
+        }
+
+        .warm-bg {
+            background-color: #F2EDE6;
+        }
+
+        .nav-link {
+            transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+        
+        .nav-link:hover {
+            color: #B89A94;
+        }
+
+        /* Serif font for main navigation items */
+        .nav-serif {
+            font-family: 'Playfair Display', Georgia, serif;
+            font-weight: 500;
+            letter-spacing: -0.01em;
+            font-size: 0.95rem;
+        }
+
+        .service-card {
+            transition: all 0.3s cubic-bezier(0.4, 0.0, 0.2, 1);
+        }
+        
+        .service-card:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 20px 25px -5px rgb(0 0 0 / 0.05), 0 8px 10px -6px rgb(0 0 0 / 0.05);
+        }
+
+        .accent {
+            color: #B89A94;
+        }
+
+        .btn-primary {
+            background-color: #2C2824;
+            color: white;
+            transition: all 0.2s cubic-bezier(0.4, 0.0, 0.2, 1);
+        }
+        
+        .btn-primary:hover {
+            background-color: #B89A94;
+            color: #2C2824;
+        }
+
+        .btn-secondary {
+            background-color: white;
+            color: #2C2824;
+            border: 1px solid #D4C9BD;
+            transition: all 0.2s cubic-bezier(0.4, 0.0, 0.2, 1);
+        }
+
+        .soft-gold {
+            color: #C9A57E;
+        }
+
+        .image-container {
+            overflow: hidden;
+        }
+        
+        .image-container img {
+            transition: transform 0.6s cubic-bezier(0.4, 0.0, 0.2, 1);
+        }
+        
+        .image-container:hover img {
+            transform: scale(1.05);
+        }
+
+        .nav-scrolled {
+            background-color: rgba(237, 233, 227, 0.95);
+            backdrop-filter: blur(12px);
+        }
+
+        /* Typography improvements for Satoshi + Playfair pairing */
+        body, p, li, input, textarea, select {
+            font-family: 'Satoshi', system_ui, -apple-system, sans-serif;
+            font-weight: 400;
+        }
+
+        .nav-link,
+        button,
+        .font-medium {
+            font-weight: 500;
+        }
+
+        .booking-step {
+            transition: all 0.3s ease;
+        }
+
+        .modern-shadow {
+            box-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.05), 0 4px 6px -4px rgb(0 0 0 / 0.05);
+        }
+
+        /* Pedicures teaser: completely hide native scrollbar (we use hover+hold arrows + drag instead) */
+        .pedicure-scroll {
+            -ms-overflow-style: none;  /* IE and Edge */
+            scrollbar-width: none;     /* Firefox */
+        }
+        .pedicure-scroll::-webkit-scrollbar {
+            display: none;             /* Chrome, Safari, Opera */
+        }
+
+        /* Hover & hold scroll controls for the pedicure list (appear on hover of the card, positioned on right) */
+        .pedicure-scroll-controls {
+            width: 22px;
+        }
+        .pedicure-scroll-btn {
+            background: rgba(242, 237, 230, 0.92);
+            border: 1px solid #E5DFD6;
+            border-radius: 9999px;
+            width: 18px;
+            height: 18px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+            transition: all 0.15s ease;
+            box-shadow: 0 1px 2px rgba(0,0,0,0.06);
+            color: #B89A94;
+            font-size: 9px;
+        }
+        .pedicure-scroll-btn:hover {
+            background: #fff;
+            border-color: #E85A9C;
+            color: #E85A9C;
+            transform: scale(1.08);
+        }
+        .pedicure-scroll-btn:active {
+            background: #E85A9C;
+            color: white;
+            border-color: #E85A9C;
+        }
+
+        /* Flying words animation for Signature Services - Gold Chrome */
+        #flying-word {
+            font-family: 'Dancing Script', cursive;
+            display: inline-block;
+            transition: all 1.6s cubic-bezier(0.34, 1.56, 0.64, 1);
+            opacity: 0;
+            transform: translateY(50px) scale(3.2);
+            
+            /* Gold Chrome Effect */
+            background: linear-gradient(
+                135deg,
+                #f5e8a3 0%,
+                #d4af37 22%,
+                #b8860b 50%,
+                #d4af37 78%,
+                #f5e8a3 100%
+            );
+            background-size: 200% 200%;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            text-shadow: 
+                0 3px 6px rgba(0, 0, 0, 0.35),
+                0 -2px 2px rgba(255, 255, 255, 0.5);
+        }
+
+        #flying-word.show {
+            opacity: 1;
+            transform: translateY(0) scale(2);
+            /* Subtle moving shine while visible */
+            animation: goldShine 2.8s linear infinite;
+        }
+
+        #flying-word.leaving {
+            opacity: 0;
+            transform: translateY(-40px) scale(1.3);
+            transition: all 0.9s ease-out;
+            animation: none;
+        }
+
+        @keyframes goldShine {
+            0% { background-position: 0% 50%; }
+            100% { background-position: 200% 50%; }
+        }
+    </style>
+
+    <!-- AI & Agent-Friendly Structured Data (JSON-LD) -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "NailSalon",
+      "name": "Reverie Nails and Spa",
+      "description": "A modern, warm, and community-oriented nail and spa experience in Saginaw, TX. Thoughtful care with premium products, complimentary drinks, and special pricing for military, teachers, and students.",
+      "url": "https://reverienailspa.com",
+      "telephone": "(682) 224-5688",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "4613 West Bailey Boswell Rd, Ste 101",
+        "addressLocality": "Saginaw",
+        "addressRegion": "TX",
+        "postalCode": "76179",
+        "addressCountry": "US"
+      },
+      "geo": {
+        "@type": "GeoCoordinates",
+        "latitude": 32.86,
+        "longitude": -97.38
+      },
+      "openingHoursSpecification": [
+        {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
+          "opens": "09:30",
+          "closes": "19:30"
+        },
+        {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": "Saturday",
+          "opens": "09:00",
+          "closes": "19:00"
+        },
+        {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": "Sunday",
+          "opens": "11:00",
+          "closes": "18:00"
+        }
+      ],
+      "sameAs": [
+        "https://www.instagram.com/reverienailspa",
+        "https://www.facebook.com/reverienailandspa/"
+      ],
+      "image": "assets/logo.png",
+      "priceRange": "$$",
+      "areaServed": "Saginaw, TX and surrounding Fort Worth area",
+      "hasOfferCatalog": {
+        "@type": "OfferCatalog",
+        "name": "Nail & Spa Services at Reverie",
+        "itemListElement": [
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Classic Pedicure",
+              "description": "Standard pedicure with nail care, cuticle work, callus removal, and relaxing hot towels. 30 min treatment.",
+              "serviceType": "Pedicure"
+            },
+            "price": "30",
+            "priceCurrency": "USD"
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Rosé All Day Pedicure",
+              "description": "Luxury pedicure with pink jelly soak, rose petals, and a glass of rosé. 65 min treatment.",
+              "serviceType": "Luxury Pedicure"
+            },
+            "price": "75",
+            "priceCurrency": "USD"
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Gel Manicure",
+              "description": "Long-lasting gel polish manicure with nail shaping and cuticle care. Typically lasts up to two weeks.",
+              "serviceType": "Manicure"
+            },
+            "price": "38",
+            "priceCurrency": "USD"
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Builder Gel Full Set",
+              "description": "Strong, natural-looking builder gel full set.",
+              "serviceType": "Nail Enhancement"
+            },
+            "price": "55",
+            "priceCurrency": "USD"
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Dipping Powder Color Set",
+              "description": "Dipping powder manicure. Adding tips available for extra charge.",
+              "serviceType": "Nail Enhancement"
+            },
+            "price": "40",
+            "priceCurrency": "USD"
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Acrylic Full Set",
+              "description": "Acrylic powder full set with regular polish.",
+              "serviceType": "Nail Enhancement"
+            },
+            "price": "40",
+            "priceCurrency": "USD"
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Eyebrow Waxing",
+              "description": "Professional eyebrow shaping and waxing.",
+              "serviceType": "Waxing"
+            },
+            "price": "12",
+            "priceCurrency": "USD"
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Wide Range of Complimentary Cocktails",
+              "description": "Wide range of complimentary cocktails, mocktails, wine, and beverages included with every service."
+            }
+          }
+        ]
+      },
+      "makesOffer": {
+        "@type": "Offer",
+        "name": "Daily Special Pricing",
+        "description": "Special pricing available every day for military, teachers, and students."
+      },
+      "aggregateRating": {
+        "@type": "AggregateRating",
+        "ratingValue": "4.9",
+        "reviewCount": "120"
+      },
+      "review": [
+        {
+          "@type": "Review",
+          "author": { "@type": "Person", "name": "Hatimah Doobraj" },
+          "reviewRating": { "@type": "Rating", "ratingValue": "5" },
+          "reviewBody": "Always love my experience here! A day one customer. Joe is always great and friendly staff. Trang did her thing on my valentines nails. Of course I'll be back."
+        },
+        {
+          "@type": "Review",
+          "author": { "@type": "Person", "name": "Krista Thomas" },
+          "reviewRating": { "@type": "Rating", "ratingValue": "5" },
+          "reviewBody": "I have been going to Reverie for several years! It's always very clean, relaxing and a great experience. I love being able to get my nails and toes done at the same time to save me time! They are always accommodating and perform excellent service."
+        }
+      ]
+    }
+    </script>
+
+    <!-- FAQPage Schema -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Do you offer student or military discounts?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes — we offer special pricing every day for military, teachers, and students. Just mention it when you book."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How long does a gel manicure last?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Our gel manicures typically last 2–3 weeks with proper care. We use high-quality products for maximum durability."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Are drinks really complimentary?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes. Every guest receives complimentary beverages during their service — wine, rosé, mocktails, water, and more."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Do I need an appointment?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "No, you don't need an appointment, but booking ahead will speed up your experience."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Do you take walk-ins?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes, we take walk-ins, but booking ahead allows us to ensure you have the perfect tech for the job — especially when technical skills are involved."
+          }
+        }
+      ]
+    }
+    </script>
+</head>
+<body class="tail-container bg-[#EDE9E3] text-[#2C2824]">
+
+    <!-- Navigation -->
+    <nav id="navbar" class="bg-[#EDE9E3] backdrop-blur-lg sticky top-0 z-50 border-b border-[#D9D4CC]">
+        <div class="max-w-6xl mx-auto px-6">
+            <div class="flex justify-between items-center h-20">
+                <!-- Logo -->
+                <a href="#" class="flex items-center gap-x-3">
+                    <img src="assets/logo.png" 
+                         alt="Reverie Nails and Spa Logo" 
+                         class="h-[42px] w-auto object-contain">
+                    <div>
+                        <div class="font-semibold tracking-tight text-xl">Reverie</div>
+                        <div class="text-[10px] text-[#756A62] -mt-1 tracking-[1px]">NAILS AND SPA</div>
+                    </div>
+                </a>
+
+                <!-- Desktop Navigation -->
+                <div class="hidden md:flex items-center gap-x-8 text-sm font-medium">
+                    <a href="#experience" class="nav-link nav-serif text-[#2C2824]">The Experience</a>
+                    <a href="#services" class="nav-link nav-serif text-[#2C2824]">Services</a>
+                    <a href="#gallery" class="nav-link nav-serif text-[#2C2824]">Gallery</a>
+                    <a href="#testimonials" class="nav-link nav-serif text-[#2C2824]">Community</a>
+                    <a href="booking.html" class="nav-link nav-serif text-[#2C2824]">Book</a>
+                </div>
+
+                <!-- CTA Buttons -->
+                <div class="flex items-center gap-x-3">
+                    <!-- Social Media Dropdown -->
+                    <div class="relative group hidden sm:block">
+                        <button 
+                            class="px-5 py-2.5 text-sm font-medium rounded-full bg-[#E85A9C] text-white hover:bg-[#C84A7E] transition-colors">
+                            Follow Us
+                        </button>
+                        <div id="follow-us-dropdown" class="absolute right-0 top-full mt-2 w-44 bg-[#E85A9C] border border-[#E85A9C] rounded-2xl shadow-lg py-2 z-50 text-white hidden before:content-[''] before:absolute before:-top-2 before:left-0 before:right-0 before:h-3">
+                            <a href="https://www.instagram.com/reverienailspa?igsh=emgwNTVnZmV0eHlm&utm_source=qr" target="_blank" rel="noopener noreferrer" class="block px-4 py-2.5 text-sm hover:bg-[#C84A7E] rounded-t-2xl">Instagram</a>
+                            <a href="https://www.facebook.com/reverienailandspa/" target="_blank" rel="noopener noreferrer" class="block px-4 py-2.5 text-sm hover:bg-[#C84A7E]">Facebook</a>
+                            <a href="https://www.google.com/maps/search/?api=1&query=Reverie+Nail+and+Spa%2C+4613+West+Bailey+Boswell+Rd%2C+Saginaw%2C+TX+76179" target="_blank" rel="noopener noreferrer" class="block px-4 py-2.5 text-sm hover:bg-[#C84A7E] rounded-b-2xl">Google</a>
+                        </div>
+                    </div>
+
+                    <a href="booking.html" 
+                       class="px-6 py-2.5 text-sm font-medium rounded-full btn-primary">
+                        Book Now
+                    </a>
+                    
+                    <!-- Mobile Menu -->
+                    <button id="mobile-menu-btn"
+                            class="md:hidden w-10 h-10 flex items-center justify-center text-[#2C2824]">
+                        <i class="fa-solid fa-bars text-xl"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Mobile Menu -->
+    <div id="mobile-menu" class="hidden md:hidden bg-white border-b">
+        <div class="px-6 py-4 flex flex-col gap-y-3 text-sm font-medium">
+            <a href="#experience" class="py-1 nav-serif">The Experience</a>
+            <a href="#services" class="py-1 nav-serif">Services</a>
+            <a href="#gallery" class="py-1 nav-serif">Gallery</a>
+            <a href="#testimonials" class="py-1 nav-serif">Community</a>
+            <a href="booking.html" class="py-1 nav-serif">Book Appointment</a>
+            <div class="pt-2 space-y-1">
+                <a href="booking.html" 
+                   class="block w-full text-center px-6 py-3 rounded-full btn-primary text-sm font-medium">
+                    Book Now
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Hero Section -->
+    <section class="relative pt-8 pb-16 md:pt-12 md:pb-20">
+        <div class="max-w-6xl mx-auto px-6">
+            <div class="grid md:grid-cols-12 gap-x-8 items-center">
+                
+                <!-- Text Content -->
+                <div class="md:col-span-7 lg:col-span-7">
+                    <div class="max-w-[620px]">
+                        <!-- Badge -->
+                        <div class="inline-flex items-center gap-x-2 px-4 py-1.5 rounded-full bg-white border border-[#E5DFD6] mb-6">
+                            <div class="w-2 h-2 bg-[#B89A94] rounded-full animate-pulse"></div>
+                            <span class="text-xs font-medium tracking-wider text-[#756A62]">NOW ACCEPTING NEW CLIENTS</span>
+                        </div>
+
+                        <h1 class="section-title text-5xl md:text-6xl lg:text-[62px] leading-[1.05] tracking-[-1.5px] mb-6">
+                            Thoughtful care.
+                        </h1>
+                        
+                        <p class="text-lg md:text-xl text-[#655C54] max-w-md mb-9">
+                            A modern nail and spa experience rooted in skill and warmth, 
+                            where we're genuinely invested in our Saginaw community — 
+                            and yes, the drinks are free.
+                        </p>
+
+                        <div class="flex flex-col sm:flex-row gap-3">
+                            <a href="booking.html" 
+                               class="inline-flex justify-center items-center px-8 py-4 rounded-2xl btn-primary text-base font-medium">
+                                <span>Book Your Appointment</span>
+                                <i class="fa-solid fa-arrow-right ml-3"></i>
+                            </a>
+                            
+                            <a href="#services" 
+                               class="inline-flex justify-center items-center px-7 py-4 rounded-2xl btn-secondary text-base font-medium">
+                                View Services
+                            </a>
+                        </div>
+
+                        <div class="flex items-center gap-x-6 mt-8 text-sm">
+                            <div class="flex -space-x-3">
+                                <div class="w-7 h-7 rounded-full border-2 border-[#EDE9E3] overflow-hidden"><img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=100" class="w-full h-full object-cover"></div>
+                                <div class="w-7 h-7 rounded-full border-2 border-[#EDE9E3] overflow-hidden"><img src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?w=100" class="w-full h-full object-cover"></div>
+                                <div class="w-7 h-7 rounded-full border-2 border-[#EDE9E3] overflow-hidden"><img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=100" class="w-full h-full object-cover"></div>
+                            </div>
+                            <div class="text-[#756A62]">
+                                <span class="font-medium text-[#2C2824]">400+</span> happy clients this year
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Hero Image -->
+                <div class="md:col-span-5 lg:col-span-5 mt-10 md:mt-0">
+                    <div class="relative rounded-3xl overflow-hidden shadow-2xl aspect-[4/3] md:aspect-auto md:h-[520px]">
+                        <!-- 
+                            RANDOM HERO IMAGE (tied to "Thoughtful care." headline)
+                            Automatically picks a random photo from the assets/Hero/ folder on every page load.
+
+                            TO ADD MORE PHOTOS FOR RANDOM SELECTION:
+                            1. Drop your photo file into the `assets/Hero/` folder.
+                            2. Use a name like hero-3.jpg, hero-4.png, etc. (common patterns are already included).
+                            3. Save + hard refresh (Ctrl/Cmd + Shift + R).
+
+                            For completely custom names, add the exact filename to the possibleHeroImages list in index.html.
+                        -->
+                        <img id="hero-random-img" 
+                             src="assets/Hero/hero-02.jpg" 
+                             alt="Reverie Nails and Spa interior" 
+                             class="w-full h-full object-cover">
+                        <div class="absolute inset-0 bg-gradient-to-t from-black/30 to-transparent"></div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Specials Banner -->
+    <!-- 
+      Shows the current special.
+      Edit assets/Current Specials/specials-data.js :
+        - Define specials as an object with keys (e.g. "basic", "july4").
+        - Set "current" to the key of the one you want to show.
+        - Give each a "folder" so photos can live in separate subfolders.
+      Photos for the active special are randomly chosen from its subfolder.
+      See the top of specials-data.js for details and examples.
+    -->
+    <div id="specials-banner" class="max-w-6xl mx-auto px-6 pb-8">
+      <!-- JS inserts the banner content here -->
+    </div>
+
+    <!-- Quick Trust Bar -->
+    <div class="border-y border-[#E5DFD6] py-4 bg-white">
+        <div class="max-w-6xl mx-auto px-6">
+            <div class="flex flex-wrap justify-center md:justify-between items-center gap-x-8 gap-y-3 text-sm text-[#756A62]">
+                <div class="flex items-center gap-x-2">
+                    <i class="fa-solid fa-check text-[#B89A94]"></i>
+                    <span>Professional, high-skill technicians</span>
+                </div>
+                <div class="flex items-center gap-x-2">
+                    <i class="fa-solid fa-check text-[#B89A94]"></i>
+                    <span>Premium products only</span>
+                </div>
+                <div class="flex items-center gap-x-2">
+                    <i class="fa-solid fa-check text-[#B89A94]"></i>
+                    <span>Welcoming space for everyone</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- The Experience / About Section -->
+    <section id="experience" class="max-w-6xl mx-auto px-6 pt-16 pb-14">
+        <div class="grid md:grid-cols-12 gap-x-12 items-center">
+            
+            <!-- Left Column - Text -->
+            <div class="md:col-span-6">
+                <div class="max-w-xl">
+                    <div class="uppercase tracking-[2px] text-xs font-medium text-[#E85A9C] mb-3">Our Philosophy</div>
+                    
+                    <h2 class="section-title text-4xl md:text-5xl leading-tight tracking-tight mb-6">
+                        A space where<br>skill meets warmth.
+                    </h2>
+                    
+                    <div class="space-y-5 text-[#655C54] text-[15px] leading-relaxed">
+                        <p>
+                            At Reverie, we blend exceptional quality and technical skill with everyday care and glamorous touches. 
+                            Our technicians are encouraged to build real connections — getting to know you as you get to know them.
+                        </p>
+                        <p>
+                            We envision Reverie as the community’s favorite “watering hole” — a warm, welcoming space where old friends reconnect and new ones are made. Our open layout and signature circular nail table are designed to spark conversation and connection.
+                        </p>
+                        <p>
+                            Whether you’re here for a luxurious pedicure or a quick set of nails, we hope you leave feeling relaxed, refreshed, and a little more connected.
+                        </p>
+                    </div>
+
+                    <div class="mt-8 flex flex-wrap gap-4 text-sm">
+                        <div class="flex items-center gap-x-3 bg-white px-5 py-3 rounded-2xl border border-[#E5DFD6]">
+                            <i class="fa-solid fa-users text-[#B89A94] text-lg"></i>
+                            <div>
+                                <div class="font-medium">Community First</div>
+                                <div class="text-xs text-[#756A62]">Many of our clients have been with us for years</div>
+                            </div>
+                        </div>
+                        <div class="flex items-center gap-x-3 bg-white px-5 py-3 rounded-2xl border border-[#E5DFD6]">
+                            <i class="fa-solid fa-handshake text-[#B89A94] text-lg"></i>
+                            <div>
+                                <div class="font-medium">Equity</div>
+                                <div class="text-xs text-[#756A62]">We're human, and so are you. If a service doesn't go as planned or the work isn't right, we'll work with you to find a fair resolution if there is a problem.</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Right Column - Image -->
+            <div class="md:col-span-6 mt-10 md:mt-0">
+                <div class="image-container rounded-3xl overflow-hidden shadow-xl aspect-[16/12]">
+                    <img id="philosophy-img" 
+                         src="assets/Our Philosophy/studio-1.jpg" 
+                         alt="Warm and inviting interior of Reverie Nails and Spa"
+                         class="w-full h-full object-cover">
+                </div>
+                <p class="text-center text-xs text-[#756A62] mt-3 italic">Our studio was designed to feel like a second home</p>
+            </div>
+
+        </div>
+        </div>
+    </section>
+
+    <!-- What to Expect -->
+    <section class="max-w-6xl mx-auto px-6 py-14 border-t border-[#E5DFD6]">
+        <div class="max-w-3xl mb-8">
+            <div class="uppercase tracking-[2px] text-xs font-medium text-[#E85A9C] mb-2">New Here?</div>
+            <h2 class="section-title text-3xl tracking-tight">What to expect at Reverie</h2>
+        </div>
+
+        <div class="grid md:grid-cols-2 gap-x-10 gap-y-6 text-[15px] text-[#655C54]">
+            <div class="flex gap-3">
+                <div class="font-medium text-[#2C2824] w-6">1.</div>
+                <div><strong>Welcome &amp; consult</strong> — We’ll go over your service, nail goals, and any preferences.</div>
+            </div>
+            <div class="flex gap-3">
+                <div class="font-medium text-[#2C2824] w-6">2.</div>
+                <div><strong>Service time</strong> — Relax with complimentary drinks while we take care of your nails or spa treatment.</div>
+            </div>
+            <div class="flex gap-3">
+                <div class="font-medium text-[#2C2824] w-6">3.</div>
+                <div><strong>Finish &amp; polish</strong> — Choose your color or design. We focus on healthy nails and beautiful, long-lasting results.</div>
+            </div>
+            <div class="flex gap-3">
+                <div class="font-medium text-[#2C2824] w-6">4.</div>
+                <div><strong>Aftercare tips</strong> — We’ll share simple tips so your nails stay looking great longer.</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services / Menu Section -->
+    <section id="services" class="bg-white py-16 border-t border-[#E5DFD6]">
+        <div class="max-w-6xl mx-auto px-6">
+            <div class="flex flex-col md:flex-row md:items-center md:justify-between mb-10 gap-y-4">
+                <!-- Left -->
+                <div class="uppercase tracking-[2px] text-xs font-medium text-[#E85A9C]">
+                    Signature Services
+                </div>
+
+                <!-- Center: Flying words -->
+                <div class="flex-1 text-center">
+                    <span id="flying-word"></span>
+                </div>
+
+                <!-- Right -->
+                <a href="booking.html" class="inline-flex items-center text-sm font-medium text-[#B89A94] hover:text-[#2C2824] transition-colors">
+                    Book any service <i class="fa-solid fa-arrow-right ml-2"></i>
+                </a>
+            </div>
+
+            <!-- Services Grid - Populated from assets/menu-data.js -->
+            <div id="services-grid" class="grid md:grid-cols-2 lg:grid-cols-3 gap-5">
+                <!-- Content is dynamically generated from menu-data.js -->
+            </div>
+
+            <div class="flex justify-center gap-3 mt-8">
+                <!-- Primary CTA -->
+                <a href="booking.html" class="inline-flex items-center gap-x-2 text-sm font-medium px-6 py-3 rounded-full bg-[#2C2824] text-white hover:bg-[#B89A94] hover:text-[#2C2824] transition-all">
+                    <span>Reserve Your Time</span>
+                    <i class="fa-solid fa-calendar-check"></i>
+                </a>
+
+                <!-- Secondary CTA -->
+                <a href="menu.html" class="inline-flex items-center gap-x-2 text-sm font-medium px-6 py-3 rounded-full bg-[#E85A9C] text-white hover:bg-[#C84A7E] transition-colors">
+                    See Full Menu
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section id="gallery" class="max-w-6xl mx-auto px-6 py-16">
+        <div class="flex items-end justify-between mb-8">
+            <div>
+                <div class="uppercase tracking-[2px] text-xs font-medium text-[#E85A9C]">Moments at Reverie</div>
+                <h2 class="section-title text-4xl tracking-tight">We are lucky to have such talented techs</h2>
+                <div class="text-[10px] text-[#756A62] mt-1 tracking-[0.5px]">All images are work done in house</div>
+            </div>
+            <a href="https://www.instagram.com/reverienailspa" target="_blank" rel="noopener noreferrer" class="hidden md:block text-sm font-medium text-[#B89A94] hover:text-[#2C2824]">View full gallery →</a>
+        </div>
+
+        <div id="gallery-grid" class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-3">
+            <!-- Always shows 8 photos randomly selected from the Moments at Reverie folder. Drop a new photo with a common name (photo 9.jpg, gallery-16.jpg, etc.) and hard refresh (it auto-detects). -->
+        </div>
+    </section>
+
+    <!-- Testimonials / Community -->
+    <!-- Bubbles are populated from assets/Real Voices from Our Community/testimonials-data.js and shown in random order each visit. Add more review photos + data entries for greater variety. -->
+    <section id="testimonials" class="bg-white py-16 border-t border-[#E5DFD6]">
+        <div class="max-w-6xl mx-auto px-6">
+            <div class="text-center mb-10">
+                <div class="uppercase tracking-[2px] text-xs font-medium text-[#E85A9C]">Real Voices from Our Community</div>
+                <h2 class="section-title text-4xl tracking-tight mt-2">What our clients say</h2>
+            </div>
+
+            <div class="grid md:grid-cols-3 gap-5">
+                
+                <div id="testimonial-0" class="bg-[#F2EDE6] rounded-3xl p-7 border border-[#E5DFD6]/60 opacity-85 hover:opacity-100 transition-all duration-300 hover:-translate-y-2 hover:scale-[1.015] hover:shadow-xl hover:border-[#B89A94] group">
+                    <div class="flex gap-x-1 text-[#C9A57E]/90 mb-4 transition-all duration-300 group-hover:text-[#E85A9C] group-hover:scale-105">
+                        <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                    </div>
+                    <p class="text-[#2C2824] leading-relaxed">"Always love my experience here! A day one customer. Joe is always great and friendly staff. Trang did her thing on my valentines nails. What do you mean....of course I'll be back. 😊"</p>
+                    <div class="mt-5 flex items-center gap-x-3">
+                        <img src="assets/Real Voices from Our Community/review 1.jpg" class="w-9 h-9 rounded-full object-cover" alt="">
+                        <div>
+                            <div class="font-medium text-sm">Hatimah Doobraj</div>
+                            <div class="text-xs text-[#756A62]">3 months ago</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div id="testimonial-1" class="bg-[#F2EDE6] rounded-3xl p-7 border border-[#E5DFD6]/60 opacity-85 hover:opacity-100 transition-all duration-300 hover:-translate-y-2 hover:scale-[1.015] hover:shadow-xl hover:border-[#B89A94] group">
+                    <div class="flex gap-x-1 text-[#C9A57E]/90 mb-4 transition-all duration-300 group-hover:text-[#E85A9C] group-hover:scale-105">
+                        <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                    </div>
+                    <p class="text-[#2C2824] leading-relaxed">"I have been going to Reverie for several years! It's always very clean, relaxing and a great experience. I love being able to get my nails and toes done at the same time to save me time! They are always accommodating and perform excellent service."</p>
+                    <div class="mt-5 flex items-center gap-x-3">
+                        <img src="assets/Real Voices from Our Community/review 2.jpg" class="w-9 h-9 rounded-full object-cover" alt="">
+                        <div>
+                            <div class="font-medium text-sm">Krista Thomas</div>
+                            <div class="text-xs text-[#756A62]">4 months ago</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div id="testimonial-2" class="bg-[#F2EDE6] rounded-3xl p-7 border border-[#E5DFD6]/60 opacity-85 hover:opacity-100 transition-all duration-300 hover:-translate-y-2 hover:scale-[1.015] hover:shadow-xl hover:border-[#B89A94] group">
+                    <div class="flex gap-x-1 text-[#C9A57E]/90 mb-4 transition-all duration-300 group-hover:text-[#E85A9C] group-hover:scale-105">
+                        <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                    </div>
+                    <p class="text-[#2C2824] leading-relaxed">"Amazing, I have been going to Reverie nail and spa with family and friends for close to 2 years now. The setting is beautiful, the service impeccable. The owner a fun, friendly host who treats each client like a vip. I absolutely love them, each nail tech is kind, well trained and helpful. For our feet we go with Holly a gentle very thorough therapist, for my nails I absolutely love Lam, ..."</p>
+                    <div class="mt-5 flex items-center gap-x-3">
+                        <img src="assets/Real Voices from Our Community/review 3.jpg" class="w-9 h-9 rounded-full object-cover" alt="">
+                        <div>
+                            <div class="font-medium text-sm">Local Guide</div>
+                            <div class="text-xs text-[#756A62]">2 years ago</div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ -->
+    <section class="max-w-6xl mx-auto px-6 py-14 border-t border-[#E5DFD6]">
+        <div class="max-w-3xl mb-8">
+            <div class="uppercase tracking-[2px] text-xs font-medium text-[#E85A9C] mb-2">Common Questions</div>
+            <h2 class="section-title text-3xl tracking-tight">Frequently asked questions</h2>
+        </div>
+
+        <div class="grid md:grid-cols-2 gap-x-10 gap-y-8 text-[15px]">
+            <div>
+                <div class="font-medium text-[#2C2824] mb-1">Do you offer student or military discounts?</div>
+                <div class="text-[#655C54]">Yes — we offer special pricing every day for military, teachers, and students. Just mention it when you book.</div>
+            </div>
+            <div>
+                <div class="font-medium text-[#2C2824] mb-1">What nail types do you offer?</div>
+                <div class="text-[#655C54]">Natural manicures, dipping powder, Acrylics, Solar Nails, French/ombre nails, Designs, Builder Gel, Gel-X and extra pampering if needed</div>
+            </div>
+            <div>
+                <div class="font-medium text-[#2C2824] mb-1">Are drinks really complimentary?</div>
+                <div class="text-[#655C54]">Yes. Every guest receives complimentary beverages during their service — wine, rosé, mocktails, water, and more.</div>
+            </div>
+            <div>
+                <div class="font-medium text-[#2C2824] mb-1">Do I need an appointment?</div>
+                <div class="text-[#655C54]">Appointments are highly recommended, especially on weekends. Walk-ins are welcome when space allows.</div>
+            </div>
+            <div>
+                <div class="font-medium text-[#2C2824] mb-1">What should I expect during my first visit?</div>
+                <div class="text-[#655C54]">We’ll welcome you, go over your service, and make sure you’re comfortable. Our goal is for you to leave feeling relaxed and happy with your results.</div>
+            </div>
+            <div>
+                <div class="font-medium text-[#2C2824] mb-1">Do you take walk-ins?</div>
+                <div class="text-[#655C54]">Yes, we accept walk-ins when our schedule allows. Booking ahead guarantees your preferred time and technician.</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Booking Section -->
+    <section id="booking" class="max-w-6xl mx-auto px-6 py-16">
+        <div class="max-w-3xl mx-auto">
+            <div class="text-center mb-10">
+                <div class="uppercase tracking-[2px] text-xs font-medium text-[#E85A9C]">Reserve Your Time</div>
+                <h2 class="section-title text-4xl tracking-tight mt-1">Book Your Appointment</h2>
+                <p class="text-[#655C54] mt-3">We’ll take great care of you. Select a service and a time that works for you.</p>
+            </div>
+
+            <!-- Booking Card -->
+            <div class="bg-white border border-[#E5DFD6] rounded-3xl p-8 shadow-sm">
+                
+                <!-- Progress Steps -->
+                <div class="flex items-center justify-between mb-8 text-sm">
+                    <div class="flex items-center gap-x-2">
+                        <div id="step-dot-1" class="w-7 h-7 rounded-full bg-[#2C2824] text-white flex items-center justify-center text-xs font-medium">1</div>
+                        <span id="step-label-1" class="font-medium">Service</span>
+                    </div>
+                    <div class="flex-1 h-px bg-[#E5DFD6] mx-3"></div>
+                    <div class="flex items-center gap-x-2">
+                        <div id="step-dot-2" class="w-7 h-7 rounded-full bg-[#E5DFD6] text-[#756A62] flex items-center justify-center text-xs font-medium">2</div>
+                        <span id="step-label-2" class="text-[#756A62]">Date & Time</span>
+                    </div>
+                    <div class="flex-1 h-px bg-[#E5DFD6] mx-3"></div>
+                    <div class="flex items-center gap-x-2">
+                        <div id="step-dot-3" class="w-7 h-7 rounded-full bg-[#E5DFD6] text-[#756A62] flex items-center justify-center text-xs font-medium">3</div>
+                        <span id="step-label-3" class="text-[#756A62]">Your Info</span>
+                    </div>
+                </div>
+
+                <!-- Step 1: Choose Service -->
+                <div id="booking-step-1">
+                    <h3 class="font-medium mb-4">What service would you like?</h3>
+                    
+                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-3">
+                        <div onclick="window.location.href='booking.html'" class="service-option cursor-pointer p-4 rounded-2xl border border-[#E5DFD6] hover:border-[#B89A94]">
+                            <div class="flex justify-between">
+                                <div>
+                                    <div class="font-medium">Classic Pedi</div>
+                                    <div class="text-xs text-[#756A62]">30 min treatment</div>
+                                </div>
+                                <div class="font-semibold">$30</div>
+                            </div>
+                        </div>
+                        <div onclick="window.location.href='booking.html'" class="service-option cursor-pointer p-4 rounded-2xl border border-[#E5DFD6] hover:border-[#B89A94]">
+                            <div class="flex justify-between">
+                                <div>
+                                    <div class="font-medium">Classic Manicure</div>
+                                    <div class="text-xs text-[#756A62]">Standard manicure</div>
+                                </div>
+                                <div class="font-semibold">$20</div>
+                            </div>
+                        </div>
+                        <div onclick="window.location.href='booking.html'" class="service-option cursor-pointer p-4 rounded-2xl border border-[#E5DFD6] hover:border-[#B89A94]">
+                            <div class="flex justify-between">
+                                <div>
+                                    <div class="font-medium">Gel Manicure</div>
+                                    <div class="text-xs text-[#756A62]">Standard gel manicure</div>
+                                </div>
+                                <div class="font-semibold">$38</div>
+                            </div>
+                        </div>
+                        <div onclick="window.location.href='booking.html'" class="service-option cursor-pointer p-4 rounded-2xl border border-[#E5DFD6] hover:border-[#B89A94]">
+                            <div class="flex justify-between">
+                                <div>
+                                    <div class="font-medium">Rosé All Day Pedicure</div>
+                                    <div class="text-xs text-[#756A62]">65 min treatment</div>
+                                </div>
+                                <div class="font-semibold">$75</div>
+                            </div>
+                        </div>
+
+                        <div onclick="window.location.href='booking.html'" class="service-option cursor-pointer p-4 rounded-2xl border border-[#E5DFD6] hover:border-[#B89A94]">
+                            <div class="flex justify-between">
+                                <div>
+                                    <div class="font-medium">Dipping Powder</div>
+                                    <div class="text-xs text-[#756A62]">Dipping powder set</div>
+                                </div>
+                                <div class="font-semibold">$40</div>
+                            </div>
+                        </div>
+                        <div onclick="window.location.href='booking.html'" class="service-option cursor-pointer p-4 rounded-2xl border border-[#E5DFD6] hover:border-[#B89A94]">
+                            <div class="flex justify-between">
+                                <div>
+                                    <div class="font-medium">Solar Pink and White Set</div>
+                                    <div class="text-xs text-[#756A62]">Solar set</div>
+                                </div>
+                                <div class="font-semibold">$55</div>
+                            </div>
+                        </div>
+                        <div onclick="window.location.href='booking.html'" class="service-option cursor-pointer p-4 rounded-2xl border border-[#E5DFD6] hover:border-[#B89A94]">
+                            <div class="flex justify-between">
+                                <div>
+                                    <div class="font-medium">Gel-X</div>
+                                    <div class="text-xs text-[#756A62]">Gel-X full set</div>
+                                </div>
+                                <div class="font-semibold">$70</div>
+                            </div>
+                        </div>
+                        <div onclick="window.location.href='booking.html'" class="service-option cursor-pointer p-4 rounded-2xl border border-[#E5DFD6] hover:border-[#B89A94]">
+                            <div class="flex justify-between">
+                                <div>
+                                    <div class="font-medium">Builder Gel Full Set</div>
+                                    <div class="text-xs text-[#756A62]">Builder gel full set</div>
+                                </div>
+                                <div class="font-semibold">$55</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Step 2: Date & Time -->
+                <div id="booking-step-2" class="hidden">
+                    <h3 class="font-medium mb-1">When would you like to come in?</h3>
+                    <p class="text-sm text-[#756A62] mb-4">Selected: <span id="selected-service-name" class="font-medium text-[#2C2824]"></span></p>
+
+                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                        <!-- Date -->
+                        <div>
+                            <label class="block text-sm font-medium mb-1.5">Preferred Date</label>
+                            <input type="date" id="booking-date" class="w-full border border-[#D4C9BD] rounded-2xl px-4 py-3 focus:outline-none focus:border-[#B89A94]" value="2025-02-18">
+                        </div>
+
+                        <!-- Time Slots -->
+                        <div>
+                            <label class="block text-sm font-medium mb-1.5">Available Times</label>
+                            <div id="time-slots" class="grid grid-cols-3 gap-2">
+                                <!-- Populated by JS -->
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="flex gap-x-3 mt-6">
+                        <button onclick="goToStep(1)" class="flex-1 py-3 rounded-2xl border border-[#D4C9BD] text-sm font-medium">Back</button>
+                        <button onclick="goToStep(3)" class="flex-1 py-3 rounded-2xl btn-primary text-sm font-medium">Continue to Your Info</button>
+                    </div>
+                </div>
+
+                <!-- Step 3: Contact Info -->
+                <div id="booking-step-3" class="hidden">
+                    <h3 class="font-medium mb-4">Tell us a little about yourself</h3>
+
+                    <div class="space-y-4">
+                        <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                            <div>
+                                <label class="block text-sm font-medium mb-1.5">First Name</label>
+                                <input id="first-name" type="text" class="w-full border border-[#D4C9BD] rounded-2xl px-4 py-3" placeholder="Alex" value="Jordan">
+                            </div>
+                            <div>
+                                <label class="block text-sm font-medium mb-1.5">Last Name</label>
+                                <input id="last-name" type="text" class="w-full border border-[#D4C9BD] rounded-2xl px-4 py-3" placeholder="Lee" value="Rivera">
+                            </div>
+                        </div>
+
+                        <div>
+                            <label class="block text-sm font-medium mb-1.5">Phone Number</label>
+                            <input id="phone" type="tel" class="w-full border border-[#D4C9BD] rounded-2xl px-4 py-3" placeholder="(682) 224-5688" value="(682) 224-5688">
+                        </div>
+
+                        <div>
+                            <label class="block text-sm font-medium mb-1.5">Anything we should know? (Optional)</label>
+                            <textarea id="notes" rows="3" class="w-full border border-[#D4C9BD] rounded-2xl px-4 py-3 text-sm" placeholder="First time client, prefer quiet morning appointments, etc."></textarea>
+                        </div>
+                    </div>
+
+                    <div class="flex gap-x-3 mt-6">
+                        <button onclick="goToStep(2)" class="flex-1 py-3 rounded-2xl border border-[#D4C9BD] text-sm font-medium">Back</button>
+                        <button onclick="submitBooking()" class="flex-1 py-3 rounded-2xl btn-primary text-sm font-medium">Request Appointment</button>
+                    </div>
+                </div>
+
+                <!-- Confirmation (shown after submit) -->
+                <div id="booking-confirmation" class="hidden text-center py-6">
+                    <div class="mx-auto w-16 h-16 bg-[#EDE9E3] rounded-full flex items-center justify-center mb-5">
+                        <i class="fa-solid fa-check text-3xl text-[#B89A94]"></i>
+                    </div>
+                    <h3 class="text-2xl font-medium tracking-tight">Thank you, Jordan!</h3>
+                    <p class="text-[#655C54] mt-2 max-w-xs mx-auto">Your appointment request has been received. We’ll confirm your time within the hour.</p>
+                    
+                    <div class="bg-[#EDE9E3] rounded-2xl p-4 text-left mt-7 text-sm">
+                        <div><strong>Service:</strong> <span id="confirm-service"></span></div>
+                        <div><strong>When:</strong> <span id="confirm-datetime"></span></div>
+                        <div><strong>At:</strong> Reverie Nails and Spa</div>
+                    </div>
+
+                    <button onclick="resetBooking()" class="mt-6 text-sm font-medium underline">Book another appointment</button>
+                </div>
+
+            </div>
+
+            <p class="text-center text-xs text-[#756A62] mt-5">We typically respond to booking requests within 1 hour during business hours.</p>
+        </div>
+    </section>
+
+    <!-- Contact & Location -->
+    <section class="bg-[#2C2824] text-white py-16">
+        <div class="max-w-6xl mx-auto px-6">
+            <div class="grid md:grid-cols-2 gap-x-16 gap-y-12">
+                
+                <div>
+                    <div class="uppercase tracking-[2px] text-xs text-[#B89A94] mb-2">Visit Us</div>
+                    <h2 class="section-title text-white text-4xl tracking-tight">Come see us</h2>
+                    
+                    <div class="mt-8 space-y-6 text-[#E5DFD6]">
+                        <div>
+                            <div class="font-medium text-white">Reverie Nails and Spa</div>
+                            <div class="mt-1">4613 West Bailey Boswell Rd<br>Ste 101<br>Saginaw, TX 76179</div>
+                        </div>
+                        
+                        <div>
+                            <div class="text-sm text-[#B89A94]">Phone</div>
+                            <a href="tel:6822245688" class="block text-lg font-medium hover:text-[#B89A94]">(682) 224-5688</a>
+                        </div>
+                    </div>
+
+                    <div class="mt-8">
+                        <a href="booking.html" class="inline-flex items-center gap-x-2 px-7 py-3 bg-white text-[#2C2824] rounded-2xl text-sm font-medium hover:bg-[#B89A94]">
+                            Book Your Visit
+                        </a>
+                    </div>
+                </div>
+
+                <div class="text-[#E5DFD6]">
+                    <div class="uppercase tracking-[2px] text-xs text-[#B89A94] mb-3">Hours</div>
+                    <div class="space-y-1 text-sm">
+                        <div class="flex justify-between"><span>Monday – Friday</span> <span>9:30 AM – 7:30 PM</span></div>
+                        <div class="flex justify-between"><span>Saturday</span> <span>9:00 AM – 7:00 PM</span></div>
+                        <div class="flex justify-between"><span>Sunday</span> <span>11:00 AM – 6:00 PM</span></div>
+                    </div>
+
+                    <div class="mt-9">
+                        <div class="uppercase tracking-[2px] text-xs text-[#B89A94] mb-3">Follow Us</div>
+                        <div class="flex gap-x-5 text-lg">
+                            <a href="https://www.instagram.com/reverienailspa?igsh=emgwNTVnZmV0eHlm&utm_source=qr" target="_blank" rel="noopener noreferrer" class="hover:text-white"><i class="fa-brands fa-instagram"></i></a>
+                            <a href="https://www.facebook.com/reverienailandspa/" target="_blank" rel="noopener noreferrer" class="hover:text-white"><i class="fa-brands fa-facebook"></i></a>
+                            <a href="https://www.google.com/maps/search/?api=1&query=Reverie+Nail+and+Spa%2C+4613+West+Bailey+Boswell+Rd%2C+Saginaw%2C+TX+76179" target="_blank" rel="noopener noreferrer" class="hover:text-white"><i class="fa-brands fa-google"></i></a>
+                        </div>
+                        <p class="mt-2 text-xs">@reverienails</p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <script>
+        // Tailwind script
+        function initializeTailwind() {
+            // Already using CDN with custom styles
+        }
+
+        // Navbar scroll effect
+        function initNavbar() {
+            const navbar = document.getElementById('navbar');
+            
+            window.addEventListener('scroll', () => {
+                if (window.scrollY > 20) {
+                    navbar.classList.add('nav-scrolled', 'shadow-sm');
+                } else {
+                    navbar.classList.remove('nav-scrolled', 'shadow-sm');
+                }
+            });
+        }
+
+        // Mobile menu
+        function initMobileMenu() {
+            const btn = document.getElementById('mobile-menu-btn');
+            const menu = document.getElementById('mobile-menu');
+            
+            btn.addEventListener('click', () => {
+                menu.classList.toggle('hidden');
+                const icon = btn.querySelector('i');
+                icon.classList.toggle('fa-bars');
+                icon.classList.toggle('fa-times');
+            });
+
+            // Close menu when clicking a link
+            menu.querySelectorAll('a').forEach(link => {
+                link.addEventListener('click', () => {
+                    menu.classList.add('hidden');
+                    const icon = btn.querySelector('i');
+                    icon.classList.add('fa-bars');
+                    icon.classList.remove('fa-times');
+                });
+            });
+        }
+
+        // Follow Us dropdown with hover grace period so it doesn't disappear
+        // while moving the mouse down to click the links
+        function initFollowUsDropdown() {
+            const dropdown = document.getElementById('follow-us-dropdown');
+            if (!dropdown) return;
+
+            const group = dropdown.parentElement; // the .relative.group container
+            if (!group) return;
+
+            let hideTimeout = null;
+
+            group.addEventListener('mouseenter', () => {
+                clearTimeout(hideTimeout);
+                dropdown.classList.remove('hidden');
+            });
+
+            group.addEventListener('mouseleave', () => {
+                hideTimeout = setTimeout(() => {
+                    dropdown.classList.add('hidden');
+                }, 220); // 220ms grace period — plenty of time to move cursor to the links
+            });
+        }
+
+        // Initialize everything
+        function init() {
+            initializeTailwind();
+            initNavbar();
+            initMobileMenu();
+            initFollowUsDropdown();
+            initBooking();
+            
+            // Smooth scroll for anchor links
+            document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+                anchor.addEventListener('click', function(e) {
+                    const target = document.querySelector(this.getAttribute('href'));
+                    if (target) {
+                        e.preventDefault();
+                        const offset = 80;
+                        const bodyRect = document.body.getBoundingClientRect().top;
+                        const elementPosition = target.getBoundingClientRect().top;
+                        const offsetPosition = elementPosition - bodyRect - offset;
+                        
+                        window.scrollTo({
+                            top: offsetPosition,
+                            behavior: 'smooth'
+                        });
+                    }
+                });
+            });
+        }
+
+        // ==================== BOOKING FLOW ====================
+        let selectedService = null;
+        let selectedTime = null;
+
+        function selectService(element, serviceName, price) {
+            // Deselect all
+            document.querySelectorAll('.service-option').forEach(el => {
+                el.classList.remove('border-[#B89A94]', 'bg-[#EDE9E3]');
+                el.classList.add('border-[#E5DFD6]');
+            });
+
+            // Select current
+            element.classList.remove('border-[#E5DFD6]');
+            element.classList.add('border-[#B89A94]', 'bg-[#EDE9E3]');
+
+            selectedService = { name: serviceName, price: price };
+
+            // Move to step 2
+            setTimeout(() => {
+                goToStep(2);
+            }, 350);
+        }
+
+        function goToStep(step) {
+            // Hide all steps
+            document.getElementById('booking-step-1').classList.add('hidden');
+            document.getElementById('booking-step-2').classList.add('hidden');
+            document.getElementById('booking-step-3').classList.add('hidden');
+
+            // Reset step indicators
+            for (let i = 1; i <= 3; i++) {
+                const dot = document.getElementById(`step-dot-${i}`);
+                const label = document.getElementById(`step-label-${i}`);
+                dot.classList.remove('bg-[#2C2824]', 'text-white');
+                dot.classList.add('bg-[#E5DFD6]', 'text-[#756A62]');
+                label.classList.remove('font-medium');
+                label.classList.add('text-[#756A62]');
+            }
+
+            if (step === 1) {
+                document.getElementById('booking-step-1').classList.remove('hidden');
+                const dot = document.getElementById('step-dot-1');
+                const label = document.getElementById('step-label-1');
+                dot.classList.add('bg-[#2C2824]', 'text-white');
+                dot.classList.remove('bg-[#E5DFD6]', 'text-[#756A62]');
+                label.classList.add('font-medium');
+                label.classList.remove('text-[#756A62]');
+            }
+
+            if (step === 2) {
+                document.getElementById('booking-step-2').classList.remove('hidden');
+                const dot = document.getElementById('step-dot-2');
+                const label = document.getElementById('step-label-2');
+                dot.classList.add('bg-[#2C2824]', 'text-white');
+                dot.classList.remove('bg-[#E5DFD6]', 'text-[#756A62]');
+                label.classList.add('font-medium');
+                label.classList.remove('text-[#756A62]');
+
+                // Show selected service
+                if (selectedService) {
+                    document.getElementById('selected-service-name').textContent = `${selectedService.name} — $${selectedService.price}`;
+                }
+
+                // Generate time slots
+                generateTimeSlots();
+            }
+
+            if (step === 3) {
+                document.getElementById('booking-step-3').classList.remove('hidden');
+                const dot = document.getElementById('step-dot-3');
+                const label = document.getElementById('step-label-3');
+                dot.classList.add('bg-[#2C2824]', 'text-white');
+                dot.classList.remove('bg-[#E5DFD6]', 'text-[#756A62]');
+                label.classList.add('font-medium');
+                label.classList.remove('text-[#756A62]');
+            }
+        }
+
+        function generateTimeSlots() {
+            const container = document.getElementById('time-slots');
+            container.innerHTML = '';
+
+            const times = ['9:00 AM', '10:00 AM', '11:00 AM', '1:00 PM', '2:00 PM', '3:00 PM', '4:00 PM', '5:00 PM'];
+
+            times.forEach(time => {
+                const div = document.createElement('div');
+                div.textContent = time;
+                div.className = `cursor-pointer text-center py-2.5 rounded-xl text-sm border transition-all ${
+                    selectedTime === time 
+                        ? 'bg-[#2C2824] text-white border-[#2C2824]' 
+                        : 'border-[#D4C9BD] hover:border-[#B89A94]'
+                }`;
+                
+                div.onclick = () => {
+                    selectedTime = time;
+                    // Re-render to show selection
+                    generateTimeSlots();
+                };
+                container.appendChild(div);
+            });
+        }
+
+        function submitBooking() {
+            if (!selectedService || !selectedTime) {
+                alert("Please complete the previous steps.");
+                return;
+            }
+
+            const firstName = document.getElementById('first-name').value || 'Guest';
+            const date = document.getElementById('booking-date').value;
+
+            // Hide form steps
+            document.getElementById('booking-step-3').classList.add('hidden');
+
+            // Show confirmation
+            const confirmation = document.getElementById('booking-confirmation');
+            confirmation.classList.remove('hidden');
+
+            document.getElementById('confirm-service').textContent = `${selectedService.name} ($${selectedService.price})`;
+            document.getElementById('confirm-datetime').textContent = `${date} at ${selectedTime}`;
+        }
+
+        function resetBooking() {
+            // Reset everything
+            document.getElementById('booking-confirmation').classList.add('hidden');
+            document.getElementById('booking-step-1').classList.remove('hidden');
+            document.getElementById('booking-step-2').classList.add('hidden');
+            document.getElementById('booking-step-3').classList.add('hidden');
+
+            // Reset selections
+            selectedService = null;
+            selectedTime = null;
+
+            // Clear visual selections
+            document.querySelectorAll('.service-option').forEach(el => {
+                el.classList.remove('border-[#B89A94]', 'bg-[#EDE9E3]');
+                el.classList.add('border-[#E5DFD6]');
+            });
+
+            // Reset step indicators
+            for (let i = 1; i <= 3; i++) {
+                const dot = document.getElementById(`step-dot-${i}`);
+                const label = document.getElementById(`step-label-${i}`);
+                if (i === 1) {
+                    dot.classList.add('bg-[#2C2824]', 'text-white');
+                    dot.classList.remove('bg-[#E5DFD6]', 'text-[#756A62]');
+                    label.classList.add('font-medium');
+                    label.classList.remove('text-[#756A62]');
+                } else {
+                    dot.classList.remove('bg-[#2C2824]', 'text-white');
+                    dot.classList.add('bg-[#E5DFD6]', 'text-[#756A62]');
+                    label.classList.remove('font-medium');
+                    label.classList.add('text-[#756A62]');
+                }
+            }
+        }
+
+        function initBooking() {
+            // Optional: pre-select a date a few days out
+            const dateInput = document.getElementById('booking-date');
+            if (dateInput) {
+                const future = new Date();
+                future.setDate(future.getDate() + 3);
+                dateInput.value = future.toISOString().split('T')[0];
+            }
+        }
+
+        // ===== Flying Words Animation for Signature Services =====
+        function initFlyingWords() {
+            const wordEl = document.getElementById('flying-word');
+            if (!wordEl) return;
+
+            const words = [
+                "Gel-X",
+                "Builder Gel",
+                "Lashes",
+                "Waxing",
+                "and more..."
+            ];
+
+            let index = 0;
+
+            function showNextWord() {
+                // Start leaving animation
+                wordEl.classList.remove('show');
+                wordEl.classList.add('leaving');
+
+                setTimeout(() => {
+                    // Change word
+                    wordEl.textContent = words[index];
+                    wordEl.classList.remove('leaving');
+
+                    // Trigger fly-in
+                    void wordEl.offsetWidth; // force reflow
+                    wordEl.classList.add('show');
+
+                    // Move to next word
+                    index = (index + 1) % words.length;
+
+                    // Schedule next word (visible longer for slower fly-in)
+                    setTimeout(showNextWord, 2650);
+                }, 750); // time for leave animation
+            }
+
+            // Start the first word after a short delay
+            setTimeout(() => {
+                wordEl.textContent = words[0];
+                wordEl.classList.add('show');
+                index = 1;
+                setTimeout(showNextWord, 1900);
+            }, 900);
+        }
+
+        window.onload = function() {
+            init();
+            initFlyingWords();
+            setRandomHeroImage();
+            renderPhilosophyImage();
+            renderSpecialsBanner();
+            renderTestimonials();
+            renderServicesMenu();
+            renderGallery();
+            initPedicureHoverHoldScroll();
+        };
+
+        // ===== Dynamic Menu Renderer (uses assets/menu-data.js) =====
+        function renderServicesMenu() {
+            const container = document.getElementById('services-grid');
+            if (!container || typeof menuData === 'undefined') return;
+
+            container.innerHTML = '';
+
+            // Use signature selection if available, otherwise show all categories
+            const sig = menuData.signature;
+            let categoriesToShow = menuData.categories;
+
+            if (sig && sig.categoryIds && sig.categoryIds.length > 0) {
+                categoriesToShow = sig.categoryIds
+                    .map(id => menuData.categories.find(c => c.id === id))
+                    .filter(Boolean);
+            }
+
+            const showOtherServices = sig && sig.categoryIds && sig.categoryIds.includes('other-offerings');
+
+            categoriesToShow.forEach(category => {
+                const card = document.createElement('div');
+                card.className = 'service-card bg-[#F2EDE6] rounded-3xl p-6 border border-[#E5DFD6]';
+
+                // Determine which services to show for this category
+                let servicesToShow = category.services;
+                if (sig && sig.services && sig.services[category.id] && sig.services[category.id].length > 0) {
+                    const selectedNames = sig.services[category.id];
+                    servicesToShow = selectedNames
+                        .map(name => category.services.find(s => s.name === name))
+                        .filter(Boolean);
+                } else {
+                    // fallback: first 4
+                    servicesToShow = category.services.slice(0, 4);
+                }
+
+                // Special for Pedicures teaser: merge in the complete Luxe Pedicures list (per user request)
+                // Compact area with hover & hold arrows + click-and-drag to scroll (scrollbar hidden)
+                let displayServices = servicesToShow;
+                let isPedicureCard = category.id === 'pedicures';
+                let isNailServicesCard = category.id === 'nail-services';
+                let cardTitle = category.name;
+
+                if (isPedicureCard) {
+                    cardTitle = 'Pedicures';
+                    const luxeCat = menuData.categories.find(c => c.id === 'luxe-pedicures');
+                    if (luxeCat) {
+                        let luxeServices = luxeCat.services;
+                        if (sig && sig.services && sig.services['luxe-pedicures'] && sig.services['luxe-pedicures'].length > 0) {
+                            const selectedLuxe = sig.services['luxe-pedicures'];
+                            luxeServices = selectedLuxe
+                                .map(name => luxeCat.services.find(s => s.name === name))
+                                .filter(Boolean);
+                        }
+                        displayServices = [...servicesToShow, ...luxeServices];
+                    }
+                }
+
+                if (isNailServicesCard) {
+                    // Special for homepage teaser only (original full menu data unchanged)
+                    // Using the custom list from user's "nail services text.txt"
+                    cardTitle = 'Nail Services';
+                    displayServices = [
+                        {
+                            name: "Manicures",
+                            duration: "",
+                            price: "",
+                            description: "Basic professional care for your natural nails and surrounding skin. Includes shaping, cuticle work, and optional treatment upgrades. Can be paired with Gel, Dip, Acrylics, Builder Gels, or Gel-X."
+                        },
+                        {
+                            name: "Acrylics",
+                            duration: "",
+                            price: "",
+                            description: "Overlays on natural nails or extensions created using nail tips. Made with colored powder (Solar) and can be finished with gel polish. Extremely strong and excel at longer-than-normal lengths. Fully fillable and ideal for French tips and detailed designs."
+                        },
+                        {
+                            name: "Dipping Powder",
+                            duration: "",
+                            price: "",
+                            description: "Single-use sets created from dipping powder. Works on both natural nails and artificial extensions. Capable of delivering everything from solid colors and French tips to beautifully designed sets."
+                        },
+                        {
+                            name: "Builder Gels & Gel-X",
+                            duration: "",
+                            price: "",
+                            description: "A thick, self-leveling gel (Builder Gel) or pre-made soft gel tips (Gel-X) cured under UV/LED light. Offers flexible strength with a more natural feel than acrylic. Ideal for longer nails, especially milky, sheer, or dimensional color techniques that benefit from depth and clarity. Fully fillable."
+                        }
+                    ];
+                }
+
+                const listClasses = isPedicureCard
+                    ? 'space-y-4 text-sm max-h-[420px] overflow-y-auto pr-2 pedicure-scroll'
+                    : 'space-y-4 text-sm';
+
+                const includePrice = !isNailServicesCard;
+
+                // Build items HTML first
+                let itemsHtml = '';
+                displayServices.forEach(service => {
+                    const priceDisplay = typeof service.price === 'number' ? '$' + service.price : service.price;
+                    const duration = service.duration ? service.duration + ' • ' : '';
+
+                    itemsHtml += `
+                        <div class="flex justify-between items-start">
+                            <div>
+                                <div class="font-medium">${service.name}</div>
+                                <div class="text-[#756A62] text-xs">${duration}${service.massage ? `<br>${service.massage}` : ''}${service.description ? ` ${service.description}` : ''}</div>
+                            </div>
+                            ${includePrice && priceDisplay ? `<div class="font-medium text-right">${priceDisplay}</div>` : ''}
+                        </div>
+                    `;
+                });
+
+                let html = `
+                    <div class="flex items-center gap-x-3 mb-5">
+                        <div class="w-11 h-11 flex items-center justify-center bg-white rounded-2xl">
+                            <i class="fa-solid ${category.icon || 'fa-list'} text-[#B89A94] text-2xl"></i>
+                        </div>
+                        <h3 class="text-xl font-medium">${cardTitle}</h3>
+                    </div>
+                `;
+
+                if (isPedicureCard) {
+                    // relative wrapper + right-side arrows (no classic scrollbar visible)
+                    html += `
+                        <div class="relative group">
+                            <div class="${listClasses}">
+                                ${itemsHtml}
+                            </div>
+                            <!-- Hover & hold arrows on right side -->
+                            <div class="pedicure-scroll-controls absolute right-0 top-0 h-full flex flex-col justify-between py-1 z-10 opacity-0 group-hover:opacity-100 transition-opacity">
+                                <button type="button" class="pedicure-scroll-btn-up pedicure-scroll-btn" aria-label="Scroll up">
+                                    <i class="fa-solid fa-chevron-up"></i>
+                                </button>
+                                <button type="button" class="pedicure-scroll-btn-down pedicure-scroll-btn" aria-label="Scroll down">
+                                    <i class="fa-solid fa-chevron-down"></i>
+                                </button>
+                            </div>
+                        </div>
+                        <div class="mt-2 text-[10px] uppercase tracking-[1px] text-[#B89A94]">Hover &amp; hold arrows (or drag) to scroll</div>
+                        <a href="menu.html#pedicures" class="mt-3 inline-flex items-center text-xs font-medium text-[#B89A94] hover:text-[#2C2824] transition-colors">
+                            See full Pedicures &amp; Luxe menu →
+                        </a>
+                    `;
+                } else if (isNailServicesCard) {
+                    html += `<div class="${listClasses}">${itemsHtml}</div>`;
+                    // Link to full menu, same pattern as Pedicures section (no "See menu" prices on right)
+                    html += `
+                        <a href="menu.html#nail-services" class="mt-3 inline-flex items-center text-xs font-medium text-[#B89A94] hover:text-[#2C2824] transition-colors">
+                            See full Nail Services menu →
+                        </a>
+                    `;
+                } else {
+                    html += `<div class="${listClasses}">${itemsHtml}</div>`;
+                }
+
+                if (category.id === 'enhancements') {
+                    html += `
+                        <div class="mt-6 pt-4 border-t border-[#E5DFD6] text-xs text-[#756A62]">
+                            All services include nail shaping, cuticle work, and your choice of polish.
+                        </div>
+                    `;
+                }
+
+                card.innerHTML = html;
+                container.appendChild(card);
+            });
+
+            // Restore "Other Services" card on homepage (custom list from last edit, not present in full menu data)
+            if (showOtherServices) {
+                const card = document.createElement('div');
+                card.className = 'service-card bg-[#F2EDE6] rounded-3xl p-6 border border-[#E5DFD6]';
+
+                const displayServices = [
+                    {
+                        name: "Reflexology",
+                        duration: "",
+                        price: "",
+                        description: "Therapeutic massage for the feet and hands, plus upper torso. $2 per minute (in addition to the massage included with your service)"
+                    },
+                    {
+                        name: "Waxing",
+                        duration: "",
+                        price: "",
+                        description: "Smooth, precise waxing from face to full body."
+                    },
+                    {
+                        name: "Lashes",
+                        duration: "",
+                        price: "",
+                        description: "Beautiful individual lash extensions that enhance your natural lashes for a fuller, more dramatic look."
+                    },
+                    {
+                        name: "Counseling",
+                        duration: "",
+                        price: "",
+                        description: "Complimentary consultation with our talented technicians. Free if you find your person."
+                    }
+                ];
+
+                let itemsHtml = '';
+                displayServices.forEach(service => {
+                    const priceDisplay = typeof service.price === 'number' ? '$' + service.price : service.price;
+                    const duration = service.duration ? service.duration + ' • ' : '';
+
+                    itemsHtml += `
+                        <div class="flex justify-between items-start">
+                            <div>
+                                <div class="font-medium">${service.name}</div>
+                                <div class="text-[#756A62] text-xs">${duration}${service.massage ? `<br>${service.massage}` : ''}${service.description ? ` ${service.description}` : ''}</div>
+                            </div>
+                            ${priceDisplay ? `<div class="font-medium text-right">${priceDisplay}</div>` : ''}
+                        </div>
+                    `;
+                });
+
+                const html = `
+                    <div class="flex items-center gap-x-3 mb-5">
+                        <div class="w-11 h-11 flex items-center justify-center bg-white rounded-2xl">
+                            <i class="fa-solid fa-list text-[#B89A94] text-2xl"></i>
+                        </div>
+                        <h3 class="text-xl font-medium">Other Services</h3>
+                    </div>
+                    <div class="space-y-4 text-sm">${itemsHtml}</div>
+                `;
+
+                card.innerHTML = html;
+                container.appendChild(card);
+            }
+        }
+
+        // ===== Hover & Hold Scroll for Pedicures teaser (no classic scrollbar) =====
+        // Arrows on right side, hold to scroll + click-and-drag the list content
+        function initPedicureHoverHoldScroll() {
+            const scrollEls = document.querySelectorAll('.pedicure-scroll');
+            if (!scrollEls.length) return;
+
+            scrollEls.forEach(scrollEl => {
+                const wrapper = scrollEl.parentElement;
+                if (!wrapper) return;
+
+                const upBtn = wrapper.querySelector('.pedicure-scroll-btn-up');
+                const downBtn = wrapper.querySelector('.pedicure-scroll-btn-down');
+
+                let scrollInterval = null;
+                const SCROLL_STEP = 28;
+                const SCROLL_INTERVAL = 55;
+
+                function startContinuousScroll(direction) {
+                    stopContinuousScroll();
+                    scrollInterval = setInterval(() => {
+                        scrollEl.scrollTop += direction * SCROLL_STEP;
+                    }, SCROLL_INTERVAL);
+                }
+
+                function stopContinuousScroll() {
+                    if (scrollInterval) {
+                        clearInterval(scrollInterval);
+                        scrollInterval = null;
+                    }
+                }
+
+                if (upBtn) {
+                    upBtn.addEventListener('mousedown', (e) => {
+                        e.preventDefault();
+                        startContinuousScroll(-1);
+                    });
+                    upBtn.addEventListener('mouseup', stopContinuousScroll);
+                    upBtn.addEventListener('mouseleave', stopContinuousScroll);
+                    upBtn.addEventListener('click', (e) => {
+                        e.preventDefault();
+                        scrollEl.scrollTop -= 70;
+                    });
+                }
+
+                if (downBtn) {
+                    downBtn.addEventListener('mousedown', (e) => {
+                        e.preventDefault();
+                        startContinuousScroll(1);
+                    });
+                    downBtn.addEventListener('mouseup', stopContinuousScroll);
+                    downBtn.addEventListener('mouseleave', stopContinuousScroll);
+                    downBtn.addEventListener('click', (e) => {
+                        e.preventDefault();
+                        scrollEl.scrollTop += 70;
+                    });
+                }
+
+                document.addEventListener('mouseup', stopContinuousScroll);
+
+                // Click and drag the list to scroll (grab to drag)
+                let isDragging = false;
+                let startY = 0;
+                let startScrollTop = 0;
+
+                scrollEl.addEventListener('mousedown', (e) => {
+                    if (e.target.closest('.pedicure-scroll-btn-up, .pedicure-scroll-btn-down')) return;
+                    isDragging = true;
+                    startY = e.clientY;
+                    startScrollTop = scrollEl.scrollTop;
+                    scrollEl.style.cursor = 'grabbing';
+                    e.preventDefault();
+                });
+
+                document.addEventListener('mousemove', (e) => {
+                    if (!isDragging) return;
+                    const deltaY = e.clientY - startY;
+                    scrollEl.scrollTop = startScrollTop - deltaY;
+                });
+
+                const endDrag = () => {
+                    if (isDragging) {
+                        isDragging = false;
+                        scrollEl.style.cursor = 'grab';
+                    }
+                    stopContinuousScroll();
+                };
+
+                document.addEventListener('mouseup', endDrag);
+                scrollEl.addEventListener('mouseleave', () => {
+                    if (isDragging) {
+                        isDragging = false;
+                        scrollEl.style.cursor = 'grab';
+                    }
+                });
+
+                scrollEl.style.cursor = 'grab';
+            });
+        }
+
+        // ===== Dynamic Gallery Renderer (uses assets/Moments at Reverie/gallery-data.js) =====
+        // Reads the simple list of filenames from the colocated data file.
+        // Always renders exactly 8 photos (shuffled random selection; cycles if fewer than 8 listed).
+        // When adding a photo to the folder, add its filename to the array in gallery-data.js.
+        function shuffleArray(array) {
+            const arr = [...array];
+            for (let i = arr.length - 1; i > 0; i--) {
+                const j = Math.floor(Math.random() * (i + 1));
+                [arr[i], arr[j]] = [arr[j], arr[i]];
+            }
+            return arr;
+        }
+
+        // Note: The Moments at Reverie gallery now uses the simple filename list
+        // in assets/Moments at Reverie/gallery-data.js (colocated with the photos).
+        // Drop a photo in the folder, add its name to the array there, save, hard refresh.
+        // No large list needed in this file anymore.
+
+        // ===== Random Hero Image =====
+        // To support any photo in the Hero folder (no need to edit hero-data.js for common names),
+        // we use a list of possible filenames. Drop a photo with a matching name and it will be used randomly.
+        const possibleHeroImages = [
+          'hero-02.jpg',
+          'heart nail.png',
+          // Common patterns for new hero photos
+          'hero-1.jpg', 'hero-2.jpg', 'hero-3.jpg', 'hero-4.jpg', 'hero-5.jpg',
+          'hero-6.jpg', 'hero-7.jpg', 'hero-8.jpg', 'hero-9.jpg', 'hero-10.jpg',
+          'hero-11.jpg', 'hero-12.jpg', 'hero-13.jpg', 'hero-14.jpg', 'hero-15.jpg',
+          'hero-01.jpg',
+          'hero-03.jpg',
+          // Add custom hero photo filenames here if they don't match patterns
+        ];
+
+        function setRandomHeroImage() {
+            const img = document.getElementById('hero-random-img');
+            if (!img || typeof possibleHeroImages === 'undefined' || !possibleHeroImages.length) {
+                return;
+            }
+
+            const validPhotos = [];
+            let pending = possibleHeroImages.length;
+
+            function onDone() {
+                pending--;
+                if (pending <= 0) {
+                    if (validPhotos.length > 0) {
+                        const randomIndex = Math.floor(Math.random() * validPhotos.length);
+                        const chosen = validPhotos[randomIndex];
+                        img.src = chosen.src;
+                        img.alt = chosen.alt;
+                    } else {
+                        // fallback to initial if nothing loaded
+                        img.src = 'assets/Hero/hero-02.jpg';
+                    }
+                }
+            }
+
+            possibleHeroImages.forEach((file) => {
+                const test = new Image();
+                test.onload = () => {
+                    validPhotos.push({
+                        src: `assets/Hero/${file}`,
+                        alt: file
+                            .replace(/\.[^/.]+$/, '')
+                            .replace(/[-_]/g, ' ')
+                            .replace(/\s+/g, ' ')
+                            .trim()
+                    });
+                    onDone();
+                };
+                test.onerror = onDone;
+                test.src = `assets/Hero/${file}`;
+            });
+
+            // safety timeout
+            setTimeout(() => {
+                if (pending > 0 && validPhotos.length > 0) {
+                    const randomIndex = Math.floor(Math.random() * validPhotos.length);
+                    const chosen = validPhotos[randomIndex];
+                    img.src = chosen.src;
+                    img.alt = chosen.alt;
+                } else if (pending > 0) {
+                    img.src = 'assets/Hero/hero-02.jpg';
+                }
+            }, 2000);
+        }
+
+        // ===== Random Philosophy Image (uses assets/Our Philosophy/philosophy-data.js) =====
+        // Picks one photo at random on every page load for the image in the Our Philosophy section.
+        function renderPhilosophyImage() {
+            const img = document.getElementById('philosophy-img');
+            if (!img || typeof philosophyImages === 'undefined' || !philosophyImages.length) return;
+
+            const randomIndex = Math.floor(Math.random() * philosophyImages.length);
+            const chosen = philosophyImages[randomIndex];
+
+            img.src = chosen.src;
+            img.alt = chosen.alt;
+        }
+
+        // ===== Random Testimonials (uses assets/Real Voices from Our Community/testimonials-data.js) =====
+        // Shuffles the reviews and populates the three bubbles in random order each load.
+        function renderTestimonials() {
+            if (typeof testimonials === 'undefined' || !testimonials.length) return;
+
+            // Pick up to 3 random testimonials (shuffled) so adding more images/quotes in the data file gives variety
+            const toShow = shuffleArray([...testimonials]).slice(0, 3);
+
+            for (let i = 0; i < 3; i++) {
+                const card = document.getElementById('testimonial-' + i);
+                if (!card) continue;
+
+                const t = toShow[i] || toShow[toShow.length - 1];
+
+                const img = card.querySelector('img');
+                const quoteP = card.querySelector('p');
+                const nameEl = card.querySelector('.font-medium.text-sm');
+                const dateEl = card.querySelector('.text-xs.text-\\[\\#756A62\\]');
+
+                if (img) img.src = t.image;
+                if (quoteP) quoteP.textContent = t.quote;
+                if (nameEl) nameEl.textContent = t.name;
+                if (dateEl) dateEl.textContent = t.date;
+            }
+        }
+
+        // ===== Specials Banner - Random Photo from the Current Specials folder =====
+        // The banner shows one current special (title + description stay the same).
+        // List of possible image filenames the Current Specials banner will try.
+        // Photos can now live in subfolders per special (e.g. assets/Current Specials/basic/ or /july4/).
+        // Drop files into the subfolder for that special.
+        // The code will look for matching names inside the active special's folder.
+        //
+        // Recommended naming inside each subfolder:
+        //   special.jpg
+        //   special-1.jpg, special-2.jpg ... (add as many as you want)
+        const possibleSpecialImages = [
+          'special.jpg',
+          'special.png',
+          'special.jpeg',
+          'special.webp',
+          'heart nail.png',
+          'Every day special.jpg',
+          // Sequential names for multiple photos of the same special
+          'special-1.jpg', 'special-2.jpg', 'special-3.jpg', 'special-4.jpg', 'special-5.jpg',
+          'special-6.jpg', 'special-7.jpg', 'special-8.jpg', 'special-9.jpg', 'special-10.jpg',
+          'special-11.jpg', 'special-12.jpg', 'special-13.jpg', 'special-14.jpg', 'special-15.jpg',
+          // Add any completely custom filenames below if you don't want to follow the naming above
+        ];
+
+        // ===== Specials Banner - Random Photo from the Current Specials folder =====
+        // The banner shows the current special's text (title + description from specials-data.js).
+        // The photo is chosen randomly from any matching image files that exist in the folder.
+        // No need to list photos in the data file.
+        function renderSpecialsBanner() {
+            const container = document.getElementById('specials-banner');
+            if (!container || typeof specialsData === 'undefined') return;
+
+            const data = specialsData;
+            let html = '';
+
+            // Support easy switching via "current" key + specials object
+            let active = null;
+            if (data.specials && typeof data.specials === 'object' && data.current) {
+                active = data.specials[data.current] || Object.values(data.specials)[0];
+            } else if (data.title) {
+                active = data;
+            }
+
+            const title = active ? active.title : '';
+            const description = active ? active.description : '';
+            const tag = active ? active.tag : null;
+            const specialFolder = active && active.folder ? active.folder + '/' : '';
+
+            if (title) {
+                const tagHtml = tag 
+                    ? `<span class="absolute top-3 right-3 text-[10px] font-medium tracking-[1px] px-2.5 py-0.5 rounded-full bg-white/90 text-[#E85A9C]">${tag}</span>` 
+                    : '';
+
+                html = `
+                    <div class="bg-[#F2EDE6] border border-[#E5DFD6] rounded-3xl p-5 md:p-6">
+                        <div class="flex items-center gap-x-3 mb-4">
+                            <span class="inline-flex items-center gap-x-2 text-xs font-medium tracking-[1px] px-3 py-1 rounded-full bg-white text-[#E85A9C]">
+                                <i class="fa-solid fa-sparkles"></i>
+                                <span>CURRENT SPECIAL</span>
+                            </span>
+                        </div>
+                        <div class="flex flex-col md:flex-row gap-4">
+                            <div class="relative md:w-5/12 lg:w-2/5 md:max-h-[260px] overflow-hidden rounded-2xl">
+                                <img id="specials-random-img" 
+                                     src="" 
+                                     alt="${title}" 
+                                     class="w-full h-44 md:max-h-[260px] md:h-auto object-cover">
+                                ${tagHtml}
+                            </div>
+                            <div class="flex-1 p-5 md:p-6">
+                                <div class="font-medium text-xl md:text-2xl tracking-tight text-[#2C2824] mb-3">
+                                    ${title}
+                                </div>
+                                <div class="text-[#655C54] leading-relaxed text-[15px]">
+                                    ${description}
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                `;
+            } else {
+                // Default / fallback message
+                const message = data.defaultText || "Come relax with us.";
+                html = `
+                    <div class="bg-[#F2EDE6] border border-[#E5DFD6] rounded-3xl px-6 py-5 text-center">
+                        <div class="text-[#655C54] text-sm md:text-[15px]">
+                            ${message}
+                        </div>
+                    </div>
+                `;
+            }
+
+            container.innerHTML = html;
+
+            // After the banner is in the DOM, pick a random photo that actually exists in the folder.
+            // Uses preload (same reliable pattern as the gallery) so only valid files are chosen.
+            // Broad candidate generation means you can drop almost any photo into the subfolder.
+            const specialImg = document.getElementById('specials-random-img');
+            if (specialImg) {
+                // Start from the explicit list (supports custom names like "Every day special.jpg")
+                let names = possibleSpecialImages ? [...possibleSpecialImages] : [];
+
+                // Add lots of flexible patterns so dropping new photos "just works"
+                for (let i = 1; i <= 25; i++) {
+                    names.push(`special-${i}.jpg`, `special-${i}.png`, `special-${i}.jpeg`);
+                    names.push(`photo ${i}.jpg`, `photo ${i}.png`);
+                    if (i <= 15) {
+                        names.push(`promo.jpg`, `promo.png`, `offer.jpg`, `offer.png`);
+                        names.push(`specials.jpg`, `specials.png`, `deal.jpg`, `deal.png`);
+                        names.push(`photo-${i}.jpg`, `photo-${i}.png`);
+                        names.push(`img-${i}.jpg`, `img-${i}.png`);
+                    }
+                }
+
+                // Prefix with active special's subfolder + dedupe
+                const seen = new Set();
+                let photoCandidates = [];
+                for (const n of names) {
+                    if (!n) continue;
+                    const prefixed = specialFolder + n;
+                    if (!seen.has(prefixed)) {
+                        seen.add(prefixed);
+                        photoCandidates.push(prefixed);
+                    }
+                }
+
+                if (photoCandidates.length === 0) {
+                    specialImg.style.display = 'none';
+                } else {
+                    const validPhotos = [];
+                    let pending = photoCandidates.length;
+
+                    function finishSelection() {
+                        pending--;
+                        if (pending === 0) {
+                            if (validPhotos.length > 0) {
+                                const chosen = validPhotos[Math.floor(Math.random() * validPhotos.length)];
+                                specialImg.src = `assets/Current Specials/${chosen}`;
+                                specialImg.style.display = '';
+                            } else {
+                                specialImg.style.display = 'none';
+                            }
+                        }
+                    }
+
+                    // Clear initial src (prevents flash of missing root special.jpg)
+                    specialImg.src = '';
+
+                    photoCandidates.forEach((file) => {
+                        const test = new Image();
+                        test.onload = () => {
+                            validPhotos.push(file);
+                            finishSelection();
+                        };
+                        test.onerror = finishSelection;
+                        test.src = `assets/Current Specials/${file}`;
+                    });
+                }
+            }
+        }
+
+        function renderGallery() {
+            const container = document.getElementById('gallery-grid');
+            if (!container) return;
+
+            container.innerHTML = '';
+
+            // Build a broad pool of candidate filenames so that "just drop the photo in the folder"
+            // works for common naming patterns (no edit needed for photo 9.jpg, gallery-16.jpg, etc.).
+            let names = [];
+
+            // 1. Any filenames the user explicitly listed in gallery-data.js (for custom/unique names)
+            if (typeof galleryImages !== 'undefined' && Array.isArray(galleryImages)) {
+                names = galleryImages.filter(item => typeof item === 'string' && item.length > 0);
+            }
+
+            // 2. Large set of generated common patterns (covers the "photo N.jpg" naming you're using + others)
+            for (let i = 1; i <= 40; i++) {
+                names.push(`photo ${i}.jpg`, `photo ${i}.png`);
+                names.push(`gallery-${i}.jpg`, `gallery-${i}.png`);
+                if (i <= 30) {
+                    names.push(`moment-${i}.jpg`, `moment-${i}.png`);
+                }
+                if (i <= 20) {
+                    names.push(`photo-${i}.jpg`, `photo-${i}.png`);
+                    names.push(`img-${i}.jpg`, `img-${i}.png`);
+                    names.push(`reverie-${i}.jpg`, `reverie-${i}.png`);
+                    names.push(`salon-${i}.jpg`, `salon-${i}.png`);
+                    names.push(`nail-${i}.jpg`, `nail-${i}.png`);
+                }
+            }
+
+            // Deduplicate (keep order so explicit data list entries are preferred first)
+            const seen = new Set();
+            const candidates = [];
+            for (const n of names) {
+                if (!seen.has(n)) {
+                    seen.add(n);
+                    candidates.push(n);
+                }
+            }
+
+            if (candidates.length === 0) return;
+
+            const numSlots = 8;
+            const imgElements = [];
+
+            // Create the 8 visual slots
+            for (let i = 0; i < numSlots; i++) {
+                const div = document.createElement('div');
+                let className = 'image-container aspect-[4/3] rounded-2xl overflow-hidden';
+                if (i === 7) className += ' hidden lg:block';
+                div.className = className;
+
+                const img = document.createElement('img');
+                img.className = 'w-full h-full object-cover';
+                img.loading = 'lazy';
+                img.src = '';
+
+                div.appendChild(img);
+                container.appendChild(div);
+                imgElements.push(img);
+            }
+
+            // Randomly assign real photos from the folder to the 8 slots.
+            // Uses the big candidate pool + retry-on-error so only files that actually exist are shown.
+            // This is what lets you drop new photos (with common names) and have them appear without editing lists.
+            // Preload candidates to discover only the real files that exist in the folder.
+            // Then fill all 8 slots from the successful loads (cycling if needed).
+            const validPhotos = [];
+            let pending = candidates.length;
+
+            function onDone() {
+                pending--;
+                if (pending <= 0) {
+                    assignValidPhotos();
+                }
+            }
+
+            function getCleanAlt(filename) {
+                let name = filename.replace(/\.[^/.]+$/, '');
+                name = name.replace(/[-_]/g, ' ').replace(/\s+/g, ' ').trim();
+                if (name.length > 0) name = name.charAt(0).toUpperCase() + name.slice(1);
+                return name + ' at Reverie Nails and Spa';
+            }
+
+            candidates.forEach((file) => {
+                const test = new Image();
+                test.onload = () => {
+                    validPhotos.push({
+                        src: `assets/Moments at Reverie/${file}`,
+                        alt: getCleanAlt(file)
+                    });
+                    onDone();
+                };
+                test.onerror = onDone;
+                test.src = `assets/Moments at Reverie/${file}`;
+            });
+
+            function assignValidPhotos() {
+                if (validPhotos.length === 0) return;
+
+                const shuffled = shuffleArray(validPhotos);
+
+                // Always 8 slots: cycle the real photos.
+                let toAssign = shuffled.slice(0, 8);
+                while (toAssign.length < 8 && shuffled.length > 0) {
+                    toAssign = toAssign.concat(shuffled);
+                    toAssign = toAssign.slice(0, 8);
+                }
+
+                imgElements.forEach((imgEl, idx) => {
+                    const p = toAssign[idx];
+                    if (p) {
+                        imgEl.src = p.src;
+                        imgEl.alt = p.alt;
+                    } else {
+                        imgEl.style.display = 'none';
+                    }
+                });
+            }
+
+            setTimeout(() => {
+                if (pending > 0) assignValidPhotos();
+            }, 2500);
+
+            function getCleanAlt(filename) {
+                let name = filename.replace(/\.[^/.]+$/, '');
+                name = name.replace(/[-_]/g, ' ').replace(/\s+/g, ' ').trim();
+                if (name.length > 0) name = name.charAt(0).toUpperCase() + name.slice(1);
+                return name + ' at Reverie Nails and Spa';
+            }
+
+        }
+
+        function getCleanAlt(filename) {
+            let name = filename.replace(/\.[^/.]+$/, '');
+            name = name.replace(/[-_]/g, ' ').replace(/\s+/g, ' ').trim();
+            if (name.length > 0) {
+                name = name.charAt(0).toUpperCase() + name.slice(1);
+            }
+            return name + ' at Reverie Nails and Spa';
+        }
+    </script>
+    <script src="assets/menu-data.js"></script>
+    <script src="assets/Moments at Reverie/gallery-data.js"></script>
+    <script src="assets/Hero/hero-data.js"></script>
+    <script src="assets/Current Specials/specials-data.js"></script>
+    <script src="assets/Our Philosophy/philosophy-data.js"></script>
+    <script src="assets/Real Voices from Our Community/testimonials-data.js"></script>
+</body>
+</html>

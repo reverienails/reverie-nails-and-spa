@@ -1,0 +1,56 @@
+=== NAIL SERVICES - REWRITE TEMPLATE ===
+
+Instructions:
+- Rewrite the lists below to be simpler for viewers (fewer items, shorter descriptions, clear prices).
+- For FULL MENU (what shows on menu.html under "Nail Services"):
+  Use this format for each item:
+  - Item Name: $Price (optional duration)
+    Short simple description here. (or leave blank if no desc needed)
+
+- For HOME PAGE TEASER (the 4 cards in Signature Services on index.html):
+  These are high-level categories. Keep 3-5 items max, with prices if you want (currently no prices shown on teaser for these).
+
+- When done, save this file and tell me "update nail services from rewrite file".
+- I will fit it into menu-data.js and the home teaser code in index.html.
+
+=== FULL MENU - Nail Services (from current data) ===
+Paste your simplified version below this line, replacing the list:
+
+- CLASSIC GEL MANICURE: $38
+  [your simple description or leave empty]
+
+- ALOE VERA GEL MANICURE: $48
+  [your simple description or leave empty]
+
+- THE REVERIE ORGANIC GEL MANICURE: $58
+  Our signature manicure includes organic products along with arm exfoliation and hand mask treatment for smooth, rejuvenated arms and hands. Enjoy this with a 12 min neck and hand massage along with hot stones, and collagen gloves.
+
+- GEL ONLY (HANDS): $25
+  [your simple description or leave empty]
+
+- GEL ONLY (TOES): $25
+  [your simple description or leave empty]
+
+- Adding gel on with pedicure: $20
+  [your simple description or leave empty]
+
+=== HOME TEASER - Nail Services (current custom, 4 items, no prices shown) ===
+Rewrite these 4 (or change number) with your simplified text + prices if wanted:
+
+- Manicures: $XX
+  Basic professional care for your natural nails and surrounding skin. Includes shaping, cuticle work, and optional treatment upgrades. Can be paired with Gel, Dip, Acrylics, Builder Gels, or Gel-X.
+
+- Acrylics: $XX
+  Overlays on natural nails or extensions created using nail tips. Made with colored powder (Solar) and can be finished with gel polish. Extremely strong and excel at longer-than-normal lengths. Fully fillable and ideal for French tips and detailed designs.
+
+- Dipping Powder: $XX
+  Single-use sets created from dipping powder. Works on both natural nails and artificial extensions. Capable of delivering everything from solid colors and French tips to beautifully designed sets.
+
+- Builder Gels & Gel-X: $XX
+  A thick, self-leveling gel (Builder Gel) or pre-made soft gel tips (Gel-X) cured under UV/LED light. Offers flexible strength with a more natural feel than acrylic. Ideal for longer nails, especially milky, sheer, or dimensional color techniques that benefit from depth and clarity. Fully fillable.
+
+=== NOTES ===
+- Keep names simple and customer-friendly.
+- Add prices as numbers or "Varies" or "From $XX".
+- If you want prices hidden in full menu for these or shown, let me know.
+- The signature picks in menu-data.js can be updated too if you change the main items.

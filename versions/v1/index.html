@@ -1,0 +1,1060 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reverie Nails and Spa • 4613 W Bailey Boswell Rd</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600&amp;family=Inter:wght@300;400;500;600&amp;display=swap');
+        
+        :root {
+            --warm-cream: #F9F5F0;
+            --dusty-rose: #C9A7A0;
+            --warm-taupe: #8B7D74;
+            --deep-charcoal: #3F3A36;
+            --soft-gold: #D4B896;
+        }
+        
+        .tail-container {
+            font-family: 'Inter', system_ui, sans-serif;
+        }
+        
+        .heading-serif {
+            font-family: 'Playfair Display', Georgia, serif;
+            font-weight: 500;
+            letter-spacing: -0.02em;
+        }
+
+        .section-title {
+            font-family: 'Playfair Display', Georgia, serif;
+            letter-spacing: -0.025em;
+        }
+
+        .warm-bg {
+            background-color: #F9F5F0;
+        }
+
+        .nav-link {
+            transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+        
+        .nav-link:hover {
+            color: #C9A7A0;
+        }
+
+        .service-card {
+            transition: all 0.3s cubic-bezier(0.4, 0.0, 0.2, 1);
+        }
+        
+        .service-card:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 20px 25px -5px rgb(0 0 0 / 0.05), 0 8px 10px -6px rgb(0 0 0 / 0.05);
+        }
+
+        .accent {
+            color: #C9A7A0;
+        }
+
+        .btn-primary {
+            background-color: #3F3A36;
+            color: white;
+            transition: all 0.2s cubic-bezier(0.4, 0.0, 0.2, 1);
+        }
+        
+        .btn-primary:hover {
+            background-color: #C9A7A0;
+            color: #3F3A36;
+        }
+
+        .btn-secondary {
+            background-color: white;
+            color: #3F3A36;
+            border: 1px solid #D1C9C0;
+            transition: all 0.2s cubic-bezier(0.4, 0.0, 0.2, 1);
+        }
+
+        .soft-gold {
+            color: #D4B896;
+        }
+
+        .image-container {
+            overflow: hidden;
+        }
+        
+        .image-container img {
+            transition: transform 0.6s cubic-bezier(0.4, 0.0, 0.2, 1);
+        }
+        
+        .image-container:hover img {
+            transform: scale(1.05);
+        }
+
+        .nav-scrolled {
+            background-color: rgba(249, 245, 240, 0.95);
+            backdrop-filter: blur(12px);
+        }
+
+        .booking-step {
+            transition: all 0.3s ease;
+        }
+
+        .modern-shadow {
+            box-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.05), 0 4px 6px -4px rgb(0 0 0 / 0.05);
+        }
+    </style>
+</head>
+<body class="tail-container bg-[#F9F5F0] text-[#3F3A36]">
+
+    <!-- Navigation -->
+    <nav id="navbar" class="bg-[#F9F5F0]/95 backdrop-blur-lg sticky top-0 z-50 border-b border-[#EDE6DC]">
+        <div class="max-w-6xl mx-auto px-6">
+            <div class="flex justify-between items-center h-20">
+                <!-- Logo -->
+                <div class="flex items-center gap-x-3">
+                    <div class="w-9 h-9 bg-[#3F3A36] rounded-full flex items-center justify-center">
+                        <span class="text-white text-xl font-semibold tracking-tight" style="font-family: 'Playfair Display', serif;">R</span>
+                    </div>
+                    <div>
+                        <div class="font-semibold tracking-tight text-xl">Reverie</div>
+                        <div class="text-[10px] text-[#8B7D74] -mt-1 tracking-[1px]">NAILS AND SPA</div>
+                    </div>
+                </div>
+
+                <!-- Desktop Navigation -->
+                <div class="hidden md:flex items-center gap-x-8 text-sm font-medium">
+                    <a href="#experience" class="nav-link text-[#3F3A36]">The Experience</a>
+                    <a href="#services" class="nav-link text-[#3F3A36]">Services</a>
+                    <a href="#gallery" class="nav-link text-[#3F3A36]">Gallery</a>
+                    <a href="#testimonials" class="nav-link text-[#3F3A36]">Community</a>
+                    <a href="#booking" class="nav-link text-[#3F3A36]">Book</a>
+                </div>
+
+                <!-- CTA Buttons -->
+                <div class="flex items-center gap-x-3">
+                    <a href="#booking" 
+                       class="hidden sm:block px-5 py-2.5 text-sm font-medium rounded-full border border-[#D1C9C0] hover:bg-white transition-colors">
+                        Book Appointment
+                    </a>
+                    <a href="#booking" 
+                       class="px-6 py-2.5 text-sm font-medium rounded-full btn-primary">
+                        Book Now
+                    </a>
+                    
+                    <!-- Mobile Menu -->
+                    <button id="mobile-menu-btn"
+                            class="md:hidden w-10 h-10 flex items-center justify-center text-[#3F3A36]">
+                        <i class="fa-solid fa-bars text-xl"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Mobile Menu -->
+    <div id="mobile-menu" class="hidden md:hidden bg-white border-b">
+        <div class="px-6 py-4 flex flex-col gap-y-3 text-sm font-medium">
+            <a href="#experience" class="py-1">The Experience</a>
+            <a href="#services" class="py-1">Services</a>
+            <a href="#gallery" class="py-1">Gallery</a>
+            <a href="#testimonials" class="py-1">Community</a>
+            <a href="#booking" class="py-1">Book Appointment</a>
+            <div class="pt-2">
+                <a href="#booking" 
+                   class="block w-full text-center px-6 py-3 rounded-full btn-primary text-sm font-medium">
+                    Book Now
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Hero Section -->
+    <section class="relative pt-8 pb-16 md:pt-12 md:pb-20">
+        <div class="max-w-6xl mx-auto px-6">
+            <div class="grid md:grid-cols-12 gap-x-8 items-center">
+                
+                <!-- Text Content -->
+                <div class="md:col-span-7 lg:col-span-7">
+                    <div class="max-w-[620px]">
+                        <!-- Badge -->
+                        <div class="inline-flex items-center gap-x-2 px-4 py-1.5 rounded-full bg-white border border-[#EDE6DC] mb-6">
+                            <div class="w-2 h-2 bg-[#C9A7A0] rounded-full animate-pulse"></div>
+                            <span class="text-xs font-medium tracking-wider text-[#8B7D74]">NOW ACCEPTING NEW CLIENTS</span>
+                        </div>
+
+                        <h1 class="section-title text-5xl md:text-6xl lg:text-[62px] leading-[1.05] tracking-[-1.5px] mb-6">
+                            Thoughtful care.<br>
+                            <span class="text-[#C9A7A0]">Exceptional results.</span>
+                        </h1>
+                        
+                        <p class="text-lg md:text-xl text-[#6B625B] max-w-md mb-9">
+                            A modern nail and spa experience rooted in skill, 
+                            warmth, and genuine community in Saginaw.
+                        </p>
+
+                        <div class="flex flex-col sm:flex-row gap-3">
+                            <a href="#booking" 
+                               class="inline-flex justify-center items-center px-8 py-4 rounded-2xl btn-primary text-base font-medium">
+                                <span>Book Your Appointment</span>
+                                <i class="fa-solid fa-arrow-right ml-3"></i>
+                            </a>
+                            
+                            <a href="#services" 
+                               class="inline-flex justify-center items-center px-7 py-4 rounded-2xl btn-secondary text-base font-medium">
+                                View Services
+                            </a>
+                        </div>
+
+                        <div class="flex items-center gap-x-6 mt-8 text-sm">
+                            <div class="flex -space-x-3">
+                                <div class="w-7 h-7 rounded-full border-2 border-[#F9F5F0] overflow-hidden"><img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=100" class="w-full h-full object-cover"></div>
+                                <div class="w-7 h-7 rounded-full border-2 border-[#F9F5F0] overflow-hidden"><img src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?w=100" class="w-full h-full object-cover"></div>
+                                <div class="w-7 h-7 rounded-full border-2 border-[#F9F5F0] overflow-hidden"><img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=100" class="w-full h-full object-cover"></div>
+                            </div>
+                            <div class="text-[#8B7D74]">
+                                <span class="font-medium text-[#3F3A36]">400+</span> happy clients this year
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Hero Image -->
+                <div class="md:col-span-5 lg:col-span-5 mt-10 md:mt-0">
+                    <div class="relative rounded-3xl overflow-hidden shadow-2xl aspect-[4/3] md:aspect-auto md:h-[520px]">
+                        <img src="https://images.unsplash.com/photo-1604654894610-df63bc536371?w=1200&q=80" 
+                             alt="Beautiful manicure at Reverie Nails and Spa" 
+                             class="w-full h-full object-cover">
+                        <div class="absolute inset-0 bg-gradient-to-t from-black/30 to-transparent"></div>
+                        
+                        <!-- Floating trust badge -->
+                        <div class="absolute bottom-5 right-5 bg-white/95 backdrop-blur px-4 py-2 rounded-2xl text-xs shadow">
+                            <div class="flex items-center gap-x-2">
+                                <i class="fa-solid fa-star text-[#D4B896]"></i>
+                                <span class="font-medium">4.98 • 312 reviews</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Quick Trust Bar -->
+    <div class="border-y border-[#EDE6DC] py-4 bg-white">
+        <div class="max-w-6xl mx-auto px-6">
+            <div class="flex flex-wrap justify-center md:justify-between items-center gap-x-8 gap-y-3 text-sm text-[#8B7D74]">
+                <div class="flex items-center gap-x-2">
+                    <i class="fa-solid fa-check text-[#C9A7A0]"></i>
+                    <span>Professional, high-skill technicians</span>
+                </div>
+                <div class="flex items-center gap-x-2">
+                    <i class="fa-solid fa-check text-[#C9A7A0]"></i>
+                    <span>Premium products only</span>
+                </div>
+                <div class="flex items-center gap-x-2">
+                    <i class="fa-solid fa-check text-[#C9A7A0]"></i>
+                    <span>Welcoming space for everyone</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- The Experience / About Section -->
+    <section id="experience" class="max-w-6xl mx-auto px-6 pt-16 pb-14">
+        <div class="grid md:grid-cols-12 gap-x-12 items-center">
+            
+            <!-- Left Column - Text -->
+            <div class="md:col-span-7">
+                <div class="max-w-xl">
+                    <div class="uppercase tracking-[2px] text-xs font-medium text-[#C9A7A0] mb-3">Our Philosophy</div>
+                    
+                    <h2 class="section-title text-4xl md:text-5xl leading-tight tracking-tight mb-6">
+                        A space where<br>skill meets warmth.
+                    </h2>
+                    
+                    <div class="space-y-5 text-[#6B625B] text-[15px] leading-relaxed">
+                        <p>
+                            At Reverie, we believe exceptional nail care should feel both elevated and deeply human. 
+                            Our team brings years of advanced training and a genuine love for the craft — 
+                            but what truly sets us apart is how we care for every person who walks through our doors.
+                        </p>
+                        <p>
+                            We’ve created a modern, comfortable sanctuary where clients feel seen, 
+                            heard, and genuinely welcomed. Whether you’re here for a quiet moment of self-care 
+                            or catching up with your favorite technician, you’ll always be treated like family.
+                        </p>
+                    </div>
+
+                    <div class="mt-8 flex flex-wrap gap-4 text-sm">
+                        <div class="flex items-center gap-x-3 bg-white px-5 py-3 rounded-2xl border border-[#EDE6DC]">
+                            <i class="fa-solid fa-users text-[#C9A7A0] text-lg"></i>
+                            <div>
+                                <div class="font-medium">Community First</div>
+                                <div class="text-xs text-[#8B7D74]">Many of our clients have been with us for years</div>
+                            </div>
+                        </div>
+                        <div class="flex items-center gap-x-3 bg-white px-5 py-3 rounded-2xl border border-[#EDE6DC]">
+                            <i class="fa-solid fa-graduation-cap text-[#C9A7A0] text-lg"></i>
+                            <div>
+                                <div class="font-medium">Advanced Training</div>
+                                <div class="text-xs text-[#8B7D74]">Ongoing education in the latest techniques</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Right Column - Image -->
+            <div class="md:col-span-5 mt-10 md:mt-0">
+                <div class="image-container rounded-3xl overflow-hidden shadow-xl aspect-[16/12]">
+                    <img src="https://images.unsplash.com/photo-1580618672591-eb180b1a973f?w=900&q=80" 
+                         alt="Warm and inviting interior of Reverie Nails and Spa"
+                         class="w-full h-full object-cover">
+                </div>
+                <p class="text-center text-xs text-[#8B7D74] mt-3 italic">Our studio was designed to feel like a second home</p>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Services / Menu Section -->
+    <section id="services" class="bg-white py-16 border-t border-[#EDE6DC]">
+        <div class="max-w-6xl mx-auto px-6">
+            <div class="flex flex-col md:flex-row md:items-end md:justify-between mb-10">
+                <div>
+                    <div class="uppercase tracking-[2px] text-xs font-medium text-[#C9A7A0] mb-2">Signature Services</div>
+                    <h2 class="section-title text-4xl tracking-tight">Our Menu</h2>
+                </div>
+                <a href="#booking" class="mt-4 md:mt-0 inline-flex items-center text-sm font-medium text-[#C9A7A0] hover:text-[#3F3A36] transition-colors">
+                    Book any service <i class="fa-solid fa-arrow-right ml-2"></i>
+                </a>
+            </div>
+
+            <!-- Services Grid -->
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-5">
+                
+                <!-- Manicures -->
+                <div class="service-card bg-[#F9F5F0] rounded-3xl p-6 border border-[#EDE6DC]">
+                    <div class="flex items-center gap-x-3 mb-5">
+                        <div class="w-11 h-11 flex items-center justify-center bg-white rounded-2xl">
+                            <i class="fa-solid fa-hand-sparkles text-[#C9A7A0] text-2xl"></i>
+                        </div>
+                        <h3 class="text-xl font-medium">Manicures</h3>
+                    </div>
+                    
+                    <div class="space-y-4 text-sm">
+                        <div class="flex justify-between items-start">
+                            <div>
+                                <div class="font-medium">Classic Manicure</div>
+                                <div class="text-[#8B7D74] text-xs">45 min • Nail shaping, cuticle care, polish</div>
+                            </div>
+                            <div class="font-medium text-right">$38</div>
+                        </div>
+                        <div class="flex justify-between items-start">
+                            <div>
+                                <div class="font-medium">Signature Manicure</div>
+                                <div class="text-[#8B7D74] text-xs">60 min • Extended massage + premium polish</div>
+                            </div>
+                            <div class="font-medium text-right">$52</div>
+                        </div>
+                        <div class="flex justify-between items-start">
+                            <div>
+                                <div class="font-medium">Gel Manicure</div>
+                                <div class="text-[#8B7D74] text-xs">60 min • Long-lasting gel polish</div>
+                            </div>
+                            <div class="font-medium text-right">$58</div>
+                        </div>
+                        <div class="flex justify-between items-start">
+                            <div>
+                                <div class="font-medium">Luxury Spa Manicure</div>
+                                <div class="text-[#8B7D74] text-xs">75 min • Paraffin + hot stone massage</div>
+                            </div>
+                            <div class="font-medium text-right">$72</div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Pedicures -->
+                <div class="service-card bg-[#F9F5F0] rounded-3xl p-6 border border-[#EDE6DC]">
+                    <div class="flex items-center gap-x-3 mb-5">
+                        <div class="w-11 h-11 flex items-center justify-center bg-white rounded-2xl">
+                            <i class="fa-solid fa-shoe-prints text-[#C9A7A0] text-2xl"></i>
+                        </div>
+                        <h3 class="text-xl font-medium">Pedicures</h3>
+                    </div>
+                    
+                    <div class="space-y-4 text-sm">
+                        <div class="flex justify-between items-start">
+                            <div>
+                                <div class="font-medium">Classic Pedicure</div>
+                                <div class="text-[#8B7D74] text-xs">50 min • Soak, scrub, massage, polish</div>
+                            </div>
+                            <div class="font-medium text-right">$48</div>
+                        </div>
+                        <div class="flex justify-between items-start">
+                            <div>
+                                <div class="font-medium">Signature Pedicure</div>
+                                <div class="text-[#8B7D74] text-xs">70 min • Extended massage + callus treatment</div>
+                            </div>
+                            <div class="font-medium text-right">$68</div>
+                        </div>
+                        <div class="flex justify-between items-start">
+                            <div>
+                                <div class="font-medium">Gel Pedicure</div>
+                                <div class="text-[#8B7D74] text-xs">70 min • Long-lasting gel polish</div>
+                            </div>
+                            <div class="font-medium text-right">$72</div>
+                        </div>
+                        <div class="flex justify-between items-start">
+                            <div>
+                                <div class="font-medium">Reverie Spa Pedicure</div>
+                                <div class="text-[#8B7D74] text-xs">90 min • Full luxury experience</div>
+                            </div>
+                            <div class="font-medium text-right">$92</div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Add-ons & Enhancements -->
+                <div class="service-card bg-[#F9F5F0] rounded-3xl p-6 border border-[#EDE6DC]">
+                    <div class="flex items-center gap-x-3 mb-5">
+                        <div class="w-11 h-11 flex items-center justify-center bg-white rounded-2xl">
+                            <i class="fa-solid fa-plus text-[#C9A7A0] text-2xl"></i>
+                        </div>
+                        <h3 class="text-xl font-medium">Enhancements</h3>
+                    </div>
+                    
+                    <div class="space-y-4 text-sm">
+                        <div class="flex justify-between">
+                            <div>Acrylic / Gel-X Full Set</div>
+                            <div class="font-medium">$75+</div>
+                        </div>
+                        <div class="flex justify-between">
+                            <div>Acrylic / Gel-X Fill</div>
+                            <div class="font-medium">$55+</div>
+                        </div>
+                        <div class="flex justify-between">
+                            <div>Chrome / Cat Eye Finish</div>
+                            <div class="font-medium">+$18</div>
+                        </div>
+                        <div class="flex justify-between">
+                            <div>Nail Art (per nail)</div>
+                            <div class="font-medium">$6–12</div>
+                        </div>
+                        <div class="flex justify-between">
+                            <div>Paraffin Treatment</div>
+                            <div class="font-medium">$18</div>
+                        </div>
+                        <div class="flex justify-between">
+                            <div>Hand or Foot Mask</div>
+                            <div class="font-medium">$15</div>
+                        </div>
+                    </div>
+                    
+                    <div class="mt-6 pt-4 border-t border-[#EDE6DC] text-xs text-[#8B7D74]">
+                        All services include nail shaping, cuticle work, and your choice of polish.
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="text-center mt-8">
+                <a href="#booking" class="inline-flex items-center gap-x-2 text-sm font-medium px-6 py-3 rounded-full bg-[#3F3A36] text-white hover:bg-[#C9A7A0] hover:text-[#3F3A36] transition-all">
+                    <span>Reserve Your Time</span>
+                    <i class="fa-solid fa-calendar-check"></i>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section id="gallery" class="max-w-6xl mx-auto px-6 py-16">
+        <div class="flex items-end justify-between mb-8">
+            <div>
+                <div class="uppercase tracking-[2px] text-xs font-medium text-[#C9A7A0]">Moments at Reverie</div>
+                <h2 class="section-title text-4xl tracking-tight">A glimpse inside</h2>
+            </div>
+            <a href="#" class="hidden md:block text-sm font-medium text-[#C9A7A0] hover:text-[#3F3A36]">View full gallery →</a>
+        </div>
+
+        <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-3">
+            <div class="image-container aspect-[4/3] rounded-2xl overflow-hidden">
+                <img src="https://images.unsplash.com/photo-1604654894610-df63bc536371?w=800&q=80" class="w-full h-full object-cover" alt="Elegant manicure">
+            </div>
+            <div class="image-container aspect-[4/3] rounded-2xl overflow-hidden">
+                <img src="https://images.unsplash.com/photo-1580618672591-eb180b1a973f?w=800&q=80" class="w-full h-full object-cover" alt="Cozy pedicure station">
+            </div>
+            <div class="image-container aspect-[4/3] rounded-2xl overflow-hidden">
+                <img src="https://images.unsplash.com/photo-1522337360788-8b13dee7a37e?w=800&q=80" class="w-full h-full object-cover" alt="Beautiful nail art">
+            </div>
+            <div class="image-container aspect-[4/3] rounded-2xl overflow-hidden">
+                <img src="https://images.unsplash.com/photo-1604654894610-df63bc536371?w=800&q=80" class="w-full h-full object-cover" alt="Client getting nails done">
+            </div>
+            <div class="image-container aspect-[4/3] rounded-2xl overflow-hidden">
+                <img src="https://images.unsplash.com/photo-1596462502278-27bfdc403348?w=800&q=80" class="w-full h-full object-cover" alt="Warm studio atmosphere">
+            </div>
+            <div class="image-container aspect-[4/3] rounded-2xl overflow-hidden">
+                <img src="https://images.unsplash.com/photo-1604654894610-df63bc536371?w=800&q=80" class="w-full h-full object-cover" alt="Detailed nail work">
+            </div>
+            <div class="image-container aspect-[4/3] rounded-2xl overflow-hidden">
+                <img src="https://images.unsplash.com/photo-1522337360788-8b13dee7a37e?w=800&q=80" class="w-full h-full object-cover" alt="Soft pink manicure">
+            </div>
+            <div class="image-container aspect-[4/3] rounded-2xl overflow-hidden hidden lg:block">
+                <img src="https://images.unsplash.com/photo-1580618672591-eb180b1a973f?w=800&q=80" class="w-full h-full object-cover" alt="Relaxing spa moment">
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials / Community -->
+    <section id="testimonials" class="bg-white py-16 border-t border-[#EDE6DC]">
+        <div class="max-w-6xl mx-auto px-6">
+            <div class="text-center mb-10">
+                <div class="uppercase tracking-[2px] text-xs font-medium text-[#C9A7A0]">Real Voices from Our Community</div>
+                <h2 class="section-title text-4xl tracking-tight mt-2">What our clients say</h2>
+            </div>
+
+            <div class="grid md:grid-cols-3 gap-5">
+                
+                <div class="bg-[#F9F5F0] rounded-3xl p-7 border border-[#EDE6DC]">
+                    <div class="flex gap-x-1 text-[#D4B896] mb-4">
+                        <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                    </div>
+                    <p class="text-[#3F3A36] leading-relaxed">"I’ve been coming to Reverie for almost three years. The attention to detail is unmatched, and I always leave feeling genuinely cared for. It’s more than a salon — it’s my little reset."</p>
+                    <div class="mt-5 flex items-center gap-x-3">
+                        <img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=80" class="w-9 h-9 rounded-full object-cover" alt="">
+                        <div>
+                            <div class="font-medium text-sm">Maria L.</div>
+                            <div class="text-xs text-[#8B7D74]">Client since 2022</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="bg-[#F9F5F0] rounded-3xl p-7 border border-[#EDE6DC]">
+                    <div class="flex gap-x-1 text-[#D4B896] mb-4">
+                        <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                    </div>
+                    <p class="text-[#3F3A36] leading-relaxed">"As a busy mom, finding a place that feels calm and professional at the same time is rare. The team at Reverie always makes me feel accommodated and never rushed. My nails have never looked better."</p>
+                    <div class="mt-5 flex items-center gap-x-3">
+                        <img src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?w=80" class="w-9 h-9 rounded-full object-cover" alt="">
+                        <div>
+                            <div class="font-medium text-sm">Aisha K.</div>
+                            <div class="text-xs text-[#8B7D74]">Client since 2023</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="bg-[#F9F5F0] rounded-3xl p-7 border border-[#EDE6DC]">
+                    <div class="flex gap-x-1 text-[#D4B896] mb-4">
+                        <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star-half-stroke"></i>
+                    </div>
+                    <p class="text-[#3F3A36] leading-relaxed">"I travel for work and have tried many salons. Reverie is the only place I trust with my hands. The skill level is truly high, and the environment feels warm and modern without being pretentious."</p>
+                    <div class="mt-5 flex items-center gap-x-3">
+                        <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=80" class="w-9 h-9 rounded-full object-cover" alt="">
+                        <div>
+                            <div class="font-medium text-sm">Daniel R.</div>
+                            <div class="text-xs text-[#8B7D74]">Client since 2021</div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Booking Section -->
+    <section id="booking" class="max-w-6xl mx-auto px-6 py-16">
+        <div class="max-w-3xl mx-auto">
+            <div class="text-center mb-10">
+                <div class="uppercase tracking-[2px] text-xs font-medium text-[#C9A7A0]">Reserve Your Time</div>
+                <h2 class="section-title text-4xl tracking-tight mt-1">Book Your Appointment</h2>
+                <p class="text-[#6B625B] mt-3">We’ll take great care of you. Select a service and a time that works for you.</p>
+            </div>
+
+            <!-- Booking Card -->
+            <div class="bg-white border border-[#EDE6DC] rounded-3xl p-8 shadow-sm">
+                
+                <!-- Progress Steps -->
+                <div class="flex items-center justify-between mb-8 text-sm">
+                    <div class="flex items-center gap-x-2">
+                        <div id="step-dot-1" class="w-7 h-7 rounded-full bg-[#3F3A36] text-white flex items-center justify-center text-xs font-medium">1</div>
+                        <span id="step-label-1" class="font-medium">Service</span>
+                    </div>
+                    <div class="flex-1 h-px bg-[#EDE6DC] mx-3"></div>
+                    <div class="flex items-center gap-x-2">
+                        <div id="step-dot-2" class="w-7 h-7 rounded-full bg-[#EDE6DC] text-[#8B7D74] flex items-center justify-center text-xs font-medium">2</div>
+                        <span id="step-label-2" class="text-[#8B7D74]">Date & Time</span>
+                    </div>
+                    <div class="flex-1 h-px bg-[#EDE6DC] mx-3"></div>
+                    <div class="flex items-center gap-x-2">
+                        <div id="step-dot-3" class="w-7 h-7 rounded-full bg-[#EDE6DC] text-[#8B7D74] flex items-center justify-center text-xs font-medium">3</div>
+                        <span id="step-label-3" class="text-[#8B7D74]">Your Info</span>
+                    </div>
+                </div>
+
+                <!-- Step 1: Choose Service -->
+                <div id="booking-step-1">
+                    <h3 class="font-medium mb-4">What service would you like?</h3>
+                    
+                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-3">
+                        <div onclick="selectService(this, 'Classic Manicure', 38)" class="service-option cursor-pointer p-4 rounded-2xl border border-[#EDE6DC] hover:border-[#C9A7A0]">
+                            <div class="flex justify-between">
+                                <div>
+                                    <div class="font-medium">Classic Manicure</div>
+                                    <div class="text-xs text-[#8B7D74]">45 minutes</div>
+                                </div>
+                                <div class="font-semibold">$38</div>
+                            </div>
+                        </div>
+                        <div onclick="selectService(this, 'Signature Manicure', 52)" class="service-option cursor-pointer p-4 rounded-2xl border border-[#EDE6DC] hover:border-[#C9A7A0]">
+                            <div class="flex justify-between">
+                                <div>
+                                    <div class="font-medium">Signature Manicure</div>
+                                    <div class="text-xs text-[#8B7D74]">60 minutes</div>
+                                </div>
+                                <div class="font-semibold">$52</div>
+                            </div>
+                        </div>
+                        <div onclick="selectService(this, 'Gel Manicure', 58)" class="service-option cursor-pointer p-4 rounded-2xl border border-[#EDE6DC] hover:border-[#C9A7A0]">
+                            <div class="flex justify-between">
+                                <div>
+                                    <div class="font-medium">Gel Manicure</div>
+                                    <div class="text-xs text-[#8B7D74]">60 minutes</div>
+                                </div>
+                                <div class="font-semibold">$58</div>
+                            </div>
+                        </div>
+                        <div onclick="selectService(this, 'Luxury Spa Manicure', 72)" class="service-option cursor-pointer p-4 rounded-2xl border border-[#EDE6DC] hover:border-[#C9A7A0]">
+                            <div class="flex justify-between">
+                                <div>
+                                    <div class="font-medium">Luxury Spa Manicure</div>
+                                    <div class="text-xs text-[#8B7D74]">75 minutes</div>
+                                </div>
+                                <div class="font-semibold">$72</div>
+                            </div>
+                        </div>
+
+                        <div onclick="selectService(this, 'Classic Pedicure', 48)" class="service-option cursor-pointer p-4 rounded-2xl border border-[#EDE6DC] hover:border-[#C9A7A0]">
+                            <div class="flex justify-between">
+                                <div>
+                                    <div class="font-medium">Classic Pedicure</div>
+                                    <div class="text-xs text-[#8B7D74]">50 minutes</div>
+                                </div>
+                                <div class="font-semibold">$48</div>
+                            </div>
+                        </div>
+                        <div onclick="selectService(this, 'Signature Pedicure', 68)" class="service-option cursor-pointer p-4 rounded-2xl border border-[#EDE6DC] hover:border-[#C9A7A0]">
+                            <div class="flex justify-between">
+                                <div>
+                                    <div class="font-medium">Signature Pedicure</div>
+                                    <div class="text-xs text-[#8B7D74]">70 minutes</div>
+                                </div>
+                                <div class="font-semibold">$68</div>
+                            </div>
+                        </div>
+                        <div onclick="selectService(this, 'Gel Pedicure', 72)" class="service-option cursor-pointer p-4 rounded-2xl border border-[#EDE6DC] hover:border-[#C9A7A0]">
+                            <div class="flex justify-between">
+                                <div>
+                                    <div class="font-medium">Gel Pedicure</div>
+                                    <div class="text-xs text-[#8B7D74]">70 minutes</div>
+                                </div>
+                                <div class="font-semibold">$72</div>
+                            </div>
+                        </div>
+                        <div onclick="selectService(this, 'Reverie Spa Pedicure', 92)" class="service-option cursor-pointer p-4 rounded-2xl border border-[#EDE6DC] hover:border-[#C9A7A0]">
+                            <div class="flex justify-between">
+                                <div>
+                                    <div class="font-medium">Reverie Spa Pedicure</div>
+                                    <div class="text-xs text-[#8B7D74]">90 minutes</div>
+                                </div>
+                                <div class="font-semibold">$92</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Step 2: Date & Time -->
+                <div id="booking-step-2" class="hidden">
+                    <h3 class="font-medium mb-1">When would you like to come in?</h3>
+                    <p class="text-sm text-[#8B7D74] mb-4">Selected: <span id="selected-service-name" class="font-medium text-[#3F3A36]"></span></p>
+
+                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                        <!-- Date -->
+                        <div>
+                            <label class="block text-sm font-medium mb-1.5">Preferred Date</label>
+                            <input type="date" id="booking-date" class="w-full border border-[#D1C9C0] rounded-2xl px-4 py-3 focus:outline-none focus:border-[#C9A7A0]" value="2025-02-18">
+                        </div>
+
+                        <!-- Time Slots -->
+                        <div>
+                            <label class="block text-sm font-medium mb-1.5">Available Times</label>
+                            <div id="time-slots" class="grid grid-cols-3 gap-2">
+                                <!-- Populated by JS -->
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="flex gap-x-3 mt-6">
+                        <button onclick="goToStep(1)" class="flex-1 py-3 rounded-2xl border border-[#D1C9C0] text-sm font-medium">Back</button>
+                        <button onclick="goToStep(3)" class="flex-1 py-3 rounded-2xl btn-primary text-sm font-medium">Continue to Your Info</button>
+                    </div>
+                </div>
+
+                <!-- Step 3: Contact Info -->
+                <div id="booking-step-3" class="hidden">
+                    <h3 class="font-medium mb-4">Tell us a little about yourself</h3>
+
+                    <div class="space-y-4">
+                        <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                            <div>
+                                <label class="block text-sm font-medium mb-1.5">First Name</label>
+                                <input id="first-name" type="text" class="w-full border border-[#D1C9C0] rounded-2xl px-4 py-3" placeholder="Alex" value="Jordan">
+                            </div>
+                            <div>
+                                <label class="block text-sm font-medium mb-1.5">Last Name</label>
+                                <input id="last-name" type="text" class="w-full border border-[#D1C9C0] rounded-2xl px-4 py-3" placeholder="Lee" value="Rivera">
+                            </div>
+                        </div>
+
+                        <div>
+                            <label class="block text-sm font-medium mb-1.5">Phone Number</label>
+                            <input id="phone" type="tel" class="w-full border border-[#D1C9C0] rounded-2xl px-4 py-3" placeholder="(817) 555-0192" value="(817) 555-0192">
+                        </div>
+
+                        <div>
+                            <label class="block text-sm font-medium mb-1.5">Email Address</label>
+                            <input id="email" type="email" class="w-full border border-[#D1C9C0] rounded-2xl px-4 py-3" placeholder="you@email.com" value="jordan.rivera@email.com">
+                        </div>
+
+                        <div>
+                            <label class="block text-sm font-medium mb-1.5">Anything we should know? (Optional)</label>
+                            <textarea id="notes" rows="3" class="w-full border border-[#D1C9C0] rounded-2xl px-4 py-3 text-sm" placeholder="First time client, prefer quiet morning appointments, etc."></textarea>
+                        </div>
+                    </div>
+
+                    <div class="flex gap-x-3 mt-6">
+                        <button onclick="goToStep(2)" class="flex-1 py-3 rounded-2xl border border-[#D1C9C0] text-sm font-medium">Back</button>
+                        <button onclick="submitBooking()" class="flex-1 py-3 rounded-2xl btn-primary text-sm font-medium">Request Appointment</button>
+                    </div>
+                </div>
+
+                <!-- Confirmation (shown after submit) -->
+                <div id="booking-confirmation" class="hidden text-center py-6">
+                    <div class="mx-auto w-16 h-16 bg-[#F9F5F0] rounded-full flex items-center justify-center mb-5">
+                        <i class="fa-solid fa-check text-3xl text-[#C9A7A0]"></i>
+                    </div>
+                    <h3 class="text-2xl font-medium tracking-tight">Thank you, Jordan!</h3>
+                    <p class="text-[#6B625B] mt-2 max-w-xs mx-auto">Your appointment request has been received. We’ll confirm your time within the hour.</p>
+                    
+                    <div class="bg-[#F9F5F0] rounded-2xl p-4 text-left mt-7 text-sm">
+                        <div><strong>Service:</strong> <span id="confirm-service"></span></div>
+                        <div><strong>When:</strong> <span id="confirm-datetime"></span></div>
+                        <div><strong>At:</strong> Reverie Nails and Spa</div>
+                    </div>
+
+                    <button onclick="resetBooking()" class="mt-6 text-sm font-medium underline">Book another appointment</button>
+                </div>
+
+            </div>
+
+            <p class="text-center text-xs text-[#8B7D74] mt-5">We typically respond to booking requests within 1 hour during business hours.</p>
+        </div>
+    </section>
+
+    <!-- Contact & Location -->
+    <section class="bg-[#3F3A36] text-white py-16">
+        <div class="max-w-6xl mx-auto px-6">
+            <div class="grid md:grid-cols-2 gap-x-16 gap-y-12">
+                
+                <div>
+                    <div class="uppercase tracking-[2px] text-xs text-[#C9A7A0] mb-2">Visit Us</div>
+                    <h2 class="section-title text-white text-4xl tracking-tight">Come see us</h2>
+                    
+                    <div class="mt-8 space-y-6 text-[#EDE6DC]">
+                        <div>
+                            <div class="font-medium text-white">Reverie Nails and Spa</div>
+                            <div class="mt-1">4613 West Bailey Boswell Rd<br>Ste 101<br>Saginaw, TX 76179</div>
+                        </div>
+                        
+                        <div>
+                            <div class="text-sm text-[#C9A7A0]">Phone</div>
+                            <a href="tel:8175550192" class="block text-lg font-medium hover:text-[#C9A7A0]">(817) 555-0192</a>
+                        </div>
+                        
+                        <div>
+                            <div class="text-sm text-[#C9A7A0]">Email</div>
+                            <a href="mailto:hello@reverienails.com" class="block hover:text-[#C9A7A0]">hello@reverienails.com</a>
+                        </div>
+                    </div>
+
+                    <div class="mt-8">
+                        <a href="#booking" class="inline-flex items-center gap-x-2 px-7 py-3 bg-white text-[#3F3A36] rounded-2xl text-sm font-medium hover:bg-[#C9A7A0]">
+                            Book Your Visit
+                        </a>
+                    </div>
+                </div>
+
+                <div class="text-[#EDE6DC]">
+                    <div class="uppercase tracking-[2px] text-xs text-[#C9A7A0] mb-3">Hours</div>
+                    <div class="space-y-1 text-sm">
+                        <div class="flex justify-between"><span>Monday – Friday</span> <span>9:00 AM – 7:00 PM</span></div>
+                        <div class="flex justify-between"><span>Saturday</span> <span>9:00 AM – 6:00 PM</span></div>
+                        <div class="flex justify-between"><span>Sunday</span> <span>10:00 AM – 5:00 PM</span></div>
+                    </div>
+
+                    <div class="mt-9">
+                        <div class="uppercase tracking-[2px] text-xs text-[#C9A7A0] mb-3">Follow Us</div>
+                        <div class="flex gap-x-5 text-lg">
+                            <a href="#" class="hover:text-white"><i class="fa-brands fa-instagram"></i></a>
+                            <a href="#" class="hover:text-white"><i class="fa-brands fa-facebook"></i></a>
+                            <a href="#" class="hover:text-white"><i class="fa-brands fa-tiktok"></i></a>
+                        </div>
+                        <p class="mt-2 text-xs">@reverienails</p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <script>
+        // Tailwind script
+        function initializeTailwind() {
+            // Already using CDN with custom styles
+        }
+
+        // Navbar scroll effect
+        function initNavbar() {
+            const navbar = document.getElementById('navbar');
+            
+            window.addEventListener('scroll', () => {
+                if (window.scrollY > 20) {
+                    navbar.classList.add('nav-scrolled', 'shadow-sm');
+                } else {
+                    navbar.classList.remove('nav-scrolled', 'shadow-sm');
+                }
+            });
+        }
+
+        // Mobile menu
+        function initMobileMenu() {
+            const btn = document.getElementById('mobile-menu-btn');
+            const menu = document.getElementById('mobile-menu');
+            
+            btn.addEventListener('click', () => {
+                menu.classList.toggle('hidden');
+                const icon = btn.querySelector('i');
+                icon.classList.toggle('fa-bars');
+                icon.classList.toggle('fa-times');
+            });
+
+            // Close menu when clicking a link
+            menu.querySelectorAll('a').forEach(link => {
+                link.addEventListener('click', () => {
+                    menu.classList.add('hidden');
+                    const icon = btn.querySelector('i');
+                    icon.classList.add('fa-bars');
+                    icon.classList.remove('fa-times');
+                });
+            });
+        }
+
+        // Initialize everything
+        function init() {
+            initializeTailwind();
+            initNavbar();
+            initMobileMenu();
+            initBooking();
+            
+            // Smooth scroll for anchor links
+            document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+                anchor.addEventListener('click', function(e) {
+                    const target = document.querySelector(this.getAttribute('href'));
+                    if (target) {
+                        e.preventDefault();
+                        const offset = 80;
+                        const bodyRect = document.body.getBoundingClientRect().top;
+                        const elementPosition = target.getBoundingClientRect().top;
+                        const offsetPosition = elementPosition - bodyRect - offset;
+                        
+                        window.scrollTo({
+                            top: offsetPosition,
+                            behavior: 'smooth'
+                        });
+                    }
+                });
+            });
+        }
+
+        // ==================== BOOKING FLOW ====================
+        let selectedService = null;
+        let selectedTime = null;
+
+        function selectService(element, serviceName, price) {
+            // Deselect all
+            document.querySelectorAll('.service-option').forEach(el => {
+                el.classList.remove('border-[#C9A7A0]', 'bg-[#F9F5F0]');
+                el.classList.add('border-[#EDE6DC]');
+            });
+
+            // Select current
+            element.classList.remove('border-[#EDE6DC]');
+            element.classList.add('border-[#C9A7A0]', 'bg-[#F9F5F0]');
+
+            selectedService = { name: serviceName, price: price };
+
+            // Move to step 2
+            setTimeout(() => {
+                goToStep(2);
+            }, 350);
+        }
+
+        function goToStep(step) {
+            // Hide all steps
+            document.getElementById('booking-step-1').classList.add('hidden');
+            document.getElementById('booking-step-2').classList.add('hidden');
+            document.getElementById('booking-step-3').classList.add('hidden');
+
+            // Reset step indicators
+            for (let i = 1; i <= 3; i++) {
+                const dot = document.getElementById(`step-dot-${i}`);
+                const label = document.getElementById(`step-label-${i}`);
+                dot.classList.remove('bg-[#3F3A36]', 'text-white');
+                dot.classList.add('bg-[#EDE6DC]', 'text-[#8B7D74]');
+                label.classList.remove('font-medium');
+                label.classList.add('text-[#8B7D74]');
+            }
+
+            if (step === 1) {
+                document.getElementById('booking-step-1').classList.remove('hidden');
+                const dot = document.getElementById('step-dot-1');
+                const label = document.getElementById('step-label-1');
+                dot.classList.add('bg-[#3F3A36]', 'text-white');
+                dot.classList.remove('bg-[#EDE6DC]', 'text-[#8B7D74]');
+                label.classList.add('font-medium');
+                label.classList.remove('text-[#8B7D74]');
+            }
+
+            if (step === 2) {
+                document.getElementById('booking-step-2').classList.remove('hidden');
+                const dot = document.getElementById('step-dot-2');
+                const label = document.getElementById('step-label-2');
+                dot.classList.add('bg-[#3F3A36]', 'text-white');
+                dot.classList.remove('bg-[#EDE6DC]', 'text-[#8B7D74]');
+                label.classList.add('font-medium');
+                label.classList.remove('text-[#8B7D74]');
+
+                // Show selected service
+                if (selectedService) {
+                    document.getElementById('selected-service-name').textContent = `${selectedService.name} — $${selectedService.price}`;
+                }
+
+                // Generate time slots
+                generateTimeSlots();
+            }
+
+            if (step === 3) {
+                document.getElementById('booking-step-3').classList.remove('hidden');
+                const dot = document.getElementById('step-dot-3');
+                const label = document.getElementById('step-label-3');
+                dot.classList.add('bg-[#3F3A36]', 'text-white');
+                dot.classList.remove('bg-[#EDE6DC]', 'text-[#8B7D74]');
+                label.classList.add('font-medium');
+                label.classList.remove('text-[#8B7D74]');
+            }
+        }
+
+        function generateTimeSlots() {
+            const container = document.getElementById('time-slots');
+            container.innerHTML = '';
+
+            const times = ['9:00 AM', '10:00 AM', '11:00 AM', '1:00 PM', '2:00 PM', '3:00 PM', '4:00 PM', '5:00 PM'];
+
+            times.forEach(time => {
+                const div = document.createElement('div');
+                div.textContent = time;
+                div.className = `cursor-pointer text-center py-2.5 rounded-xl text-sm border transition-all ${
+                    selectedTime === time 
+                        ? 'bg-[#3F3A36] text-white border-[#3F3A36]' 
+                        : 'border-[#D1C9C0] hover:border-[#C9A7A0]'
+                }`;
+                
+                div.onclick = () => {
+                    selectedTime = time;
+                    // Re-render to show selection
+                    generateTimeSlots();
+                };
+                container.appendChild(div);
+            });
+        }
+
+        function submitBooking() {
+            if (!selectedService || !selectedTime) {
+                alert("Please complete the previous steps.");
+                return;
+            }
+
+            const firstName = document.getElementById('first-name').value || 'Guest';
+            const date = document.getElementById('booking-date').value;
+
+            // Hide form steps
+            document.getElementById('booking-step-3').classList.add('hidden');
+
+            // Show confirmation
+            const confirmation = document.getElementById('booking-confirmation');
+            confirmation.classList.remove('hidden');
+
+            document.getElementById('confirm-service').textContent = `${selectedService.name} ($${selectedService.price})`;
+            document.getElementById('confirm-datetime').textContent = `${date} at ${selectedTime}`;
+        }
+
+        function resetBooking() {
+            // Reset everything
+            document.getElementById('booking-confirmation').classList.add('hidden');
+            document.getElementById('booking-step-1').classList.remove('hidden');
+            document.getElementById('booking-step-2').classList.add('hidden');
+            document.getElementById('booking-step-3').classList.add('hidden');
+
+            // Reset selections
+            selectedService = null;
+            selectedTime = null;
+
+            // Clear visual selections
+            document.querySelectorAll('.service-option').forEach(el => {
+                el.classList.remove('border-[#C9A7A0]', 'bg-[#F9F5F0]');
+                el.classList.add('border-[#EDE6DC]');
+            });
+
+            // Reset step indicators
+            for (let i = 1; i <= 3; i++) {
+                const dot = document.getElementById(`step-dot-${i}`);
+                const label = document.getElementById(`step-label-${i}`);
+                if (i === 1) {
+                    dot.classList.add('bg-[#3F3A36]', 'text-white');
+                    dot.classList.remove('bg-[#EDE6DC]', 'text-[#8B7D74]');
+                    label.classList.add('font-medium');
+                    label.classList.remove('text-[#8B7D74]');
+                } else {
+                    dot.classList.remove('bg-[#3F3A36]', 'text-white');
+                    dot.classList.add('bg-[#EDE6DC]', 'text-[#8B7D74]');
+                    label.classList.remove('font-medium');
+                    label.classList.add('text-[#8B7D74]');
+                }
+            }
+        }
+
+        function initBooking() {
+            // Optional: pre-select a date a few days out
+            const dateInput = document.getElementById('booking-date');
+            if (dateInput) {
+                const future = new Date();
+                future.setDate(future.getDate() + 3);
+                dateInput.value = future.toISOString().split('T')[0];
+            }
+        }
+
+        window.onload = init;
+    </script>
+</body>
+</html>
