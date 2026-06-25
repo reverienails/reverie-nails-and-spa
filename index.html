@@ -1933,7 +1933,7 @@
           'special.webp',
           'heart nail.png',
           'Every day special.jpg',
-          'fourth of jully teaser.png',
+          'july4-teaser.png',
           // Sequential names for multiple photos of the same special
           'special-1.jpg', 'special-2.jpg', 'special-3.jpg', 'special-4.jpg', 'special-5.jpg',
           'special-6.jpg', 'special-7.jpg', 'special-8.jpg', 'special-9.jpg', 'special-10.jpg',
@@ -2054,8 +2054,7 @@
                         if (pending === 0) {
                             if (validPhotos.length > 0) {
                                 const chosen = validPhotos[Math.floor(Math.random() * validPhotos.length)];
-                                const safeChosen = chosen.replace(/ /g, '%20');
-                                specialImg.src = `assets/Current Specials/${safeChosen}`;
+                                specialImg.src = `assets/Current Specials/${chosen}`;
                                 specialImg.style.display = '';
                             } else {
                                 specialImg.style.display = 'none';
@@ -2073,8 +2072,7 @@
                             finishSelection();
                         };
                         test.onerror = finishSelection;
-                        const safeFile = file.replace(/ /g, '%20');
-                        test.src = `assets/Current Specials/${safeFile}`;
+                        test.src = `assets/Current Specials/${file}`;
                     });
                 }
             }
