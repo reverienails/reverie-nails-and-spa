@@ -1965,6 +1965,10 @@
             const tag = active ? active.tag : null;
             const specialFolder = active && active.folder ? active.folder + '/' : '';
 
+            // Sanitize title for use in alt attribute (strip HTML tags to prevent broken attributes and leakage)
+            // Use only the main title text for alt (before any <br> or HTML)
+            const plainTitle = title ? title.split('<')[0].trim() : '';
+
             if (title) {
                 const tagHtml = tag 
                     ? `<span class="absolute top-3 right-3 text-[10px] font-medium tracking-[1px] px-2.5 py-0.5 rounded-full bg-white/90 text-[#E85A9C]">${tag}</span>` 
@@ -1982,7 +1986,7 @@
                             <div class="relative md:w-5/12 lg:w-2/5 md:max-h-[260px] overflow-hidden rounded-2xl">
                                 <img id="specials-random-img" 
                                      src="" 
-                                     alt="${title}" 
+                                     alt="${plainTitle}" 
                                      class="w-full h-44 md:max-h-[260px] md:h-auto object-cover">
                                 ${tagHtml}
                             </div>
