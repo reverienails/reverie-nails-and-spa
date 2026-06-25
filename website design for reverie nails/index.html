@@ -506,8 +506,8 @@
         </div>
     </nav>
 
-    <!-- Mobile Menu -->
-    <div id="mobile-menu" class="hidden md:hidden bg-white border-b">
+    <!-- Mobile Menu (overlay for all scroll positions) -->
+    <div id="mobile-menu" class="hidden md:hidden fixed top-20 left-0 right-0 z-[60] bg-white shadow-lg border-b max-h-[calc(100vh-5rem)] overflow-y-auto">
         <div class="px-6 py-4 flex flex-col gap-y-3 text-sm font-medium">
             <a href="#experience" class="py-1 nav-serif">The Experience</a>
             <a href="#services" class="py-1 nav-serif">Services</a>
@@ -1139,6 +1139,13 @@
                 const icon = btn.querySelector('i');
                 icon.classList.toggle('fa-bars');
                 icon.classList.toggle('fa-times');
+
+                // Lock body scroll when menu is open (better mobile UX)
+                if (menu.classList.contains('hidden')) {
+                    document.body.style.overflow = '';
+                } else {
+                    document.body.style.overflow = 'hidden';
+                }
             });
 
             // Close menu when clicking a link
@@ -1148,6 +1155,7 @@
                     const icon = btn.querySelector('i');
                     icon.classList.add('fa-bars');
                     icon.classList.remove('fa-times');
+                    document.body.style.overflow = '';
                 });
             });
         }
@@ -1965,6 +1973,10 @@
             const tag = active ? active.tag : null;
             const specialFolder = active && active.folder ? active.folder + '/' : '';
 
+            // Sanitize title for use in alt attribute (strip HTML tags to prevent broken attributes and leakage)
+            // Use only the main title text for alt (before any <br> or HTML)
+            const plainTitle = title ? title.split('<')[0].trim() : '';
+
             if (title) {
                 const tagHtml = tag 
                     ? `<span class="absolute top-3 right-3 text-[10px] font-medium tracking-[1px] px-2.5 py-0.5 rounded-full bg-white/90 text-[#E85A9C]">${tag}</span>` 
@@ -1982,7 +1994,7 @@
                             <div class="relative md:w-5/12 lg:w-2/5 md:max-h-[260px] overflow-hidden rounded-2xl">
                                 <img id="specials-random-img" 
                                      src="" 
-                                     alt="${title}" 
+                                     alt="${plainTitle}" 
                                      class="w-full h-44 md:max-h-[260px] md:h-auto object-cover">
                                 ${tagHtml}
                             </div>
