@@ -577,18 +577,15 @@
                 <div class="md:col-span-5 lg:col-span-5 mt-10 md:mt-0">
                     <div class="relative rounded-3xl overflow-hidden shadow-2xl aspect-[4/3] md:aspect-auto md:h-[520px]">
                         <!-- 
-                            RANDOM HERO IMAGE (tied to "Thoughtful care." headline)
+                            RANDOM HERO IMAGE
                             Automatically picks a random photo from the assets/Hero/ folder on every page load.
+                            Drop ANY photo (jpg or png) into the folder — it will be included automatically
+                            on the next load (supports "photo 7.png", "my-shot.jpg", "salon-3.png", etc.).
 
-                            TO ADD MORE PHOTOS FOR RANDOM SELECTION:
-                            1. Drop your photo file into the `assets/Hero/` folder.
-                            2. Use a name like hero-3.jpg, hero-4.png, etc. (common patterns are already included).
-                            3. Save + hard refresh (Ctrl/Cmd + Shift + R).
-
-                            For completely custom names, add the exact filename to the possibleHeroImages list in index.html.
+                            Just save the new file in assets/Hero/ and hard refresh the page.
                         -->
                         <img id="hero-random-img" 
-                             src="assets/Hero/hero-02.jpg" 
+                             src="assets/Hero/photo 1.png" 
                              alt="Reverie Nails and Spa interior" 
                              class="w-full h-full object-cover">
                         <div class="absolute inset-0 bg-gradient-to-t from-black/30 to-transparent"></div>
@@ -1779,28 +1776,62 @@
         // No large list needed in this file anymore.
 
         // ===== Random Hero Image =====
-        // To support any photo in the Hero folder (no need to edit hero-data.js for common names),
-        // we use a list of possible filenames. Drop a photo with a matching name and it will be used randomly.
+        // Automatically picks ONE random photo from the assets/Hero/ folder on every page load.
+        // Drop ANY photo (jpg/png) into the folder — common names like "photo 5.png", "hero-3.jpg",
+        // "salon-interior.png" etc. are auto-supported. No need to edit lists for most cases.
         const possibleHeroImages = [
           'hero-02.jpg',
           'heart nail.png',
-          // Common patterns for new hero photos
+          // Current photos in the folder (for safety)
+          'photo 1.png', 'photo 2.png', 'photo 3.png', 'photo 4.png', 'photo 5.png',
+          'photo 6.png', 'photo 7.png', 'photo 8.png', 'photo 9.png', 'photo 10.png',
+          'photo 11.png', 'photo 12.png', 'photo 13.png', 'photo 15.png',
+          // Common patterns
           'hero-1.jpg', 'hero-2.jpg', 'hero-3.jpg', 'hero-4.jpg', 'hero-5.jpg',
           'hero-6.jpg', 'hero-7.jpg', 'hero-8.jpg', 'hero-9.jpg', 'hero-10.jpg',
           'hero-11.jpg', 'hero-12.jpg', 'hero-13.jpg', 'hero-14.jpg', 'hero-15.jpg',
-          'hero-01.jpg',
-          'hero-03.jpg',
-          // Add custom hero photo filenames here if they don't match patterns
+          'hero-01.jpg', 'hero-03.jpg',
+          // Add completely custom filenames here (e.g. "my-new-hero.png")
         ];
 
         function setRandomHeroImage() {
             const img = document.getElementById('hero-random-img');
-            if (!img || typeof possibleHeroImages === 'undefined' || !possibleHeroImages.length) {
+            if (!img) return;
+
+            // Build a very broad pool so ANY photo dropped in the Hero folder works
+            // (photo 7.png, my-vacation.jpg, salon-3.png, etc.)
+            let names = possibleHeroImages ? [...possibleHeroImages] : [];
+
+            // Large set of generated patterns (same idea as gallery & specials)
+            for (let i = 1; i <= 30; i++) {
+                names.push(`photo ${i}.jpg`, `photo ${i}.png`);
+                names.push(`photo-${i}.jpg`, `photo-${i}.png`);
+                names.push(`hero-${i}.jpg`, `hero-${i}.png`);
+                names.push(`hero ${i}.jpg`, `hero ${i}.png`);
+                if (i <= 20) {
+                    names.push(`img-${i}.jpg`, `img-${i}.png`);
+                    names.push(`salon-${i}.jpg`, `salon-${i}.png`);
+                    names.push(`reverie-${i}.jpg`, `reverie-${i}.png`);
+                }
+            }
+
+            // Deduplicate
+            const seen = new Set();
+            let candidates = [];
+            for (const n of names) {
+                if (n && !seen.has(n)) {
+                    seen.add(n);
+                    candidates.push(n);
+                }
+            }
+
+            if (candidates.length === 0) {
+                img.src = 'assets/Hero/hero-02.jpg';
                 return;
             }
 
             const validPhotos = [];
-            let pending = possibleHeroImages.length;
+            let pending = candidates.length;
 
             function onDone() {
                 pending--;
@@ -1811,13 +1842,12 @@
                         img.src = chosen.src;
                         img.alt = chosen.alt;
                     } else {
-                        // fallback to initial if nothing loaded
-                        img.src = 'assets/Hero/hero-02.jpg';
+                        img.src = 'assets/Hero/heart nail.png';  // safe fallback that exists
                     }
                 }
             }
 
-            possibleHeroImages.forEach((file) => {
+            candidates.forEach((file) => {
                 const test = new Image();
                 test.onload = () => {
                     validPhotos.push({
@@ -1842,9 +1872,9 @@
                     img.src = chosen.src;
                     img.alt = chosen.alt;
                 } else if (pending > 0) {
-                    img.src = 'assets/Hero/hero-02.jpg';
+                    img.src = 'assets/Hero/heart nail.png';
                 }
-            }, 2000);
+            }, 2500);
         }
 
         // ===== Random Philosophy Image (uses assets/Our Philosophy/philosophy-data.js) =====
@@ -2024,7 +2054,8 @@
                         if (pending === 0) {
                             if (validPhotos.length > 0) {
                                 const chosen = validPhotos[Math.floor(Math.random() * validPhotos.length)];
-                                specialImg.src = `assets/Current Specials/${chosen}`;
+                                const safeChosen = chosen.replace(/ /g, '%20');
+                                specialImg.src = `assets/Current Specials/${safeChosen}`;
                                 specialImg.style.display = '';
                             } else {
                                 specialImg.style.display = 'none';
@@ -2042,7 +2073,8 @@
                             finishSelection();
                         };
                         test.onerror = finishSelection;
-                        test.src = `assets/Current Specials/${file}`;
+                        const safeFile = file.replace(/ /g, '%20');
+                        test.src = `assets/Current Specials/${safeFile}`;
                     });
                 }
             }
