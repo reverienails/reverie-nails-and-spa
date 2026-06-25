@@ -330,6 +330,15 @@
             transition: background-color 700ms ease;
         }
 
+        /* Hide scrollbar on the mobile category pill bar (single-line scroll) */
+        #full-menu > div.sticky div {
+            -ms-overflow-style: none;  /* IE and Edge */
+            scrollbar-width: none;     /* Firefox */
+        }
+        #full-menu > div.sticky div::-webkit-scrollbar {
+            display: none;             /* Chrome, Safari, Opera */
+        }
+
         /* Right side illustration: drink being poured from a shaker.
            Only visible once the gradient transition starts (Non-Alcoholic / .drinks-realm).
            Fades out as you scroll down through the drinks (using --decor-opacity).
@@ -831,12 +840,14 @@
             });
 
             // Build category nav first so it's in the initial DOM for proper hash/anchor scrolling
-            let navHtml = `<div class="sticky top-[80px] bg-[#EDE9E3] z-40 py-4 mb-8 border-b border-[#E5DFD6] -mx-6 px-6">
-                <div class="flex flex-wrap gap-2 max-w-6xl mx-auto">
-                    <a href="#full-menu" class="px-4 py-1.5 text-sm rounded-full bg-white border border-[#E5DFD6] hover:bg-[#F2EDE6] transition-colors">All</a>`;
+            // On mobile: single-line horizontal scroll so it doesn't take vertical space and block menu reading.
+            // On md+: allows wrap if needed.
+            let navHtml = `<div class="sticky top-[80px] bg-[#EDE9E3] z-40 py-3 mb-8 border-b border-[#E5DFD6] -mx-6 px-6">
+                <div class="flex gap-2 max-w-6xl mx-auto overflow-x-auto pb-1 -mx-1 px-1 md:flex-wrap md:overflow-x-visible md:pb-0 md:-mx-0 md:px-0 whitespace-nowrap md:whitespace-normal" style="-ms-overflow-style:none; scrollbar-width:none;">
+                    <a href="#full-menu" class="flex-shrink-0 whitespace-nowrap px-3.5 py-1 text-xs md:text-sm rounded-full bg-white border border-[#E5DFD6] hover:bg-[#F2EDE6] transition-colors">All</a>`;
 
             menuData.categories.forEach(cat => {
-                navHtml += `<a href="#${cat.id}" class="px-4 py-1.5 text-sm rounded-full bg-white border border-[#E5DFD6] hover:bg-[#F2EDE6] transition-colors">${cat.name}</a>`;
+                navHtml += `<a href="#${cat.id}" class="flex-shrink-0 whitespace-nowrap px-3.5 py-1 text-xs md:text-sm rounded-full bg-white border border-[#E5DFD6] hover:bg-[#F2EDE6] transition-colors">${cat.name}</a>`;
             });
 
             navHtml += `</div></div>`;
