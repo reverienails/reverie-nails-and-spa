@@ -17,7 +17,7 @@
 const specialsData = {
   // === CHANGE THIS TO SWITCH THE DISPLAYED SPECIAL ===
   // Use the key of the special you want to show right now (e.g. "basic" or "july4")
-  current: "july4",
+  current: "basic",
 
   specials: {
     "basic": {
