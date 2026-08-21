@@ -1942,6 +1942,10 @@
           'heart nail.png',
           'Every day special.jpg',
           'july4-teaser.png',
+          'instagram give away.jpg',
+          'instagram give away-1.png',
+          'instagram-giveaway.jpg',
+          'giveaway.jpg',
           // Sequential names for multiple photos of the same special
           'special-1.jpg', 'special-2.jpg', 'special-3.jpg', 'special-4.jpg', 'special-5.jpg',
           'special-6.jpg', 'special-7.jpg', 'special-8.jpg', 'special-9.jpg', 'special-10.jpg',
@@ -1972,6 +1976,13 @@
             const description = active ? active.description : '';
             const tag = active ? active.tag : null;
             const specialFolder = active && active.folder ? active.folder + '/' : '';
+            const containImg = active && active.imageFit === 'contain';
+            const imgClass = containImg
+                ? 'w-full h-auto max-h-[420px] object-contain bg-[#F8EEE8]'
+                : 'w-full h-44 md:max-h-[260px] md:h-auto object-cover';
+            const imgWrapClass = containImg
+                ? 'relative md:w-5/12 lg:w-2/5 overflow-hidden rounded-2xl bg-[#F8EEE8]'
+                : 'relative md:w-5/12 lg:w-2/5 md:max-h-[260px] overflow-hidden rounded-2xl';
 
             // Sanitize title for use in alt attribute (strip HTML tags to prevent broken attributes and leakage)
             // Use only the main title text for alt (before any <br> or HTML)
@@ -1991,11 +2002,11 @@
                             </span>
                         </div>
                         <div class="flex flex-col md:flex-row gap-4">
-                            <div class="relative md:w-5/12 lg:w-2/5 md:max-h-[260px] overflow-hidden rounded-2xl">
+                            <div class="${imgWrapClass}">
                                 <img id="specials-random-img" 
                                      src="" 
                                      alt="${plainTitle}" 
-                                     class="w-full h-44 md:max-h-[260px] md:h-auto object-cover">
+                                     class="${imgClass}">
                                 ${tagHtml}
                             </div>
                             <div class="flex-1 p-5 md:p-6">

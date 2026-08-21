@@ -10,8 +10,9 @@ CURRENT SETUP:
 - The site will randomly pick one real photo that exists in that subfolder on load.
 
 FOLDERS RIGHT NOW:
-- basic/          → Military / Teacher / Student Discounts   (current)
-- july4/          → (example for future "Boom Boom Pedicure")
+- give away/      → The Reverie VIP Giveaway   (current)
+- basic/          → Military / Teacher / Student Discounts
+- fourth of jully/ → Fourth of July pedicure (archived)
 
 STEPS TO ADD/CHANGE THE PHOTO:
 1. Put your photo(s) inside the subfolder for the special (e.g. assets/Current Specials/basic/ )

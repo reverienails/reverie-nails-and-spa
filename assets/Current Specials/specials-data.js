@@ -17,9 +17,30 @@
 const specialsData = {
   // === CHANGE THIS TO SWITCH THE DISPLAYED SPECIAL ===
   // Use the key of the special you want to show right now (e.g. "basic" or "july4")
-  current: "basic",
+  current: "giveaway",
 
   specials: {
+    "giveaway": {
+      title: 'The Reverie VIP Giveaway<br><span class="text-base font-normal text-[#B89A94]">One year of luxury nails — three winners</span>',
+      description: `<p class="mb-2">We’re celebrating our community with three exclusive VIP cards. Enter on Instagram for a chance to win a year of luxury nails.</p>
+<ul class="list-disc pl-5 my-2">
+  <li><strong>Grand prize — VIP Gold:</strong> 25% off for 1 year</li>
+  <li><strong>2nd prize — VIP Silver:</strong> 20% off for 1 year</li>
+  <li><strong>3rd prize — VIP Bronze:</strong> 15% off for 6 months</li>
+</ul>
+<p class="mb-1 font-medium text-[#2C2824]">How to enter</p>
+<ul class="list-disc pl-5 my-2">
+  <li>Follow <a class="underline text-[#E85A9C] hover:text-[#2C2824]" href="https://www.instagram.com/reverienailspa" target="_blank" rel="noopener noreferrer">@ReverieNailSpa</a></li>
+  <li>Like the giveaway post</li>
+  <li>Tag friends in the comments — every tagged friend is 1 entry (unlimited)</li>
+  <li>Share to your story and tag us for a bonus entry</li>
+</ul>
+<p class="mt-2">Giveaway closes <strong>August 31, 2026 at 11:59 PM CST</strong>. Winners announced <strong>September 1, 2026</strong> on our Instagram story and page.</p>
+<p class="mt-1"><a class="font-medium underline text-[#E85A9C] hover:text-[#2C2824]" href="https://www.instagram.com/reverienailspa" target="_blank" rel="noopener noreferrer">Enter on Instagram →</a></p>`,
+      tag: 'Giveaway',
+      folder: 'give away',
+      imageFit: 'contain'
+    },
     "basic": {
       title: 'Military • Teacher • Student Discounts',
       description: 'We proudly offer special pricing every day for military, teachers, and students. Just ask for details!',
