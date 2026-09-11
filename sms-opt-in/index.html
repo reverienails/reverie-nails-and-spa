@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Appointment text opt-in • Reverie Nails and Spa</title>
+    <meta name="description" content="How customers opt in to appointment confirmation and reminder texts from Reverie Nail and Spa Inc. at book.reverienailstx.com.">
+    <link rel="icon" href="../assets/logo.png" type="image/png">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link href="https://api.fontshare.com/v2/css?f[]=satoshi@300,400,500,700&amp;display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600&amp;display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Satoshi', system-ui, -apple-system, sans-serif;
+            background-color: #EDE9E3;
+            color: #2C2824;
+        }
+        .section-title {
+            font-family: 'Playfair Display', Georgia, serif;
+            font-weight: 500;
+            letter-spacing: -0.03em;
+            line-height: 1.05;
+        }
+        .nav-link { transition: color 0.2s ease; }
+        .nav-link:hover { color: #E85A9C; }
+        .mock-input {
+            width: 100%;
+            border-radius: 1rem;
+            border: 2px solid #E5DFD6;
+            background: #fff;
+            padding: 0.75rem 1rem;
+            outline: none;
+        }
+        .mock-check {
+            display: flex;
+            align-items: flex-start;
+            gap: 0.75rem;
+            border-radius: 1rem;
+            border: 1px solid #E5DFD6;
+            background: #fff;
+            padding: 0.75rem;
+            font-size: 0.875rem;
+            line-height: 1.45;
+            color: #655C54;
+        }
+        .mock-check input { margin-top: 0.2rem; flex-shrink: 0; }
+        .mock-check a { color: #C84A7E; text-decoration: underline; }
+    </style>
+</head>
+<body class="bg-[#EDE9E3] text-[#2C2824]">
+
+    <nav class="bg-[#EDE9E3]/95 backdrop-blur-lg sticky top-0 z-50 border-b border-[#D9D4CC]">
+        <div class="max-w-6xl mx-auto px-6">
+            <div class="flex justify-between items-center h-20">
+                <a href="../index.html" class="flex items-center gap-x-3">
+                    <img src="../assets/logo.png" alt="Reverie Nails and Spa Logo" class="h-[42px] w-auto object-contain">
+                    <div>
+                        <div class="font-semibold tracking-tight text-xl">Reverie</div>
+                        <div class="text-[10px] text-[#756A62] -mt-1 tracking-[1px]">NAILS AND SPA</div>
+                    </div>
+                </a>
+                <div class="hidden md:flex items-center gap-x-8 text-sm font-medium">
+                    <a href="../index.html#experience" class="nav-link">The Experience</a>
+                    <a href="../index.html#services" class="nav-link">Services</a>
+                    <a href="../index.html#gallery" class="nav-link">Gallery</a>
+                    <a href="../index.html#testimonials" class="nav-link">Community</a>
+                    <a href="../booking.html" class="nav-link">Book</a>
+                </div>
+                <div class="flex items-center gap-x-3">
+                    <a href="../index.html" class="px-5 py-2.5 text-sm font-medium rounded-full border border-[#D4C9BD] hover:bg-white transition-colors">Back to Home</a>
+                    <button id="mobile-menu-btn" class="md:hidden w-10 h-10 flex items-center justify-center text-[#2C2824]" aria-label="Open menu">
+                        <i class="fa-solid fa-bars text-xl"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <div id="mobile-menu" class="hidden md:hidden bg-white border-b">
+        <div class="px-6 py-5 flex flex-col gap-y-4 text-sm font-medium">
+            <a href="../index.html#experience" class="py-1">The Experience</a>
+            <a href="../index.html#services" class="py-1">Services</a>
+            <a href="../index.html#gallery" class="py-1">Gallery</a>
+            <a href="../index.html#testimonials" class="py-1">Community</a>
+            <a href="../booking.html" class="py-1">Book</a>
+            <a href="../privacy.html" class="py-1">Privacy Policy</a>
+            <a href="../terms.html" class="py-1">Terms of Service</a>
+        </div>
+    </div>
+
+    <main class="max-w-3xl mx-auto px-6 py-14">
+        <p class="uppercase tracking-[2px] text-xs font-medium text-[#E85A9C] mb-2">SMS program</p>
+        <h1 class="section-title text-4xl md:text-5xl tracking-tight mb-3">Appointment text opt-in</h1>
+        <p class="text-[#655C54] mb-8">
+            This page shows how customers consent to appointment texts from
+            <strong>Reverie Nail and Spa Inc.</strong> (Reverie Nails and Spa).
+            Reviewers can see the call-to-action without logging into the booking flow.
+        </p>
+
+        <div class="bg-white rounded-3xl border border-[#E5DFD6] p-8 md:p-10 space-y-8">
+            <section>
+                <h2 class="section-title text-2xl mb-3">Where opt-in happens</h2>
+                <p class="text-[#4A433C] leading-relaxed">
+                    On the online booking contact step at
+                    <a class="text-[#C84A7E] underline" href="https://book.reverienailstx.com/book">https://book.reverienailstx.com/book</a>
+                    (“Almost done — your info”), customers enter their name and mobile number.
+                    An optional SMS checkbox appears under the phone field. It starts
+                    <strong>unchecked</strong>. Checking it is not required to finish booking.
+                    If it stays unchecked, we do not send appointment texts for that booking.
+                </p>
+            </section>
+
+            <section>
+                <h2 class="section-title text-2xl mb-3">Checkbox wording (same as booking form)</h2>
+                <p class="text-[#4A433C] leading-relaxed mb-4">
+                    Exact language shown next to the checkbox:
+                </p>
+                <blockquote class="rounded-2xl border border-[#E5DFD6] bg-[#F7F4F0] px-4 py-3 text-sm text-[#4A433C] leading-relaxed">
+                    I agree to receive appointment confirmation and reminder texts from Reverie Nail and Spa. Message frequency varies. Message and data rates may apply. Reply STOP to opt out, HELP for help. Consent is not required to book.
+                    <a class="text-[#C84A7E] underline" href="https://www.reverienailstx.com/privacy">Privacy Policy</a>
+                    |
+                    <a class="text-[#C84A7E] underline" href="https://www.reverienailstx.com/terms">Terms</a>
+                </blockquote>
+            </section>
+
+            <section>
+                <h2 class="section-title text-2xl mb-3">Recreation of the booking phone + consent step</h2>
+                <p class="text-sm text-[#756A62] mb-4">
+                    Visual recreation of the live form. The SMS box is shown unchecked, matching the live default.
+                </p>
+                <div class="rounded-3xl border-2 border-[#E5DFD6] bg-[#FBF9F6] p-5 md:p-6 shadow-sm">
+                    <p class="text-xs font-semibold uppercase tracking-[1.5px] text-[#E85A9C] mb-3">Almost done — your info</p>
+                    <label class="block mb-3">
+                        <span class="mb-1 block text-sm font-medium">Name <span class="text-[#E85A9C]">*</span></span>
+                        <input class="mock-input" type="text" value="" placeholder="Your name" readonly tabindex="-1" aria-label="Name field recreation">
+                    </label>
+                    <label class="block mb-3">
+                        <span class="mb-1 block text-sm font-medium">Phone <span class="text-[#E85A9C]">*</span></span>
+                        <input class="mock-input" type="tel" value="" placeholder="Phone number (10+ digits)" readonly tabindex="-1" aria-label="Phone field recreation">
+                    </label>
+                    <label class="mock-check">
+                        <input type="checkbox" disabled aria-checked="false" aria-label="SMS consent checkbox recreation (unchecked)">
+                        <span>
+                            I agree to receive appointment confirmation and reminder texts from Reverie Nail and Spa. Message frequency varies. Message and data rates may apply. Reply STOP to opt out, HELP for help. Consent is not required to book.
+                            <a href="https://www.reverienailstx.com/privacy">Privacy Policy</a>
+                            |
+                            <a href="https://www.reverienailstx.com/terms">Terms</a>
+                        </span>
+                    </label>
+                    <button type="button" disabled class="mt-4 w-full rounded-full bg-[#C84A7E]/50 px-4 py-3 text-sm font-semibold text-white opacity-60 cursor-not-allowed">
+                        Confirm booking
+                    </button>
+                </div>
+            </section>
+
+            <section>
+                <h2 class="section-title text-2xl mb-3">Screenshot from the live booking form</h2>
+                <p class="text-sm text-[#756A62] mb-4">
+                    Capture of the phone field and unchecked SMS consent checkbox on the live booking portal.
+                </p>
+                <figure class="rounded-2xl border border-[#E5DFD6] overflow-hidden bg-[#F7F4F0]">
+                    <img
+                        src="../assets/legal/booking-sms-opt-in.jpg"
+                        alt="Screenshot of Reverie online booking contact step showing name, phone, and unchecked SMS consent checkbox"
+                        class="w-full h-auto"
+                        width="900"
+                        height="700"
+                    >
+                    <figcaption class="px-4 py-3 text-xs text-[#756A62]">
+                        Live step: “Almost done — your info” on
+                        <a class="text-[#C84A7E] underline" href="https://book.reverienailstx.com/book">book.reverienailstx.com/book</a>
+                    </figcaption>
+                </figure>
+            </section>
+
+            <section class="pt-2 border-t border-[#E5DFD6]">
+                <h2 class="section-title text-2xl mb-3">Related policies</h2>
+                <ul class="list-disc pl-5 text-[#4A433C] space-y-2">
+                    <li><a class="text-[#C84A7E] underline" href="https://www.reverienailstx.com/privacy">Privacy Policy</a></li>
+                    <li><a class="text-[#C84A7E] underline" href="https://www.reverienailstx.com/terms">Terms of Service</a></li>
+                    <li><a class="text-[#C84A7E] underline" href="https://book.reverienailstx.com/book">Online booking</a></li>
+                </ul>
+                <p class="mt-4 text-sm text-[#756A62]">
+                    Business: Reverie Nail and Spa Inc., dba Reverie Nails and Spa,
+                    4613 W Bailey Boswell Rd Ste 101, Saginaw, TX 76179,
+                    <a class="underline" href="tel:6822245688">(682) 224-5688</a>.
+                </p>
+            </section>
+        </div>
+    </main>
+
+    <footer class="bg-[#2C2824] text-[#EDE9E3] py-8">
+        <div class="max-w-6xl mx-auto px-6 text-center text-sm">
+            <p>Reverie Nail and Spa Inc. d/b/a Reverie Nails and Spa • Saginaw, TX • <a href="tel:6822245688" class="hover:text-white transition-colors">(682) 224-5688</a></p>
+            <div class="mt-3 flex justify-center gap-x-4 text-xs text-[#A8A09A]">
+                <a href="../privacy.html" class="hover:text-white">Privacy Policy</a>
+                <span aria-hidden="true">·</span>
+                <a href="../terms.html" class="hover:text-white">Terms of Service</a>
+            </div>
+            <div class="mt-4 flex justify-center gap-x-5 text-lg">
+                <a href="https://www.instagram.com/reverienailspa" target="_blank" rel="noopener noreferrer" class="hover:text-white transition-colors" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+                <a href="https://www.facebook.com/reverienailandspa/" target="_blank" rel="noopener noreferrer" class="hover:text-white transition-colors" aria-label="Facebook"><i class="fa-brands fa-facebook"></i></a>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        const mobileBtn = document.getElementById('mobile-menu-btn');
+        const mobileMenu = document.getElementById('mobile-menu');
+        if (mobileBtn && mobileMenu) {
+            mobileBtn.addEventListener('click', () => {
+                mobileMenu.classList.toggle('hidden');
+                const icon = mobileBtn.querySelector('i');
+                if (icon) {
+                    icon.classList.toggle('fa-bars');
+                    icon.classList.toggle('fa-times');
+                }
+            });
+        }
+    </script>
+</body>
+</html>
