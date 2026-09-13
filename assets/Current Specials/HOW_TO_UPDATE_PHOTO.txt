@@ -10,7 +10,8 @@ CURRENT SETUP:
 - The site will randomly pick one real photo that exists in that subfolder on load.
 
 FOLDERS RIGHT NOW:
-- give away/      → The Reverie VIP Giveaway   (current)
+- fall special/   → The Pumpkin Spice Espresso Martini   (current)
+- give away/      → The Reverie VIP Giveaway (archived)
 - basic/          → Military / Teacher / Student Discounts
 - fourth of jully/ → Fourth of July pedicure (archived)
 

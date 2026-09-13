@@ -17,9 +17,24 @@
 const specialsData = {
   // === CHANGE THIS TO SWITCH THE DISPLAYED SPECIAL ===
   // Use the key of the special you want to show right now (e.g. "basic" or "july4")
-  current: "giveaway",
+  current: "pumpkinSpice",
 
   specials: {
+    "pumpkinSpice": {
+      title: 'The Pumpkin Spice Espresso Martini<br><span class="text-base font-normal text-[#B89A94]">Reason enough to slow down this fall.</span>',
+      description: `<p class="mb-2">Our third espresso martini yet — and maybe the best one. Cinnamon dusted, with a shimmer of gold glitter catching the light across the foam. It's not just a drink, it's your cue to put the day down, sink into the chair, and let us take it from here.</p>
+<p class="mb-1 font-medium text-[#2C2824]">How to try it:</p>
+<ul class="list-disc pl-5 my-2">
+  <li>Walk in anytime we're open — no appointment needed</li>
+  <li>Ask your tech for the Pumpkin Spice Espresso Martini</li>
+  <li>Stay a while: the service, the break, and the drink are all part of it</li>
+</ul>
+<p class="mt-2">Pouring now through December, then we'll pour something new.</p>
+<p class="mt-1"><a class="font-medium underline text-[#E85A9C] hover:text-[#2C2824]" href="#walk-in">Walk in today ›</a></p>`,
+      tag: 'Current Special',
+      folder: 'fall special',
+      imageFit: 'contain'
+    },
     "giveaway": {
       title: 'The Reverie VIP Giveaway<br><span class="text-base font-normal text-[#B89A94]">One year of luxury nails — three winners</span>',
       description: `<p class="mb-2">We’re celebrating our community with three exclusive VIP cards. Enter on Instagram for a chance to win a year of luxury nails.</p>

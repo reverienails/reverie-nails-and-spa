@@ -42,7 +42,7 @@ Use this everywhere unless Joseph says otherwise:
 - Google Posts / Q&A UIs are flaky from automation; try the owner Search dashboard (`Posts`, `Add a post`) or Maps.
 
 ## Site conventions
-- Static HTML + Tailwind CDN. Specials: `assets/Current Specials/specials-data.js` (`current` key + matching subfolder). Images jpg/png only (not PDF). Current special (as of 2026-08): VIP giveaway, folder `give away`, closes Aug 31 2026, winners Sep 1.
+- Static HTML + Tailwind CDN. Specials: `assets/Current Specials/specials-data.js` (`current` key + matching subfolder). Images jpg/png only (not PDF). Current special (as of 2026-09): Pumpkin Spice Espresso Martini, folder `fall special`, through December.
 - Homepage walk-in surfaces: hero badge/CTAs (Call / Directions / Book ahead), trust bar, `#walk-in` block, FAQ + FAQ schema, booking subtitle, hours line. Keep that tone; don’t pile on extra walk-in sentences.
 - Schema URL should be `https://www.reverienailstx.com` (old leftover was `reverienailspa.com`).
 - Push live: commit on `main` and `git push origin main` (GitHub Pages).
