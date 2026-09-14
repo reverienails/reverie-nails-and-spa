@@ -27,7 +27,7 @@ STEPS TO ADD/CHANGE THE PHOTO:
 
 3. Save everything.
 
-4. Hard refresh the browser (Ctrl + Shift + R) on the website.
+4. Hard refresh the browser (Cmd + Shift + R on this Mac) on the website.
 
 The banner will show the title/description from data + a random valid photo from the folder.
 

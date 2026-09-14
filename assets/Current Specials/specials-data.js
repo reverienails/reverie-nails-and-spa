@@ -8,7 +8,7 @@
 // 1. Add or edit specials in the "specials" object below (each has a key like "basic").
 // 2. Set "current" to the key of the special you want right now (e.g. "basic").
 // 3. Each special must have a "folder" that matches its subfolder under assets/Current Specials/.
-// 4. Save and hard refresh the page (Ctrl/Cmd + Shift + R).
+// 4. Save and hard refresh the page (Cmd + Shift + R on this Mac).
 //
 // Photos are automatically pulled from the matching subfolder (basic/, fourth of jully/, etc.).
 // Drop any photo(s) into the subfolder — the site will pick a real one that loads.

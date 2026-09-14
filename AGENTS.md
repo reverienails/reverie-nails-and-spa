@@ -9,7 +9,7 @@ This is the dedicated workspace for the **public salon website**.
 ## Project Overview
 - Project name: reverienailstxWebsiteMGT
 - Live site: https://www.reverienailstx.com (GitHub Pages, repo `reverienails/reverie-nails-and-spa`, branch `main`, CNAME `www.reverienailstx.com`)
-- Local files: `C:\Users\josep\Desktop\reverie-nails` (this folder is the live deploy root — not the nested `website design for reverie nails/` copy)
+- Local files: `/Users/josephina8517/Desktop/Joe's AI /projects/website/reverie-nails-and-spa` (this folder is the live deploy root — not the nested `website design for reverie nails/` copy). This Mac is the primary machine.
 - Goal: Small website updates plus Google/Meta/directory presence, NAP consistency, reviews, specials
 - **Public change rule:** Never publish, post, or edit live Google/Meta/website listings without explicit approval. After Joseph approves a change, enact it without a second confirmation.
 
@@ -28,13 +28,13 @@ Use this everywhere unless Joseph says otherwise:
 - **Joseph personal Google:** `josephanthonyaragon@gmail.com` — manager-side Gmail; **0** Business Profiles on this account. Switch to the salon Gmail for listing edits.
 - **Instagram:** logged in as `reverienailspa` (web edit: https://www.instagram.com/accounts/edit/). Bio is 150-character limited.
 - **Facebook:** `facebook.com/reverienailandspa` — often needs a fresh sign-in after Brave restart.
-- Everyday browser is **Brave** (Default profile). Chrome DevTools MCP uses an empty isolated profile — it will **not** have salon logins.
-- To attach to Brave: fully quit `brave.exe`, clear `User Data\Singleton*`, relaunch with `--remote-debugging-port=9222 --remote-allow-origins=* --user-data-dir="C:\Users\josep\AppData\Local\BraveSoftware\Brave-Browser\User Data" --profile-directory=Default`. Port dies if a normal Brave instance is already running. Sessions sometimes drop on kill.
+- Everyday browser is **Brave** (Default profile) on this Mac.
+- Brave user data: `~/Library/Application Support/BraveSoftware/Brave-Browser`
 
 ## Google Business Profile
 - Public Maps: [Reverie Nails and Spa](https://www.google.com/maps/place/Reverie+Nails+and+Spa/@32.8804623,-97.3937718,17z/data=!3m1!4b1!4m6!3m5!1s0x864ddf68e29a7769:0x66492a7fc21013f8)
 - Owner IDs: `n/1287027436026357857`, `fid=7370468993373574136`
-- Manager UI: https://business.google.com/u/1/locations (salon Gmail)
+- Manager UI: https://business.google.com/locations (salon Gmail; on this Mac it has been `authuser=2`)
 - Second listing on same account: Modified Jewelry - Permanent Jewelry, same street (do not mix them up)
 - Owner planning: **Accepts walk-ins**, **Appointment not required**. Public Maps may still show a Google-inferred “Appointments recommended” chip — that is not the owner toggle.
 - Description should lead with walk-ins, Ste 101, Saginaw, phone, hours.

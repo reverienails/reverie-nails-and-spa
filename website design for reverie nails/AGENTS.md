@@ -5,7 +5,8 @@ This is the dedicated workspace for **Website design for reverie nails**.
 ## Project Overview
 - Project name: Website design for reverie nails
 - Goal: Build a complete, production-ready website
-- Keep all website-related files inside this folder (`C:\Users\josep\Desktop\projects\website design for reverie nails`)
+- This nested folder is **not** the live site. Live deploy root:
+  `/Users/josephina8517/Desktop/Joe's AI /projects/website/reverie-nails-and-spa`
 
 ## General Guidelines
 - Keep the project structure clean and organized (use logical folders: src/, assets/, components/, pages/, styles/, etc.)
