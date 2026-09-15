@@ -44,6 +44,7 @@ Use this everywhere unless Joseph says otherwise:
 ## Site conventions
 - Static HTML + Tailwind CDN. Specials: `assets/Current Specials/specials-data.js` (`current` key + matching subfolder). Images jpg/png only (not PDF). Current special (as of 2026-09): Pumpkin Spice Espresso Martini, folder `fall special`, through December.
 - Homepage walk-in surfaces: hero badge/CTAs (Call / Directions / Book ahead), trust bar, `#walk-in` block, FAQ + FAQ schema, booking subtitle, hours line. Keep that tone; don’t pile on extra walk-in sentences.
+- **Book CTAs stay on this site** (`booking.html` — walk-in/call). Do not send customers to `https://book.reverienailstx.com/book` until Joseph says the booking app is ready. Privacy/terms/sms-opt-in body copy may still name that URL for SMS/A2P; nav Book links on those pages still go to `booking.html`.
 - Schema URL should be `https://www.reverienailstx.com` (old leftover was `reverienailspa.com`).
 - Push live: commit on `main` and `git push origin main` (GitHub Pages).
 
