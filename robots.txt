@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://YOUR_USERNAME.github.io/reverie-nails-and-spa/sitemap.xml
+Sitemap: https://www.reverienailstx.com/sitemap.xml

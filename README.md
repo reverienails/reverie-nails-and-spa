@@ -70,7 +70,7 @@ After changes:
 reverie-nails/
 ├── index.html          # Homepage
 ├── menu.html           # Full menu
-├── booking.html        # Booking placeholder
+├── booking.html        # Redirects to https://book.reverienailstx.com/book
 ├── assets/
 │   ├── Current Specials/
 │   ├── Hero/
