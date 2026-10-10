@@ -17,9 +17,24 @@
 const specialsData = {
   // === CHANGE THIS TO SWITCH THE DISPLAYED SPECIAL ===
   // Use the key of the special you want to show right now (e.g. "basic" or "july4")
-  current: "pumpkinSpice",
+  current: "happyHour",
 
   specials: {
+    "happyHour": {
+      title: 'Your midweek treat, on us ✨<br><span class="text-base font-normal text-[#B89A94]">Slow down, settle in, and make a little time for you 🩷</span>',
+      description: `<p class="mb-2">Enjoy 15% OFF ALL services at Reverie, Monday through Thursday before 3 PM.</p>
+<p class="mb-2">Come take a seat under the chandeliers, sip something good, and get a little pampering in before the afternoon rush. 🥂✨</p>
+<ul class="list-none pl-0 my-2 space-y-1">
+  <li>📅 Monday–Thursday · Before 3 PM</li>
+  <li>💅 15% OFF all services</li>
+  <li>📲 Book online <a class="underline text-[#E85A9C] hover:text-[#2C2824]" href="https://book.reverienailstx.com/book">book.reverienailstx.com/book</a></li>
+  <li>Or give us a call <a class="underline text-[#E85A9C] hover:text-[#2C2824]" href="tel:6822245688">(682) 224-5688</a></li>
+</ul>
+<p class="mt-2 font-medium text-[#2C2824]">Must Show Post to Redeem!!</p>
+<p class="mt-2">Because your week could use a little Reverie ✨</p>`,
+      folder: 'happy hour',
+      imageFit: 'contain'
+    },
     "pumpkinSpice": {
       title: 'The Pumpkin Spice Espresso Martini<br><span class="text-base font-normal text-[#B89A94]">Reason enough to slow down this fall.</span>',
       description: `<p class="mb-2">Our third espresso martini yet — and maybe the best one. Cinnamon dusted, with a shimmer of gold glitter catching the light across the foam. It's not just a drink, it's your cue to put the day down, sink into the chair, and let us take it from here.</p>
