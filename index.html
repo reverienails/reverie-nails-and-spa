@@ -487,9 +487,10 @@
                     </a>
                     
                     <!-- Mobile Menu -->
-                    <button id="mobile-menu-btn"
+                    <button id="mobile-menu-btn" type="button"
                             class="md:hidden w-10 h-10 flex items-center justify-center text-[#2C2824]"
-                            aria-label="Open menu">
+                            aria-label="Open menu"
+                            aria-controls="mobile-menu">
                         <i class="fa-solid fa-bars text-xl" aria-hidden="true"></i>
                     </button>
                 </div>
@@ -748,9 +749,206 @@
                 </a>
             </div>
 
-            <!-- Services Grid - Populated from assets/menu-data.js -->
-            <div id="services-grid" class="grid md:grid-cols-2 lg:grid-cols-3 gap-5">
-                <!-- Content is dynamically generated from menu-data.js -->
+            <!-- When assets/menu-data.js changes, regenerate the HTML inside #services-grid. -->
+            <div id="services-grid" class="grid md:grid-cols-2 lg:grid-cols-3 gap-5" data-prerendered="1">
+<div class="service-card bg-[#F2EDE6] rounded-3xl p-6 border border-[#E5DFD6]">
+                    <div class="flex items-center gap-x-3 mb-5">
+                        <div class="w-11 h-11 flex items-center justify-center bg-white rounded-2xl">
+                            <i class="fa-solid fa-shoe-prints text-[#B89A94] text-2xl"></i>
+                        </div>
+                        <h3 class="text-xl font-medium">Pedicures</h3>
+                    </div>
+                
+                        <div class="relative group">
+                            <div class="space-y-4 text-sm max-h-[420px] overflow-y-auto pr-2 pedicure-scroll">
+                                
+                        <div class="flex justify-between items-start">
+                            <div>
+                                <div class="font-medium">THE CLASSIC</div>
+                                <div class="text-[#756A62] text-xs">30 min treatment • <br>5min massage Toe-tally Basic! Our standard pedicure consists of your general nail care of trimming, cuticle and callus removal along with relaxing hot towels for the feet.</div>
+                            </div>
+                            <div class="font-medium text-right">$30</div>
+                        </div>
+                    
+                        <div class="flex justify-between items-start">
+                            <div>
+                                <div class="font-medium">THE PEPPERMINT</div>
+                                <div class="text-[#756A62] text-xs">40 min treatment • <br>10min massage It’s Mint to be! Cool, soothe, and revive tired feet with this refreshing peppermint pedicure! Includes your general nail care, hydrating leg masque, and paraffin wax.</div>
+                            </div>
+                            <div class="font-medium text-right">$38</div>
+                        </div>
+                    
+                        <div class="flex justify-between items-start">
+                            <div>
+                                <div class="font-medium">THE LAVENDER</div>
+                                <div class="text-[#756A62] text-xs">50 min treatment • <br>15min massage Lavender you long time! This relaxing pedicure will put you at ease. It includes the general nail care, sugar scrub exfoliation, hydrating leg masque, paraffin wax, and hot stones.</div>
+                            </div>
+                            <div class="font-medium text-right">$48</div>
+                        </div>
+                    
+                        <div class="flex justify-between items-start">
+                            <div>
+                                <div class="font-medium">THE MILK &amp; HONEY</div>
+                                <div class="text-[#756A62] text-xs">50 min treatment • <br>15min massage Milk it, Honey! A scrumptious pedicure with a sweet scent of delight includes the general nail care, sugar scrub exfoliation, hydrating leg masque, paraffin wax, and hot stones.</div>
+                            </div>
+                            <div class="font-medium text-right">$48</div>
+                        </div>
+                    
+                        <div class="flex justify-between items-start">
+                            <div>
+                                <div class="font-medium">THE ALOE VERA</div>
+                                <div class="text-[#756A62] text-xs">50 min treatment • <br>15min massage Aloe Gorgeous! This hydrating pedicure will bring moisture right back onto your legs. Using fresh aloe vera’s hydrating properties into a leg masque. It includes the general nail care, sugar scrub exfoliation, hydrating leg masque, paraffin wax, and hot stones.</div>
+                            </div>
+                            <div class="font-medium text-right">$50</div>
+                        </div>
+                    
+                        <div class="flex justify-between items-start">
+                            <div>
+                                <div class="font-medium">THE HAWAIIAN</div>
+                                <div class="text-[#756A62] text-xs">55 min treatment • <br>18min massage Tropic like it's hot! Escape to paradise with this island-inspired pedicure using fresh orange and cucumber. It includes the general nail care, sugar scrub exfoliation, hydrating leg masque, paraffin wax, hot stones.</div>
+                            </div>
+                            <div class="font-medium text-right">$55</div>
+                        </div>
+                    
+                        <div class="flex justify-between items-start">
+                            <div>
+                                <div class="font-medium">THE COLLAGEN CRYSTAL</div>
+                                <div class="text-[#756A62] text-xs">55 min treatment •  Glow big or glow home! A luxury pedicure formulated to relieve stress and rejuvenate the vibrancy of skin producing collagen production to diminish fine lines and wrinkles for a youthful glow. (20min massage)</div>
+                            </div>
+                            <div class="font-medium text-right">$60</div>
+                        </div>
+                    
+                        <div class="flex justify-between items-start">
+                            <div>
+                                <div class="font-medium">THE JELLY SPA</div>
+                                <div class="text-[#756A62] text-xs">60 min treatment •  Get jelly with it! Dip your feet into a warm, plush jelly soak that melts stress away while deeply hydrating the skin. This unique pedicure includes a gentle exfoliation, nourishing mask, and a soothing massage, leaving your legs and feet silky smooth, soft, and glowing with moisture. (22min massage)</div>
+                            </div>
+                            <div class="font-medium text-right">$65</div>
+                        </div>
+                    
+                        <div class="flex justify-between items-start">
+                            <div>
+                                <div class="font-medium">ROSÉ ALL DAY</div>
+                                <div class="text-[#756A62] text-xs">65 min treatment •  Sip, Soak, and Slay! Start off by dipping your feet into a luxe plush pink jelly. Fun and bubbly! Dissolved into a rose scented water bath topped with a scrumptious bath rose petals. Finish with luxurious rose-scented products for a fresh, floral glow. Top it off with a glass of Rosé for a total chic and fun pampering experience! Includes general nail and leg care. (25min massage)</div>
+                            </div>
+                            <div class="font-medium text-right">$75</div>
+                        </div>
+                    
+                        <div class="flex justify-between items-start">
+                            <div>
+                                <div class="font-medium">THE DIAMOND VIP</div>
+                                <div class="text-[#756A62] text-xs">70 min treatment •  Shine bright like this pedi! Indulge in five steps of pure luxury. This radiant experience begins with a Vitamin E-infused soak to soothe and sanitize, followed by a gentle Diamond Sugar Scrub to exfoliate and hydrate dry skin. A detoxifying Diamond Mask draws out impurities for a flawless glow, while our Diamond Serum Massage Oil stimulates circulation and deeply relaxes tired legs. Finish with our ultra-nourishing Diamond Body Butter Cream. Top this pedicure off with a leg steam treatment and candle wax massage. (25min leg steam + 5min hand massage)</div>
+                            </div>
+                            <div class="font-medium text-right">$85</div>
+                        </div>
+                    
+                        <div class="flex justify-between items-start">
+                            <div>
+                                <div class="font-medium">THE RED GLOW</div>
+                                <div class="text-[#756A62] text-xs">70 min treatment •  Red-y, set, glow! Glow deeper and detox stronger with Red Glow. This rejuvenating pedicure begins with activated charcoal-infused products to draw out toxins, cleanse pores, and deeply purify the skin. Followed by LED red light therapy to boost collagen, calm inflammation, and promote cellular renewal. Finished with a hydrating massage and polish of your choice—your feet will feel refreshed, radiant, and renewed. (25min leg massage + 5min hand massage)</div>
+                            </div>
+                            <div class="font-medium text-right">$90</div>
+                        </div>
+                    
+                            </div>
+                            <!-- Hover & hold arrows on right side -->
+                            <div class="pedicure-scroll-controls absolute right-0 top-0 h-full flex flex-col justify-between py-1 z-10 opacity-0 group-hover:opacity-100 transition-opacity">
+                                <button type="button" class="pedicure-scroll-btn-up pedicure-scroll-btn" aria-label="Scroll up">
+                                    <i class="fa-solid fa-chevron-up"></i>
+                                </button>
+                                <button type="button" class="pedicure-scroll-btn-down pedicure-scroll-btn" aria-label="Scroll down">
+                                    <i class="fa-solid fa-chevron-down"></i>
+                                </button>
+                            </div>
+                        </div>
+                        <div class="mt-2 text-[10px] uppercase tracking-[1px] text-[#B89A94]">Hover &amp; hold arrows (or drag) to scroll</div>
+                        <a href="menu.html#pedicures" class="mt-3 inline-flex items-center text-xs font-medium text-[#B89A94] hover:text-[#2C2824] transition-colors">
+                            See full Pedicures &amp; Luxe menu →
+                        </a>
+                    </div><div class="service-card bg-[#F2EDE6] rounded-3xl p-6 border border-[#E5DFD6]">
+                    <div class="flex items-center gap-x-3 mb-5">
+                        <div class="w-11 h-11 flex items-center justify-center bg-white rounded-2xl">
+                            <i class="fa-solid fa-gem text-[#B89A94] text-2xl"></i>
+                        </div>
+                        <h3 class="text-xl font-medium">Nail Services</h3>
+                    </div>
+                <div class="space-y-4 text-sm">
+                        <div class="flex justify-between items-start">
+                            <div>
+                                <div class="font-medium">Manicures</div>
+                                <div class="text-[#756A62] text-xs"> Basic professional care for your natural nails and surrounding skin. Includes shaping, cuticle work, and optional treatment upgrades. Can be paired with Gel, Dip, Acrylics, Builder Gels, or Gel-X.</div>
+                            </div>
+                            
+                        </div>
+                    
+                        <div class="flex justify-between items-start">
+                            <div>
+                                <div class="font-medium">Acrylics</div>
+                                <div class="text-[#756A62] text-xs"> Overlays on natural nails or extensions created using nail tips. Made with colored powder (Solar) and can be finished with gel polish. Extremely strong and excel at longer-than-normal lengths. Fully fillable and ideal for French tips and detailed designs.</div>
+                            </div>
+                            
+                        </div>
+                    
+                        <div class="flex justify-between items-start">
+                            <div>
+                                <div class="font-medium">Dipping Powder</div>
+                                <div class="text-[#756A62] text-xs"> Single-use sets created from dipping powder. Works on both natural nails and artificial extensions. Capable of delivering everything from solid colors and French tips to beautifully designed sets.</div>
+                            </div>
+                            
+                        </div>
+                    
+                        <div class="flex justify-between items-start">
+                            <div>
+                                <div class="font-medium">Builder Gels &amp; Gel-X</div>
+                                <div class="text-[#756A62] text-xs"> A thick, self-leveling gel (Builder Gel) or pre-made soft gel tips (Gel-X) cured under UV/LED light. Offers flexible strength with a more natural feel than acrylic. Ideal for longer nails, especially milky, sheer, or dimensional color techniques that benefit from depth and clarity. Fully fillable.</div>
+                            </div>
+                            
+                        </div>
+                    </div>
+                        <a href="menu.html#nail-services" class="mt-3 inline-flex items-center text-xs font-medium text-[#B89A94] hover:text-[#2C2824] transition-colors">
+                            See full Nail Services menu →
+                        </a>
+                    </div><div class="service-card bg-[#F2EDE6] rounded-3xl p-6 border border-[#E5DFD6]">
+                    <div class="flex items-center gap-x-3 mb-5">
+                        <div class="w-11 h-11 flex items-center justify-center bg-white rounded-2xl">
+                            <i class="fa-solid fa-list text-[#B89A94] text-2xl"></i>
+                        </div>
+                        <h3 class="text-xl font-medium">Other Services</h3>
+                    </div>
+                    <div class="space-y-4 text-sm">
+                        <div class="flex justify-between items-start">
+                            <div>
+                                <div class="font-medium">Reflexology</div>
+                                <div class="text-[#756A62] text-xs"> Therapeutic massage for the feet and hands, plus upper torso. $2 per minute (in addition to the massage included with your service)</div>
+                            </div>
+                            
+                        </div>
+                    
+                        <div class="flex justify-between items-start">
+                            <div>
+                                <div class="font-medium">Waxing</div>
+                                <div class="text-[#756A62] text-xs"> Smooth, precise waxing from face to full body.</div>
+                            </div>
+                            
+                        </div>
+                    
+                        <div class="flex justify-between items-start">
+                            <div>
+                                <div class="font-medium">Lashes</div>
+                                <div class="text-[#756A62] text-xs"> Beautiful individual lash extensions that enhance your natural lashes for a fuller, more dramatic look.</div>
+                            </div>
+                            
+                        </div>
+                    
+                        <div class="flex justify-between items-start">
+                            <div>
+                                <div class="font-medium">Counseling</div>
+                                <div class="text-[#756A62] text-xs"> Complimentary consultation with our talented technicians. Free if you find your person.</div>
+                            </div>
+                            
+                        </div>
+                    </div>
+                </div>
             </div>
 
             <div class="flex justify-center gap-3 mt-8">
@@ -824,7 +1022,7 @@
                     </div>
                     <p class="text-[#2C2824] leading-relaxed">"Always love my experience here! A day one customer. Joe is always great and friendly staff. Trang did her thing on my valentines nails. What do you mean....of course I'll be back. 😊"</p>
                     <div class="mt-5 flex items-center gap-x-3">
-                        <img src="assets/img/review-1-160.webp" width="307" height="160" class="w-9 h-9 rounded-full object-cover" alt="" loading="lazy" decoding="async">
+                        <img src="assets/img/review-1-160.webp" width="307" height="160" class="w-9 h-9 rounded-full object-cover" alt="Photo from Hatimah Doobraj's review" loading="lazy" decoding="async">
                         <div>
                             <div class="font-medium text-sm">Hatimah Doobraj</div>
                             <div class="text-xs text-[#756A62]">3 months ago</div>
@@ -838,7 +1036,7 @@
                     </div>
                     <p class="text-[#2C2824] leading-relaxed">"I have been going to Reverie for several years! It's always very clean, relaxing and a great experience. I love being able to get my nails and toes done at the same time to save me time! They are always accommodating and perform excellent service."</p>
                     <div class="mt-5 flex items-center gap-x-3">
-                        <img src="assets/img/review-2-160.webp" width="528" height="160" class="w-9 h-9 rounded-full object-cover" alt="" loading="lazy" decoding="async">
+                        <img src="assets/img/review-2-160.webp" width="528" height="160" class="w-9 h-9 rounded-full object-cover" alt="Photo from Krista Thomas's review" loading="lazy" decoding="async">
                         <div>
                             <div class="font-medium text-sm">Krista Thomas</div>
                             <div class="text-xs text-[#756A62]">4 months ago</div>
@@ -852,7 +1050,7 @@
                     </div>
                     <p class="text-[#2C2824] leading-relaxed">"Amazing, I have been going to Reverie nail and spa with family and friends for close to 2 years now. The setting is beautiful, the service impeccable. The owner a fun, friendly host who treats each client like a vip. I absolutely love them, each nail tech is kind, well trained and helpful. For our feet we go with Holly a gentle very thorough therapist, for my nails I absolutely love Lam, ..."</p>
                     <div class="mt-5 flex items-center gap-x-3">
-                        <img src="assets/img/review-3-160.webp" width="246" height="160" class="w-9 h-9 rounded-full object-cover" alt="" loading="lazy" decoding="async">
+                        <img src="assets/img/review-3-160.webp" width="246" height="160" class="w-9 h-9 rounded-full object-cover" alt="Photo from Local Guide's review" loading="lazy" decoding="async">
                         <div>
                             <div class="font-medium text-sm">Local Guide</div>
                             <div class="text-xs text-[#756A62]">2 years ago</div>
@@ -1148,7 +1346,9 @@
         // ===== Dynamic Menu Renderer (uses assets/menu-data.js) =====
         function renderServicesMenu() {
             const container = document.getElementById('services-grid');
-            if (!container || typeof menuData === 'undefined') return;
+            if (!container) return;
+            if (container.dataset.prerendered) return;
+            if (typeof menuData === 'undefined') return;
 
             container.innerHTML = '';
 
@@ -1531,6 +1731,7 @@
                     img.src = t.image;
                     if (t.width) img.width = t.width;
                     if (t.height) img.height = t.height;
+                    img.alt = "Photo from " + t.name + "'s review";
                     img.loading = 'lazy';
                     img.decoding = 'async';
                 }
@@ -1653,7 +1854,6 @@
             });
         }
     </script>
-    <script src="assets/menu-data.js"></script>
     <script src="assets/Moments at Reverie/gallery-data.js"></script>
     <script src="assets/Hero/hero-data.js"></script>
     <script src="assets/Current Specials/specials-data.js"></script>
