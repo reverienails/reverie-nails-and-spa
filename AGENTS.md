@@ -9,14 +9,14 @@ This is the dedicated workspace for the **public salon website**.
 ## Project Overview
 - Project name: reverienailstxWebsiteMGT
 - Live site: https://www.reverienailstx.com (GitHub Pages, repo `reverienails/reverie-nails-and-spa`, branch `main`, CNAME `www.reverienailstx.com`)
-- Local files: `/Users/josephina8517/Desktop/Joe's AI /projects/website/reverie-nails-and-spa` (this folder is the live deploy root — not the nested `website design for reverie nails/` copy). This Mac is the primary machine.
+- Local files: `/Users/josephina8517/Desktop/Joe's AI /projects/website/reverie-nails-and-spa` (this folder is the live deploy root). This Mac is the primary machine.
 - Goal: Small website updates plus Google/Meta/directory presence, NAP consistency, reviews, specials
 - **Public change rule:** Never publish, post, or edit live Google/Meta/website listings without explicit approval. After Joseph approves a change, enact it without a second confirmation.
 
 ## Canonical business facts (NAP)
 Use this everywhere unless Joseph says otherwise:
 - **Name:** Reverie Nails and Spa (`Nails` plural)
-- **Address:** 4613 West Bailey Boswell Rd, **Ste 101**, **Saginaw**, TX 76179 (zip is Saginaw; many old listings said Fort Worth)
+- **Address:** 4613 W Bailey Boswell Rd, **Ste 101**, **Saginaw**, TX 76179 (zip is Saginaw; many old listings said Fort Worth)
 - **Phone:** (682) 224-5688
 - **Hours:** Mon–Fri 9:30 AM–7:30 PM · Sat 9:00 AM–7:00 PM · Sun 11:00 AM–6:00 PM
 - **Positioning:** Walk-ins first. No appointment required. Booking is a **plus** (specific tech, skip the wait, get in quicker) — not “highly recommended.”
