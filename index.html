@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Reverie Nails and Spa | Luxury Nail Salon in Saginaw, TX</title>
     <meta name="description" content="Reverie Nails and Spa in Saginaw, TX offers luxury manicures, pedicures, nail art, and relaxing spa services with a warm, community-focused experience. Military, teacher, and student discounts available daily.">
-    <link rel="icon" href="assets/logo.png" type="image/png">
+    <link rel="icon" href="assets/img/favicon-64.png" type="image/png">
     <meta name="keywords" content="nail salon Saginaw TX, manicure Saginaw, pedicure near me, luxury nails Texas, nail art Saginaw, spa services Fort Worth area">
 
     <!-- Open Graph / Social -->
@@ -15,11 +15,13 @@
     <meta property="og:url" content="https://www.reverienailstx.com">
     <meta property="og:image" content="https://www.reverienailstx.com/assets/logo.png">
 
-    <script src="https://cdn.tailwindcss.com"></script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
-    <!-- Satoshi (body) via Fontshare + Playfair Display (headings) -->
-    <link href="https://api.fontshare.com/v2/css?f[]=satoshi@300,400,500,700&amp;display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600&amp;family=Dancing+Script:wght@400;500;600&amp;display=swap" rel="stylesheet">
+    <link rel="preload" href="assets/css/site.css" as="style">
+    <link rel="stylesheet" href="assets/css/fonts.css">
+    <link rel="stylesheet" href="assets/vendor/fontawesome/icons.css">
+    <link rel="preload" as="image" href="assets/img/photo-1-1080.webp" imagesrcset="assets/img/photo-1-400.webp 400w, assets/img/photo-1-800.webp 800w, assets/img/photo-1-1080.webp 1080w" imagesizes="(min-width: 1024px) 470px, (min-width: 768px) 40vw, calc(100vw - 48px)" fetchpriority="high">
+    <link rel="preload" href="assets/fonts/satoshi-400.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="assets/fonts/satoshi-500.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="assets/fonts/playfair-latin.woff2" as="font" type="font/woff2" crossorigin>
     <style>
         :root {
             /* Option 5: Inspired by your actual salon interior (gray/blue/cream + warmth) */
@@ -438,6 +440,7 @@
       ]
     }
     </script>
+    <link rel="stylesheet" href="assets/css/site.css">
 </head>
 <body class="tail-container bg-[#EDE9E3] text-[#2C2824]">
 
@@ -447,9 +450,7 @@
             <div class="flex justify-between items-center h-20">
                 <!-- Logo -->
                 <a href="#" class="flex items-center gap-x-3">
-                    <img src="assets/logo.png" 
-                         alt="Reverie Nails and Spa Logo" 
-                         class="h-[42px] w-auto object-contain">
+                    <img src="assets/img/logo-240.webp" alt="Reverie Nails and Spa Logo" width="240" height="177" class="h-[42px] w-auto object-contain" loading="lazy" decoding="async">
                     <div>
                         <div class="font-semibold tracking-tight text-xl">Reverie</div>
                         <div class="text-[10px] text-[#756A62] -mt-1 tracking-[1px]">NAILS AND SPA</div>
@@ -487,8 +488,9 @@
                     
                     <!-- Mobile Menu -->
                     <button id="mobile-menu-btn"
-                            class="md:hidden w-10 h-10 flex items-center justify-center text-[#2C2824]">
-                        <i class="fa-solid fa-bars text-xl"></i>
+                            class="md:hidden w-10 h-10 flex items-center justify-center text-[#2C2824]"
+                            aria-label="Open menu">
+                        <i class="fa-solid fa-bars text-xl" aria-hidden="true"></i>
                     </button>
                 </div>
             </div>
@@ -563,9 +565,9 @@
 
                         <div class="flex items-center gap-x-6 mt-8 text-sm">
                             <div class="flex -space-x-3">
-                                <div class="w-7 h-7 rounded-full border-2 border-[#EDE9E3] overflow-hidden"><img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=100" class="w-full h-full object-cover"></div>
-                                <div class="w-7 h-7 rounded-full border-2 border-[#EDE9E3] overflow-hidden"><img src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?w=100" class="w-full h-full object-cover"></div>
-                                <div class="w-7 h-7 rounded-full border-2 border-[#EDE9E3] overflow-hidden"><img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=100" class="w-full h-full object-cover"></div>
+                                <div class="w-7 h-7 rounded-full border-2 border-[#EDE9E3] overflow-hidden"><img src="assets/img/avatar-1-160.webp" alt="" width="107" height="160" class="w-full h-full object-cover" loading="lazy" decoding="async"></div>
+                                <div class="w-7 h-7 rounded-full border-2 border-[#EDE9E3] overflow-hidden"><img src="assets/img/avatar-2-160.webp" alt="" width="128" height="160" class="w-full h-full object-cover" loading="lazy" decoding="async"></div>
+                                <div class="w-7 h-7 rounded-full border-2 border-[#EDE9E3] overflow-hidden"><img src="assets/img/avatar-3-160.webp" alt="" width="107" height="160" class="w-full h-full object-cover" loading="lazy" decoding="async"></div>
                             </div>
                             <div class="text-[#756A62]">
                                 <span class="font-medium text-[#2C2824]">400+</span> happy clients this year
@@ -577,18 +579,16 @@
                 <!-- Hero Image -->
                 <div class="md:col-span-5 lg:col-span-5 mt-10 md:mt-0">
                     <div class="relative rounded-3xl overflow-hidden shadow-2xl aspect-[4/3] md:aspect-auto md:h-[520px]">
-                        <!-- 
-                            RANDOM HERO IMAGE
-                            Automatically picks a random photo from the assets/Hero/ folder on every page load.
-                            Drop ANY photo (jpg or png) into the folder — it will be included automatically
-                            on the next load (supports "photo 7.png", "my-shot.jpg", "salon-3.png", etc.).
-
-                            Just save the new file in assets/Hero/ and hard refresh the page.
-                        -->
-                        <img id="hero-random-img" 
-                             src="assets/Hero/photo 1.png" 
-                             alt="Reverie Nails and Spa interior" 
-                             class="w-full h-full object-cover">
+                        <!-- Random hero photo from the list in assets/Hero/hero-data.js -->
+                        <img id="hero-random-img"
+                             src="assets/img/photo-1-1080.webp"
+                             srcset="assets/img/photo-1-400.webp 400w, assets/img/photo-1-800.webp 800w, assets/img/photo-1-1080.webp 1080w"
+                             sizes="(min-width: 1024px) 470px, (min-width: 768px) 40vw, calc(100vw - 48px)"
+                             width="1080"
+                             height="1350"
+                             alt="Reverie Nails and Spa interior"
+                             class="w-full h-full object-cover"
+                             fetchpriority="high">
                         <div class="absolute inset-0 bg-gradient-to-t from-black/30 to-transparent"></div>
                     </div>
                 </div>
@@ -683,10 +683,16 @@
             <!-- Right Column - Image -->
             <div class="md:col-span-6 mt-10 md:mt-0">
                 <div class="image-container rounded-3xl overflow-hidden shadow-xl aspect-[16/12]">
-                    <img id="philosophy-img" 
-                         src="assets/Our Philosophy/studio-1.jpg" 
+                    <img id="philosophy-img"
+                         src="assets/img/salon-interior-1600.webp"
+                         srcset="assets/img/salon-interior-400.webp 400w, assets/img/salon-interior-800.webp 800w, assets/img/salon-interior-1600.webp 1600w"
+                         sizes="(min-width: 768px) 50vw, 100vw"
+                         width="1600"
+                         height="1200"
                          alt="Warm and inviting interior of Reverie Nails and Spa"
-                         class="w-full h-full object-cover">
+                         class="w-full h-full object-cover"
+                         loading="lazy"
+                         decoding="async">
                 </div>
                 <p class="text-center text-xs text-[#756A62] mt-3 italic">Our studio was designed to feel like a second home</p>
             </div>
@@ -797,7 +803,7 @@
         </div>
 
         <div id="gallery-grid" class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-3">
-            <!-- Always shows 8 photos randomly selected from the Moments at Reverie folder. Drop a new photo with a common name (photo 9.jpg, gallery-16.jpg, etc.) and hard refresh (it auto-detects). -->
+            <!-- Eight random photos from assets/Moments at Reverie/gallery-data.js -->
         </div>
     </section>
 
@@ -818,7 +824,7 @@
                     </div>
                     <p class="text-[#2C2824] leading-relaxed">"Always love my experience here! A day one customer. Joe is always great and friendly staff. Trang did her thing on my valentines nails. What do you mean....of course I'll be back. 😊"</p>
                     <div class="mt-5 flex items-center gap-x-3">
-                        <img src="assets/Real Voices from Our Community/review 1.jpg" class="w-9 h-9 rounded-full object-cover" alt="">
+                        <img src="assets/img/review-1-160.webp" width="307" height="160" class="w-9 h-9 rounded-full object-cover" alt="" loading="lazy" decoding="async">
                         <div>
                             <div class="font-medium text-sm">Hatimah Doobraj</div>
                             <div class="text-xs text-[#756A62]">3 months ago</div>
@@ -832,7 +838,7 @@
                     </div>
                     <p class="text-[#2C2824] leading-relaxed">"I have been going to Reverie for several years! It's always very clean, relaxing and a great experience. I love being able to get my nails and toes done at the same time to save me time! They are always accommodating and perform excellent service."</p>
                     <div class="mt-5 flex items-center gap-x-3">
-                        <img src="assets/Real Voices from Our Community/review 2.jpg" class="w-9 h-9 rounded-full object-cover" alt="">
+                        <img src="assets/img/review-2-160.webp" width="528" height="160" class="w-9 h-9 rounded-full object-cover" alt="" loading="lazy" decoding="async">
                         <div>
                             <div class="font-medium text-sm">Krista Thomas</div>
                             <div class="text-xs text-[#756A62]">4 months ago</div>
@@ -846,7 +852,7 @@
                     </div>
                     <p class="text-[#2C2824] leading-relaxed">"Amazing, I have been going to Reverie nail and spa with family and friends for close to 2 years now. The setting is beautiful, the service impeccable. The owner a fun, friendly host who treats each client like a vip. I absolutely love them, each nail tech is kind, well trained and helpful. For our feet we go with Holly a gentle very thorough therapist, for my nails I absolutely love Lam, ..."</p>
                     <div class="mt-5 flex items-center gap-x-3">
-                        <img src="assets/Real Voices from Our Community/review 3.jpg" class="w-9 h-9 rounded-full object-cover" alt="">
+                        <img src="assets/img/review-3-160.webp" width="246" height="160" class="w-9 h-9 rounded-full object-cover" alt="" loading="lazy" decoding="async">
                         <div>
                             <div class="font-medium text-sm">Local Guide</div>
                             <div class="text-xs text-[#756A62]">2 years ago</div>
@@ -963,9 +969,9 @@
                     <div class="mt-9">
                         <div class="uppercase tracking-[2px] text-xs text-[#B89A94] mb-3">Follow Us</div>
                         <div class="flex gap-x-5 text-lg">
-                            <a href="https://www.instagram.com/reverienailspa?igsh=emgwNTVnZmV0eHlm&utm_source=qr" target="_blank" rel="noopener noreferrer" class="hover:text-white"><i class="fa-brands fa-instagram"></i></a>
-                            <a href="https://www.facebook.com/reverienailandspa/" target="_blank" rel="noopener noreferrer" class="hover:text-white"><i class="fa-brands fa-facebook"></i></a>
-                            <a href="https://www.google.com/maps/search/?api=1&query=Reverie+Nails+and+Spa%2C+4613+W+Bailey+Boswell+Rd%2C+Ste+101%2C+Saginaw%2C+TX+76179" target="_blank" rel="noopener noreferrer" class="hover:text-white"><i class="fa-brands fa-google"></i></a>
+                            <a href="https://www.instagram.com/reverienailspa?igsh=emgwNTVnZmV0eHlm&utm_source=qr" target="_blank" rel="noopener noreferrer" class="hover:text-white" aria-label="Instagram"><i class="fa-brands fa-instagram" aria-hidden="true"></i></a>
+                            <a href="https://www.facebook.com/reverienailandspa/" target="_blank" rel="noopener noreferrer" class="hover:text-white" aria-label="Facebook"><i class="fa-brands fa-facebook" aria-hidden="true"></i></a>
+                            <a href="https://www.google.com/maps/search/?api=1&query=Reverie+Nails+and+Spa%2C+4613+W+Bailey+Boswell+Rd%2C+Ste+101%2C+Saginaw%2C+TX+76179" target="_blank" rel="noopener noreferrer" class="hover:text-white" aria-label="Google"><i class="fa-brands fa-google" aria-hidden="true"></i></a>
                         </div>
                         <p class="mt-2 text-xs">@reverienailspa</p>
                     </div>
@@ -1131,7 +1137,6 @@
         window.onload = function() {
             init();
             initFlyingWords();
-            setRandomHeroImage();
             renderPhilosophyImage();
             renderSpecialsBanner();
             renderTestimonials();
@@ -1487,119 +1492,20 @@
         // Drop a photo in the folder, add its name to the array there, save, hard refresh.
         // No large list needed in this file anymore.
 
-        // ===== Random Hero Image =====
-        // Automatically picks ONE random photo from the assets/Hero/ folder on every page load.
-        // Drop ANY photo (jpg/png) into the folder — common names like "photo 5.png", "hero-3.jpg",
-        // "salon-interior.png" etc. are auto-supported. No need to edit lists for most cases.
-        const possibleHeroImages = [
-          'hero-02.jpg',
-          'heart nail.png',
-          // Current photos in the folder (for safety)
-          'photo 1.png', 'photo 2.png', 'photo 3.png', 'photo 4.png', 'photo 5.png',
-          'photo 6.png', 'photo 7.png', 'photo 8.png', 'photo 9.png', 'photo 10.png',
-          'photo 11.png', 'photo 12.png', 'photo 13.png', 'photo 15.png',
-          // Common patterns
-          'hero-1.jpg', 'hero-2.jpg', 'hero-3.jpg', 'hero-4.jpg', 'hero-5.jpg',
-          'hero-6.jpg', 'hero-7.jpg', 'hero-8.jpg', 'hero-9.jpg', 'hero-10.jpg',
-          'hero-11.jpg', 'hero-12.jpg', 'hero-13.jpg', 'hero-14.jpg', 'hero-15.jpg',
-          'hero-01.jpg', 'hero-03.jpg',
-          // Add completely custom filenames here (e.g. "my-new-hero.png")
-        ];
-
-        function setRandomHeroImage() {
-            const img = document.getElementById('hero-random-img');
-            if (!img) return;
-
-            // Build a very broad pool so ANY photo dropped in the Hero folder works
-            // (photo 7.png, my-vacation.jpg, salon-3.png, etc.)
-            let names = possibleHeroImages ? [...possibleHeroImages] : [];
-
-            // Large set of generated patterns (same idea as gallery & specials)
-            for (let i = 1; i <= 30; i++) {
-                names.push(`photo ${i}.jpg`, `photo ${i}.png`);
-                names.push(`photo-${i}.jpg`, `photo-${i}.png`);
-                names.push(`hero-${i}.jpg`, `hero-${i}.png`);
-                names.push(`hero ${i}.jpg`, `hero ${i}.png`);
-                if (i <= 20) {
-                    names.push(`img-${i}.jpg`, `img-${i}.png`);
-                    names.push(`salon-${i}.jpg`, `salon-${i}.png`);
-                    names.push(`reverie-${i}.jpg`, `reverie-${i}.png`);
-                }
-            }
-
-            // Deduplicate
-            const seen = new Set();
-            let candidates = [];
-            for (const n of names) {
-                if (n && !seen.has(n)) {
-                    seen.add(n);
-                    candidates.push(n);
-                }
-            }
-
-            if (candidates.length === 0) {
-                img.src = 'assets/Hero/hero-02.jpg';
-                return;
-            }
-
-            const validPhotos = [];
-            let pending = candidates.length;
-
-            function onDone() {
-                pending--;
-                if (pending <= 0) {
-                    if (validPhotos.length > 0) {
-                        const randomIndex = Math.floor(Math.random() * validPhotos.length);
-                        const chosen = validPhotos[randomIndex];
-                        img.src = chosen.src;
-                        img.alt = chosen.alt;
-                    } else {
-                        img.src = 'assets/Hero/heart nail.png';  // safe fallback that exists
-                    }
-                }
-            }
-
-            candidates.forEach((file) => {
-                const test = new Image();
-                test.onload = () => {
-                    validPhotos.push({
-                        src: `assets/Hero/${file}`,
-                        alt: file
-                            .replace(/\.[^/.]+$/, '')
-                            .replace(/[-_]/g, ' ')
-                            .replace(/\s+/g, ' ')
-                            .trim()
-                    });
-                    onDone();
-                };
-                test.onerror = onDone;
-                test.src = `assets/Hero/${file}`;
-            });
-
-            // safety timeout
-            setTimeout(() => {
-                if (pending > 0 && validPhotos.length > 0) {
-                    const randomIndex = Math.floor(Math.random() * validPhotos.length);
-                    const chosen = validPhotos[randomIndex];
-                    img.src = chosen.src;
-                    img.alt = chosen.alt;
-                } else if (pending > 0) {
-                    img.src = 'assets/Hero/heart nail.png';
-                }
-            }, 2500);
-        }
-
         // ===== Random Philosophy Image (uses assets/Our Philosophy/philosophy-data.js) =====
         // Picks one photo at random on every page load for the image in the Our Philosophy section.
         function renderPhilosophyImage() {
             const img = document.getElementById('philosophy-img');
             if (!img || typeof philosophyImages === 'undefined' || !philosophyImages.length) return;
 
-            const randomIndex = Math.floor(Math.random() * philosophyImages.length);
-            const chosen = philosophyImages[randomIndex];
-
+            const chosen = philosophyImages[Math.floor(Math.random() * philosophyImages.length)];
             img.src = chosen.src;
+            if (chosen.srcset) img.srcset = chosen.srcset;
+            if (chosen.width) img.width = chosen.width;
+            if (chosen.height) img.height = chosen.height;
             img.alt = chosen.alt;
+            img.loading = 'lazy';
+            img.decoding = 'async';
         }
 
         // ===== Random Testimonials (uses assets/Real Voices from Our Community/testimonials-data.js) =====
@@ -1621,48 +1527,19 @@
                 const nameEl = card.querySelector('.font-medium.text-sm');
                 const dateEl = card.querySelector('.text-xs.text-\\[\\#756A62\\]');
 
-                if (img) img.src = t.image;
+                if (img) {
+                    img.src = t.image;
+                    if (t.width) img.width = t.width;
+                    if (t.height) img.height = t.height;
+                    img.loading = 'lazy';
+                    img.decoding = 'async';
+                }
                 if (quoteP) quoteP.textContent = t.quote;
                 if (nameEl) nameEl.textContent = t.name;
                 if (dateEl) dateEl.textContent = t.date;
             }
         }
 
-        // ===== Specials Banner - Random Photo from the Current Specials folder =====
-        // The banner shows one current special (title + description stay the same).
-        // List of possible image filenames the Current Specials banner will try.
-        // Photos can now live in subfolders per special (e.g. assets/Current Specials/basic/ or /july4/).
-        // Drop files into the subfolder for that special.
-        // The code will look for matching names inside the active special's folder.
-        //
-        // Recommended naming inside each subfolder:
-        //   special.jpg
-        //   special-1.jpg, special-2.jpg ... (add as many as you want)
-        const possibleSpecialImages = [
-          'special.jpg',
-          'special.png',
-          'special.jpeg',
-          'special.webp',
-          'heart nail.png',
-          'Every day special.jpg',
-          'july4-teaser.png',
-          'instagram give away.jpg',
-          'instagram give away-1.png',
-          'instagram-giveaway.jpg',
-          'giveaway.jpg',
-          'pumpkin-spice-espresso-martini.png',
-          'happy-hour.png',
-          // Sequential names for multiple photos of the same special
-          'special-1.jpg', 'special-2.jpg', 'special-3.jpg', 'special-4.jpg', 'special-5.jpg',
-          'special-6.jpg', 'special-7.jpg', 'special-8.jpg', 'special-9.jpg', 'special-10.jpg',
-          'special-11.jpg', 'special-12.jpg', 'special-13.jpg', 'special-14.jpg', 'special-15.jpg',
-          // Add any completely custom filenames below if you don't want to follow the naming above
-        ];
-
-        // ===== Specials Banner - Random Photo from the Current Specials folder =====
-        // The banner shows the current special's text (title + description from specials-data.js).
-        // The photo is chosen randomly from any matching image files that exist in the folder.
-        // No need to list photos in the data file.
         function renderSpecialsBanner() {
             const container = document.getElementById('specials-banner');
             if (!container || typeof specialsData === 'undefined') return;
@@ -1709,10 +1586,14 @@
                         </div>
                         <div class="flex flex-col md:flex-row gap-4">
                             <div class="${imgWrapClass}">
-                                <img id="specials-random-img" 
-                                     src="" 
-                                     alt="${plainTitle}" 
-                                     class="${imgClass}">
+                                <img id="specials-random-img"
+                                     src="${active.image || ''}"
+                                     width="${active.imageWidth || ''}"
+                                     height="${active.imageHeight || ''}"
+                                     alt="${plainTitle}"
+                                     class="${imgClass}"
+                                     loading="lazy"
+                                     decoding="async">
                                 ${tagHtml}
                             </div>
                             <div class="flex-1 p-5 md:p-6">
@@ -1740,214 +1621,36 @@
 
             container.innerHTML = html;
 
-            // After the banner is in the DOM, pick a random photo that actually exists in the folder.
-            // Uses preload (same reliable pattern as the gallery) so only valid files are chosen.
-            // Broad candidate generation means you can drop almost any photo into the subfolder.
-            const specialImg = document.getElementById('specials-random-img');
-            if (specialImg) {
-                // Start from the explicit list (supports custom names like "Every day special.jpg")
-                let names = possibleSpecialImages ? [...possibleSpecialImages] : [];
-
-                // Add lots of flexible patterns so dropping new photos "just works"
-                for (let i = 1; i <= 25; i++) {
-                    names.push(`special-${i}.jpg`, `special-${i}.png`, `special-${i}.jpeg`);
-                    names.push(`photo ${i}.jpg`, `photo ${i}.png`);
-                    if (i <= 15) {
-                        names.push(`promo.jpg`, `promo.png`, `offer.jpg`, `offer.png`);
-                        names.push(`specials.jpg`, `specials.png`, `deal.jpg`, `deal.png`);
-                        names.push(`photo-${i}.jpg`, `photo-${i}.png`);
-                        names.push(`img-${i}.jpg`, `img-${i}.png`);
-                    }
-                }
-
-                // Prefix with active special's subfolder + dedupe
-                const seen = new Set();
-                let photoCandidates = [];
-                for (const n of names) {
-                    if (!n) continue;
-                    const prefixed = specialFolder + n;
-                    if (!seen.has(prefixed)) {
-                        seen.add(prefixed);
-                        photoCandidates.push(prefixed);
-                    }
-                }
-
-                if (photoCandidates.length === 0) {
-                    specialImg.style.display = 'none';
-                } else {
-                    const validPhotos = [];
-                    let pending = photoCandidates.length;
-
-                    function finishSelection() {
-                        pending--;
-                        if (pending === 0) {
-                            if (validPhotos.length > 0) {
-                                const chosen = validPhotos[Math.floor(Math.random() * validPhotos.length)];
-                                specialImg.src = `assets/Current Specials/${chosen}`;
-                                specialImg.style.display = '';
-                            } else {
-                                specialImg.style.display = 'none';
-                            }
-                        }
-                    }
-
-                    // Clear initial src (prevents flash of missing root special.jpg)
-                    specialImg.src = '';
-
-                    photoCandidates.forEach((file) => {
-                        const test = new Image();
-                        test.onload = () => {
-                            validPhotos.push(file);
-                            finishSelection();
-                        };
-                        test.onerror = finishSelection;
-                        test.src = `assets/Current Specials/${file}`;
-                    });
-                }
-            }
         }
 
         function renderGallery() {
             const container = document.getElementById('gallery-grid');
-            if (!container) return;
+            if (!container || typeof galleryImages === 'undefined' || !galleryImages.length) return;
 
             container.innerHTML = '';
-
-            // Build a broad pool of candidate filenames so that "just drop the photo in the folder"
-            // works for common naming patterns (no edit needed for photo 9.jpg, gallery-16.jpg, etc.).
-            let names = [];
-
-            // 1. Any filenames the user explicitly listed in gallery-data.js (for custom/unique names)
-            if (typeof galleryImages !== 'undefined' && Array.isArray(galleryImages)) {
-                names = galleryImages.filter(item => typeof item === 'string' && item.length > 0);
+            const shuffled = shuffleArray([...galleryImages]);
+            let picks = shuffled.slice(0, 8);
+            while (picks.length < 8 && shuffled.length) {
+                picks = picks.concat(shuffled).slice(0, 8);
             }
 
-            // 2. Large set of generated common patterns (covers the "photo N.jpg" naming you're using + others)
-            for (let i = 1; i <= 40; i++) {
-                names.push(`photo ${i}.jpg`, `photo ${i}.png`);
-                names.push(`gallery-${i}.jpg`, `gallery-${i}.png`);
-                if (i <= 30) {
-                    names.push(`moment-${i}.jpg`, `moment-${i}.png`);
-                }
-                if (i <= 20) {
-                    names.push(`photo-${i}.jpg`, `photo-${i}.png`);
-                    names.push(`img-${i}.jpg`, `img-${i}.png`);
-                    names.push(`reverie-${i}.jpg`, `reverie-${i}.png`);
-                    names.push(`salon-${i}.jpg`, `salon-${i}.png`);
-                    names.push(`nail-${i}.jpg`, `nail-${i}.png`);
-                }
-            }
-
-            // Deduplicate (keep order so explicit data list entries are preferred first)
-            const seen = new Set();
-            const candidates = [];
-            for (const n of names) {
-                if (!seen.has(n)) {
-                    seen.add(n);
-                    candidates.push(n);
-                }
-            }
-
-            if (candidates.length === 0) return;
-
-            const numSlots = 8;
-            const imgElements = [];
-
-            // Create the 8 visual slots
-            for (let i = 0; i < numSlots; i++) {
+            picks.forEach((photo, i) => {
                 const div = document.createElement('div');
-                let className = 'image-container aspect-[4/3] rounded-2xl overflow-hidden';
-                if (i === 7) className += ' hidden lg:block';
-                div.className = className;
+                div.className = 'image-container aspect-[4/3] rounded-2xl overflow-hidden' + (i === 7 ? ' hidden lg:block' : '');
 
                 const img = document.createElement('img');
                 img.className = 'w-full h-full object-cover';
+                img.src = photo.src;
+                img.srcset = photo.srcset;
+                img.sizes = '(min-width: 1024px) 270px, (min-width: 768px) 33vw, 50vw';
+                img.width = photo.width;
+                img.height = photo.height;
+                img.alt = photo.alt;
                 img.loading = 'lazy';
-                img.src = '';
-
+                img.decoding = 'async';
                 div.appendChild(img);
                 container.appendChild(div);
-                imgElements.push(img);
-            }
-
-            // Randomly assign real photos from the folder to the 8 slots.
-            // Uses the big candidate pool + retry-on-error so only files that actually exist are shown.
-            // This is what lets you drop new photos (with common names) and have them appear without editing lists.
-            // Preload candidates to discover only the real files that exist in the folder.
-            // Then fill all 8 slots from the successful loads (cycling if needed).
-            const validPhotos = [];
-            let pending = candidates.length;
-
-            function onDone() {
-                pending--;
-                if (pending <= 0) {
-                    assignValidPhotos();
-                }
-            }
-
-            function getCleanAlt(filename) {
-                let name = filename.replace(/\.[^/.]+$/, '');
-                name = name.replace(/[-_]/g, ' ').replace(/\s+/g, ' ').trim();
-                if (name.length > 0) name = name.charAt(0).toUpperCase() + name.slice(1);
-                return name + ' at Reverie Nails and Spa';
-            }
-
-            candidates.forEach((file) => {
-                const test = new Image();
-                test.onload = () => {
-                    validPhotos.push({
-                        src: `assets/Moments at Reverie/${file}`,
-                        alt: getCleanAlt(file)
-                    });
-                    onDone();
-                };
-                test.onerror = onDone;
-                test.src = `assets/Moments at Reverie/${file}`;
             });
-
-            function assignValidPhotos() {
-                if (validPhotos.length === 0) return;
-
-                const shuffled = shuffleArray(validPhotos);
-
-                // Always 8 slots: cycle the real photos.
-                let toAssign = shuffled.slice(0, 8);
-                while (toAssign.length < 8 && shuffled.length > 0) {
-                    toAssign = toAssign.concat(shuffled);
-                    toAssign = toAssign.slice(0, 8);
-                }
-
-                imgElements.forEach((imgEl, idx) => {
-                    const p = toAssign[idx];
-                    if (p) {
-                        imgEl.src = p.src;
-                        imgEl.alt = p.alt;
-                    } else {
-                        imgEl.style.display = 'none';
-                    }
-                });
-            }
-
-            setTimeout(() => {
-                if (pending > 0) assignValidPhotos();
-            }, 2500);
-
-            function getCleanAlt(filename) {
-                let name = filename.replace(/\.[^/.]+$/, '');
-                name = name.replace(/[-_]/g, ' ').replace(/\s+/g, ' ').trim();
-                if (name.length > 0) name = name.charAt(0).toUpperCase() + name.slice(1);
-                return name + ' at Reverie Nails and Spa';
-            }
-
-        }
-
-        function getCleanAlt(filename) {
-            let name = filename.replace(/\.[^/.]+$/, '');
-            name = name.replace(/[-_]/g, ' ').replace(/\s+/g, ' ').trim();
-            if (name.length > 0) {
-                name = name.charAt(0).toUpperCase() + name.slice(1);
-            }
-            return name + ' at Reverie Nails and Spa';
         }
     </script>
     <script src="assets/menu-data.js"></script>

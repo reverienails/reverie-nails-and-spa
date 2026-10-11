@@ -13,14 +13,12 @@ A warm, luxurious, community-focused static website for Reverie Nails and Spa in
 ## How to Update Content (No Coding Needed)
 
 ### Photos (Hero, Gallery, Specials, Philosophy)
-Just drop new images into the correct folders. The site automatically finds and uses real photos:
+Photos are the WebP files in `assets/img/`. Add a new one there, then add it to the list:
 
-- **Hero image** → `assets/Hero/`
-- **Current Specials** → `assets/Current Specials/basic/` (or other special folders)
-- **Gallery** ("A glimpse inside") → `assets/Moments at Reverie/`
-- **Philosophy / Studio** → `assets/Our Philosophy/`
-
-Recommended names: `photo 1.png`, `special.jpg`, `promo.png`, etc. (many patterns are supported automatically).
+- **Hero** → `assets/Hero/hero-data.js`
+- **Gallery** → `assets/Moments at Reverie/gallery-data.js`
+- **Current special** → `image` on that special in `assets/Current Specials/specials-data.js`
+- **Philosophy** → `assets/Our Philosophy/philosophy-data.js`
 
 ### Switch the Current Special
 Edit `assets/Current Specials/specials-data.js`:

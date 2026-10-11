@@ -10,9 +10,8 @@
 // 3. Each special must have a "folder" that matches its subfolder under assets/Current Specials/.
 // 4. Save and hard refresh the page (Cmd + Shift + R on this Mac).
 //
-// Photos are automatically pulled from the matching subfolder (basic/, fourth of jully/, etc.).
-// Drop any photo(s) into the subfolder — the site will pick a real one that loads.
-// No need to list filenames here.
+// Each special has an image in assets/img/. Set image, imageWidth, and imageHeight
+// when you change the art. The page does not guess filenames.
 
 const specialsData = {
   // === CHANGE THIS TO SWITCH THE DISPLAYED SPECIAL ===
@@ -33,6 +32,9 @@ const specialsData = {
 <p class="mt-2 font-medium text-[#2C2824]">Must Show Post to Redeem!!</p>
 <p class="mt-2">Because your week could use a little Reverie ✨</p>`,
       folder: 'happy hour',
+      image: 'assets/img/special-happy-hour-800.webp',
+      imageWidth: 800,
+      imageHeight: 800,
       imageFit: 'contain'
     },
     "pumpkinSpice": {
@@ -48,6 +50,9 @@ const specialsData = {
 <p class="mt-1"><a class="font-medium underline text-[#E85A9C] hover:text-[#2C2824]" href="#walk-in">Walk in today ›</a></p>`,
       tag: 'Current Special',
       folder: 'fall special',
+      image: 'assets/img/special-pumpkin-spice-800.webp',
+      imageWidth: 800,
+      imageHeight: 1035,
       imageFit: 'contain'
     },
     "giveaway": {
@@ -69,13 +74,19 @@ const specialsData = {
 <p class="mt-1"><a class="font-medium underline text-[#E85A9C] hover:text-[#2C2824]" href="https://www.instagram.com/reverienailspa" target="_blank" rel="noopener noreferrer">Enter on Instagram →</a></p>`,
       tag: 'Giveaway',
       folder: 'give away',
+      image: 'assets/img/special-giveaway-800.webp',
+      imageWidth: 800,
+      imageHeight: 1035,
       imageFit: 'contain'
     },
     "basic": {
       title: 'Military • Teacher • Student Discounts',
       description: 'We proudly offer special pricing every day for military, teachers, and students. Just ask for details!',
-      tag: 'Everyday',           // optional - remove line if no tag
-      folder: 'basic'            // photos in assets/Current Specials/basic/
+      tag: 'Everyday',
+      folder: 'basic',
+      image: 'assets/img/special-everyday-800.webp',
+      imageWidth: 800,
+      imageHeight: 537
     },
     "july4": {
       title: 'Stars, Stripes & Sparkle Pedicure<br><span class="text-base font-normal text-[#B89A94]">(Limited time: June 26 – July 4)</span>',
@@ -92,7 +103,10 @@ const specialsData = {
 
 <p class="mt-1"><strong>Book your spot now while availability lasts. Walk-ins welcome!</strong></p>`,
       tag: 'Limited Time',
-      folder: 'fourth of jully'   // photos in assets/Current Specials/fourth of jully/
+      folder: 'fourth of jully',
+      image: 'assets/img/special-july4-800.webp',
+      imageWidth: 800,
+      imageHeight: 1000
     }
     // Add more like "spring", "fall", "holiday" etc.
   },

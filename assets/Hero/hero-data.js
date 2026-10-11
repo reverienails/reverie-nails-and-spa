@@ -1,11 +1,130 @@
-// Hero images for the main homepage hero section.
-// A random photo from the assets/Hero/ folder is chosen automatically on every page load.
-//
-// DROP ANY PHOTO INTO THE FOLDER:
-// It will show up randomly. Common names (photo 1.png, hero-5.jpg, salon-interior.png, etc.)
-// are supported automatically.
-//
-// See the setRandomHeroImage() logic + possibleHeroImages list in index.html for details.
-// This file is kept only for compatibility (no longer needed for the list).
+// Real hero photos. One is chosen at random on each visit.
+const heroImages = [
+  {
+    src: 'assets/img/photo-1-1080.webp',
+    srcset: 'assets/img/photo-1-400.webp 400w, assets/img/photo-1-800.webp 800w, assets/img/photo-1-1080.webp 1080w',
+    width: 1080,
+    height: 1350,
+    alt: 'Photo 1 at Reverie Nails and Spa'
+  },
+  {
+    src: 'assets/img/photo-2-1080.webp',
+    srcset: 'assets/img/photo-2-400.webp 400w, assets/img/photo-2-800.webp 800w, assets/img/photo-2-1080.webp 1080w',
+    width: 1080,
+    height: 1350,
+    alt: 'Photo 2 at Reverie Nails and Spa'
+  },
+  {
+    src: 'assets/img/photo-3-1080.webp',
+    srcset: 'assets/img/photo-3-400.webp 400w, assets/img/photo-3-800.webp 800w, assets/img/photo-3-1080.webp 1080w',
+    width: 1080,
+    height: 1350,
+    alt: 'Photo 3 at Reverie Nails and Spa'
+  },
+  {
+    src: 'assets/img/photo-4-1080.webp',
+    srcset: 'assets/img/photo-4-400.webp 400w, assets/img/photo-4-800.webp 800w, assets/img/photo-4-1080.webp 1080w',
+    width: 1080,
+    height: 1350,
+    alt: 'Photo 4 at Reverie Nails and Spa'
+  },
+  {
+    src: 'assets/img/photo-5-1080.webp',
+    srcset: 'assets/img/photo-5-400.webp 400w, assets/img/photo-5-800.webp 800w, assets/img/photo-5-1080.webp 1080w',
+    width: 1080,
+    height: 1350,
+    alt: 'Photo 5 at Reverie Nails and Spa'
+  },
+  {
+    src: 'assets/img/photo-6-1080.webp',
+    srcset: 'assets/img/photo-6-400.webp 400w, assets/img/photo-6-800.webp 800w, assets/img/photo-6-1080.webp 1080w',
+    width: 1080,
+    height: 1350,
+    alt: 'Photo 6 at Reverie Nails and Spa'
+  },
+  {
+    src: 'assets/img/photo-7-1080.webp',
+    srcset: 'assets/img/photo-7-400.webp 400w, assets/img/photo-7-800.webp 800w, assets/img/photo-7-1080.webp 1080w',
+    width: 1080,
+    height: 1350,
+    alt: 'Photo 7 at Reverie Nails and Spa'
+  },
+  {
+    src: 'assets/img/photo-8-1080.webp',
+    srcset: 'assets/img/photo-8-400.webp 400w, assets/img/photo-8-800.webp 800w, assets/img/photo-8-1080.webp 1080w',
+    width: 1080,
+    height: 1350,
+    alt: 'Photo 8 at Reverie Nails and Spa'
+  },
+  {
+    src: 'assets/img/photo-9-1080.webp',
+    srcset: 'assets/img/photo-9-400.webp 400w, assets/img/photo-9-800.webp 800w, assets/img/photo-9-1080.webp 1080w',
+    width: 1080,
+    height: 1350,
+    alt: 'Photo 9 at Reverie Nails and Spa'
+  },
+  {
+    src: 'assets/img/photo-10-1080.webp',
+    srcset: 'assets/img/photo-10-400.webp 400w, assets/img/photo-10-800.webp 800w, assets/img/photo-10-1080.webp 1080w',
+    width: 1080,
+    height: 1350,
+    alt: 'Photo 10 at Reverie Nails and Spa'
+  },
+  {
+    src: 'assets/img/photo-11-1080.webp',
+    srcset: 'assets/img/photo-11-400.webp 400w, assets/img/photo-11-800.webp 800w, assets/img/photo-11-1080.webp 1080w',
+    width: 1080,
+    height: 1350,
+    alt: 'Photo 11 at Reverie Nails and Spa'
+  },
+  {
+    src: 'assets/img/photo-12-1080.webp',
+    srcset: 'assets/img/photo-12-400.webp 400w, assets/img/photo-12-800.webp 800w, assets/img/photo-12-1080.webp 1080w',
+    width: 1080,
+    height: 1350,
+    alt: 'Photo 12 at Reverie Nails and Spa'
+  },
+  {
+    src: 'assets/img/photo-13-1080.webp',
+    srcset: 'assets/img/photo-13-400.webp 400w, assets/img/photo-13-800.webp 800w, assets/img/photo-13-1080.webp 1080w',
+    width: 1080,
+    height: 1350,
+    alt: 'Photo 13 at Reverie Nails and Spa'
+  },
+  {
+    src: 'assets/img/photo-15-1080.webp',
+    srcset: 'assets/img/photo-15-400.webp 400w, assets/img/photo-15-800.webp 800w, assets/img/photo-15-1080.webp 1080w',
+    width: 1080,
+    height: 1350,
+    alt: 'Photo 15 at Reverie Nails and Spa'
+  },
+  {
+    src: 'assets/img/heart-nail-1600.webp',
+    srcset: 'assets/img/heart-nail-400.webp 400w, assets/img/heart-nail-800.webp 800w, assets/img/heart-nail-1600.webp 1600w',
+    width: 1600,
+    height: 2000,
+    alt: 'Heart nail at Reverie Nails and Spa'
+  },
+  {
+    src: 'assets/img/salon-interior-1600.webp',
+    srcset: 'assets/img/salon-interior-400.webp 400w, assets/img/salon-interior-800.webp 800w, assets/img/salon-interior-1600.webp 1600w',
+    width: 1600,
+    height: 1200,
+    alt: 'Reverie Nails and Spa interior'
+  }
+];
 
-const heroImages = [];  // No longer used for the main list - kept for compatibility
+function setRandomHeroImage() {
+  const img = document.getElementById('hero-random-img');
+  if (!img || !heroImages.length) return;
+  const chosen = heroImages[Math.floor(Math.random() * heroImages.length)];
+  img.src = chosen.src;
+  img.srcset = chosen.srcset;
+  img.width = chosen.width;
+  img.height = chosen.height;
+  img.alt = chosen.alt;
+}
+
+// Swap after the first paint so the preloaded photo is the one that
+// counts for load time. The visit still gets a random hero.
+window.addEventListener('load', setRandomHeroImage);

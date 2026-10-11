@@ -1,40 +1,12 @@
-HOW TO UPDATE CURRENT SPECIALS (SUBFOLDERS + EASY SWITCH)
+HOW TO UPDATE CURRENT SPECIALS
 
-Photos for the CURRENT SPECIAL live in subfolders so you can prepare several in advance.
+specials-data.js controls which special shows.
+Set "current" to the key you want (happyHour, pumpkinSpice, giveaway, basic, july4).
 
-CURRENT SETUP:
-- specials-data.js controls which one shows:
-  - "current": "basic"   ← change this key to switch
-  - Each special has a "folder": "basic"  ← tells code which subfolder to look in
-- Drop 1 or more photos into the matching subfolder (e.g. basic/ )
-- The site will randomly pick one real photo that exists in that subfolder on load.
+Each special has:
+- title and description
+- image, imageWidth, imageHeight (a file in assets/img/)
+- imageFit: "contain" when the whole poster should show
 
-FOLDERS RIGHT NOW:
-- happy hour/     → Early Bird, 15% off Mon–Thu before 3 PM   (current)
-- fall special/   → The Pumpkin Spice Espresso Martini
-- give away/      → The Reverie VIP Giveaway (archived)
-- basic/          → Military / Teacher / Student Discounts
-- fourth of jully/ → Fourth of July pedicure (archived)
-
-STEPS TO ADD/CHANGE THE PHOTO:
-1. Put your photo(s) inside the subfolder for the special (e.g. assets/Current Specials/basic/ )
-   - Any filename works now (special.jpg, Every day special.jpg, promo.png, photo 3.jpg, etc.)
-   - No need to edit lists in index.html
-
-2. To switch which special is active:
-   - Edit specials-data.js
-   - Change the value of "current": "basic"   (use the key from the specials object)
-   - Make sure that entry has the correct "folder"
-
-3. Save everything.
-
-4. Hard refresh the browser (Cmd + Shift + R on this Mac) on the website.
-
-The banner will show the title/description from data + a random valid photo from the folder.
-
-TIPS:
-- Keep folder names simple (no spaces if possible): basic, july4, fall, holiday etc.
-- You can have many photos in one folder — one will be chosen at random each visit.
-- If the photo doesn't appear, make sure the "folder" value in data exactly matches the subfolder name.
-
-See comments at the top of specials-data.js for the full structure.
+To change the art, put a new WebP in assets/img/ and point that special's image at it.
+The page does not look for other filenames.
