@@ -653,6 +653,7 @@
     }
     </script>
     <link rel="stylesheet" href="assets/css/site.css">
+    <link rel="stylesheet" href="assets/css/nav-fit.css">
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-N12KYJSR0B"></script>
     <script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-N12KYJSR0B');</script>
     <script defer src="assets/js/analytics.js"></script>
@@ -674,9 +675,10 @@
                 </a>
 
                 <!-- Desktop Nav -->
-                <div class="hidden md:flex items-center gap-x-8 text-sm font-medium">
+                <div class="desk-nav hidden md:flex items-center gap-x-8 text-sm font-medium">
                     <a href="index.html#experience" class="nav-link">The Experience</a>
                     <a href="index.html#services" class="nav-link">Services</a>
+                    <a href="pedicures-saginaw-tx/" class="nav-link">Pedicures</a>
                     <a href="index.html#gallery" class="nav-link">Gallery</a>
                     <a href="index.html#testimonials" class="nav-link">Community</a>
                     <a href="https://book.reverienailstx.com/book" class="nav-link">Book</a>
@@ -705,6 +707,7 @@
         <div class="px-6 py-5 flex flex-col gap-y-4 text-sm font-medium">
             <a href="index.html#experience" class="py-1">The Experience</a>
             <a href="index.html#services" class="py-1">Services</a>
+            <a href="pedicures-saginaw-tx/" class="py-1">Pedicures</a>
             <a href="index.html#gallery" class="py-1">Gallery</a>
             <a href="index.html#testimonials" class="py-1">Community</a>
             <a href="https://book.reverienailstx.com/book" class="py-1">Book Appointment</a>
@@ -749,6 +752,7 @@
                             </div>
                             <h2 class="section-title text-3xl tracking-tight">Pedicures</h2>
                         </div>
+                        <p class="mb-4 text-sm"><a href="pedicures-saginaw-tx/" class="underline hover:text-[#2C2824]">See our pedicures in Saginaw</a>, with times, what's included, and what to book.</p>
                         
                         <div class="bg-white rounded-3xl border border-[#E5DFD6] overflow-hidden">
                 
@@ -834,6 +838,7 @@
                             </div>
                             <h2 class="section-title text-3xl tracking-tight">Luxe Pedicures</h2>
                         </div>
+                        <p class="mb-4 text-sm"><a href="pedicures-saginaw-tx/#luxe" class="underline hover:text-[#2C2824]">Luxe pedicures in Saginaw</a>, from jelly spa to Red Glow.</p>
                         
                         <div class="bg-white rounded-3xl border border-[#E5DFD6] overflow-hidden">
                 
@@ -990,6 +995,30 @@
                             </div>
                             <div class="text-right flex-shrink-0">
                                 <div class="font-semibold text-lg">$58</div>
+                                
+                                
+                            </div>
+                        </div>
+                    
+                        <div class="flex justify-between items-start px-6 py-5">
+                            <div class="flex-1 pr-4">
+                                <div class="font-medium text-lg">GEL ONLY (TOES)</div>
+                                <div class="text-[#655C54] text-sm mt-1 leading-relaxed">Gel polish on toes, on its own.</div>
+                            </div>
+                            <div class="text-right flex-shrink-0">
+                                <div class="font-semibold text-lg">$25</div>
+                                
+                                
+                            </div>
+                        </div>
+                    
+                        <div class="flex justify-between items-start px-6 py-5">
+                            <div class="flex-1 pr-4">
+                                <div class="font-medium text-lg">Adding gel on with pedicure</div>
+                                <div class="text-[#655C54] text-sm mt-1 leading-relaxed">Add gel polish to any pedicure.</div>
+                            </div>
+                            <div class="text-right flex-shrink-0">
+                                <div class="font-semibold text-lg">$20</div>
                                 
                                 
                             </div>
@@ -1991,7 +2020,14 @@
                             </div>
                             <h2 class="section-title text-3xl tracking-tight">${category.name}</h2>
                         </div>
-                        
+                `;
+                if (category.id === 'pedicures') {
+                    html += `<p class="mb-4 text-sm"><a href="pedicures-saginaw-tx/" class="underline hover:text-[#2C2824]">See our pedicures in Saginaw</a>, with times, what's included, and what to book.</p>`;
+                }
+                if (category.id === 'luxe-pedicures') {
+                    html += `<p class="mb-4 text-sm"><a href="pedicures-saginaw-tx/#luxe" class="underline hover:text-[#2C2824]">Luxe pedicures in Saginaw</a>, from jelly spa to Red Glow.</p>`;
+                }
+                html += `
                         <div class="bg-white rounded-3xl border border-[#E5DFD6] overflow-hidden">
                 `;
 
@@ -2059,6 +2095,8 @@
             <p>Reverie Nails and Spa • Saginaw, TX • <a href="tel:6822245688" class="hover:text-white transition-colors">(682) 224-5688</a></p>
             <p class="mt-1 text-[#A8A09A]">Prices and services subject to change. Please call for the most up-to-date information.</p>
             <div class="mt-3 flex justify-center gap-x-4 text-xs text-[#A8A09A]">
+                <a href="pedicures-saginaw-tx/" class="hover:text-white">Pedicures in Saginaw</a>
+                <span aria-hidden="true">·</span>
                 <a href="privacy.html" class="hover:text-white">Privacy Policy</a>
                 <span aria-hidden="true">·</span>
                 <a href="terms.html" class="hover:text-white">Terms of Service</a>

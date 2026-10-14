@@ -1,0 +1,8 @@
+/* The desktop links (including Pedicures) do not fit beside the logo
+   and the header buttons until about 1040px. Below that, use the
+   hamburger. These rules override site.css .md\:flex and .md\:hidden. */
+@media (max-width: 1040px) {
+    .desk-nav { display: none !important; }
+    #mobile-menu-btn { display: flex !important; }
+    #mobile-menu:not(.hidden) { display: block !important; }
+}

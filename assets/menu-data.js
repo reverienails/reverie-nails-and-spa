@@ -5,8 +5,9 @@
 // INSTRUCTIONS FOR UPDATING THE MENU:
 // 1. Edit the categories and services below.
 // 2. Each service should have: name, duration, price, description.
-// 3. Save the file, then regenerate the HTML in menu.html (#full-menu)
-//    and index.html (#services-grid). A refresh alone will not update the menu.
+// 3. Save the file, then regenerate the HTML in menu.html (#full-menu),
+//    index.html (#services-grid), and pedicures-saginaw-tx/index.html.
+//    A refresh alone will not update the menu.
 // 
 // You can add new categories or services easily.
 // When you're ready with the full real menu, paste it here or send it to me
@@ -162,6 +163,18 @@ const menuData = {
           duration: "",
           price: 58,
           description: ""
+        },
+        {
+          name: "GEL ONLY (TOES)",
+          duration: "",
+          price: 25,
+          description: "Gel polish on toes, on its own."
+        },
+        {
+          name: "Adding gel on with pedicure",
+          duration: "",
+          price: 20,
+          description: "Add gel polish to any pedicure."
         }
       ]
     },
