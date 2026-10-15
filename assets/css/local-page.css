@@ -1,0 +1,58 @@
+/* Shared layout for service, about, FAQ, and contact pages. */
+body {
+    font-family: 'Satoshi', system-ui, -apple-system, sans-serif;
+    background-color: #EDE9E3;
+    color: #2C2824;
+}
+h1, h2, h3, .section-title {
+    font-family: 'Playfair Display', Georgia, serif;
+    font-weight: 500;
+    letter-spacing: -0.02em;
+}
+.section-title { letter-spacing: -0.03em; line-height: 1.05; }
+.nav-link { transition: color 0.2s ease; }
+.nav-link:hover { color: #E85A9C; }
+.btn-primary { background-color: #2C2824; color: #fff; }
+.btn-primary:hover { background-color: #B89A94; color: #2C2824; }
+.btn-secondary { background-color: #fff; color: #2C2824; border: 1px solid #D4C9BD; }
+.btn-secondary:hover { background-color: #F2EDE6; }
+a:focus-visible, button:focus-visible, summary:focus-visible {
+    outline: 2px solid #E85A9C;
+    outline-offset: 3px;
+}
+.skip-link {
+    position: absolute;
+    left: 0.75rem;
+    top: -3rem;
+    background: #2C2824;
+    color: #fff;
+    padding: 0.5rem 0.8rem;
+    border-radius: 0.5rem;
+    z-index: 80;
+}
+.skip-link:focus { top: 0.75rem; }
+.prose-link { color: #8E2F5C; text-decoration: underline; }
+.lead { color: #3F3A36; line-height: 1.65; }
+.price-table { width: 100%; border-collapse: collapse; background: #fff; }
+.price-table th, .price-table td {
+    text-align: left;
+    padding: 0.75rem 0.9rem;
+    border-bottom: 1px solid #E5DFD6;
+    vertical-align: top;
+}
+.price-table thead th { background: #F2EDE6; font-weight: 500; }
+.price-wrap { overflow-x: auto; -webkit-overflow-scrolling: touch; border-radius: 1rem; border: 1px solid #E5DFD6; }
+details.faq {
+    background: #fff;
+    border: 1px solid #E5DFD6;
+    border-radius: 1rem;
+    padding: 0.95rem 1.15rem;
+}
+details.faq + details.faq { margin-top: 0.75rem; }
+details.faq summary { cursor: pointer; font-weight: 500; }
+details.faq p { margin-top: 0.65rem; color: #3F3A36; line-height: 1.6; }
+.photo { width: 100%; height: auto; border-radius: 1.5rem; }
+section[id] { scroll-margin-top: 5.5rem; }
+@media (max-width: 767px) {
+    .desk-book { display: none; }
+}

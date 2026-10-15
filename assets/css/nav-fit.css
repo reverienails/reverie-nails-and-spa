@@ -6,3 +6,40 @@
     #mobile-menu-btn { display: flex !important; }
     #mobile-menu:not(.hidden) { display: block !important; }
 }
+
+/* Thumb-zone Call / Book on phones. Hidden on wider screens. */
+.mobile-book-bar { display: none; }
+@media (max-width: 767px) {
+    .mobile-book-bar {
+        display: flex;
+        position: fixed;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        z-index: 80;
+        gap: 0.5rem;
+        padding: 0.6rem 0.75rem calc(0.6rem + env(safe-area-inset-bottom));
+        background: #2C2824;
+        box-shadow: 0 -6px 16px rgba(0, 0, 0, 0.12);
+    }
+    .mobile-book-bar a {
+        flex: 1;
+        text-align: center;
+        border-radius: 9999px;
+        padding: 0.75rem 0.5rem;
+        font-size: 0.95rem;
+        font-weight: 500;
+        text-decoration: none;
+    }
+    .mobile-book-bar a:first-child {
+        color: #EDE9E3;
+        border: 1px solid rgba(237, 233, 227, 0.45);
+    }
+    .mobile-book-bar a:last-child {
+        background: #E85A9C;
+        color: #fff;
+    }
+    body:has(.mobile-book-bar) {
+        padding-bottom: calc(4.25rem + env(safe-area-inset-bottom));
+    }
+}

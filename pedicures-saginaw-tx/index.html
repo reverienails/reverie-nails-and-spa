@@ -143,7 +143,7 @@
     <script type="application/ld+json">
     {
       "@context": "https://schema.org",
-      "@type": "NailSalon",
+      "@type": ["NailSalon", "LocalBusiness"],
       "@id": "https://www.reverienailstx.com/#salon",
       "name": "Reverie Nails and Spa",
       "legalName": "Reverie Nail and Spa Inc.",
@@ -184,16 +184,20 @@
           "closes": "18:00"
         }
       ],
+      "hasMap": "https://maps.google.com/?cid=7370468993373574136",
       "areaServed": [
         { "@type": "City", "name": "Saginaw" },
-        { "@type": "Place", "name": "North Fort Worth" },
+        { "@type": "City", "name": "Fort Worth" },
         { "@type": "Place", "name": "Eagle Mountain" },
-        { "@type": "City", "name": "Blue Mound" },
-        { "@type": "City", "name": "Haslet" }
+        { "@type": "City", "name": "Lake Worth" },
+        { "@type": "City", "name": "Haslet" },
+        { "@type": "City", "name": "Blue Mound" }
       ],
       "sameAs": [
         "https://www.instagram.com/reverienailspa",
-        "https://www.facebook.com/reverienailandspa/"
+        "https://www.facebook.com/reverienailandspa/",
+        "https://www.yelp.com/biz/reverie-nails-and-spa-fort-worth",
+        "https://maps.google.com/?cid=7370468993373574136"
       ],
       "hasOfferCatalog": {
         "@type": "OfferCatalog",
@@ -473,7 +477,7 @@
                     <p class="uppercase tracking-[2px] text-xs font-medium accent mb-3">Reverie Nails and Spa</p>
                     <h1 class="section-title text-4xl md:text-5xl tracking-tight mb-5">Pedicures in Saginaw, TX</h1>
                     <p class="text-lg text-[#3F3A36] leading-relaxed mb-4">Reverie is our spot in Saginaw for a real pedicure and a little time that is just yours. We are at 4613 W Bailey Boswell Rd, Ste 101, in the same plaza as Dunkin'.</p>
-                    <p class="text-[#3F3A36] leading-relaxed mb-4">People come from Saginaw, and from North Fort Worth, Eagle Mountain, Blue Mound, and Haslet. You sit back with a hot towel, a massage, and a drink in your hand. Wine, rosé, cocktails, and water are on the house.</p>
+                    <p class="text-[#3F3A36] leading-relaxed mb-4">People come from Saginaw, and from Fort Worth, Eagle Mountain, Lake Worth, Haslet, and Blue Mound. You sit back with a hot towel, a massage, and a drink in your hand. Wine, rosé, cocktails, and water are on the house.</p>
                     <p class="text-[#3F3A36] leading-relaxed mb-6">Walk-ins are welcome whenever we are open. If you want a certain technician, or a time you can plan around, book ahead. Either way, come in and stay a while.</p>
                     <div class="flex flex-col sm:flex-row gap-3">
                         <a href="https://book.reverienailstx.com/book" class="inline-flex justify-center items-center px-8 py-4 rounded-2xl btn-primary text-base font-medium">Book a Pedicure</a>
@@ -969,23 +973,31 @@
         </section>
     </main>
 
-    <footer class="bg-[#2C2824] text-[#EDE9E3] py-8">
+    <footer class="bg-[#2C2824] text-[#EDE9E3] py-10">
         <div class="max-w-6xl mx-auto px-6 text-center text-sm">
-            <p>Reverie Nails and Spa • Saginaw, TX • <a href="tel:6822245688" class="hover:text-white">(682) 224-5688</a></p>
-            <div class="mt-3 flex flex-wrap justify-center gap-x-4 gap-y-3 text-xs text-[#E5DFD6]">
-                <a href="../pedicures-saginaw-tx/" class="hover:text-white" aria-current="page">Pedicures in Saginaw</a>
-                <span aria-hidden="true">·</span>
-                <a href="../menu.html" class="hover:text-white">Full menu</a>
-                <span aria-hidden="true">·</span>
-                <a href="../index.html" class="hover:text-white">Home</a>
-                <span aria-hidden="true">·</span>
-                <a href="../privacy.html" class="hover:text-white">Privacy Policy</a>
-                <span aria-hidden="true">·</span>
-                <a href="../terms.html" class="hover:text-white">Terms of Service</a>
+            <p class="font-medium text-base">Reverie Nails and Spa</p>
+            <p class="mt-2">4613 W Bailey Boswell Rd, Ste 101, Saginaw, TX 76179</p>
+            <p class="mt-2"><a href="tel:6822245688" class="hover:text-white">(682) 224-5688</a></p>
+            <div class="mt-3">
+                <p>Monday–Friday 9:30 AM–7:30 PM</p>
+                <p>Saturday 9:00 AM–7:00 PM</p>
+                <p>Sunday 11:00 AM–6:00 PM</p>
+            </div>
+            <p class="mt-2 text-xs text-[#E5DFD6]">Walk-ins welcome. Ste 101, same plaza as Dunkin'.</p>
+            
+            <nav class="mt-4 flex flex-wrap justify-center gap-x-3 gap-y-2 text-xs text-[#E5DFD6]" aria-label="On this site">
+                <a href="../manicures-saginaw-tx/" class="hover:text-white">Manicures in Saginaw</a><a href="../pedicures-saginaw-tx/" class="hover:text-white">Pedicures in Saginaw</a><a href="../dip-powder-saginaw-tx/" class="hover:text-white">Dip powder in Saginaw</a><a href="../gel-x-saginaw-tx/" class="hover:text-white">Gel-X in Saginaw</a><a href="../acrylics-saginaw-tx/" class="hover:text-white">Acrylics in Saginaw</a><a href="../builder-gel-saginaw-tx/" class="hover:text-white">Builder gel in Saginaw</a><a href="../solar-nails-saginaw-tx/" class="hover:text-white">Solar nails in Saginaw</a><a href="../menu.html" class="hover:text-white">Full menu</a><a href="../about/" class="hover:text-white">About Reverie</a><a href="../faq/" class="hover:text-white">Salon FAQ</a><a href="../contact/" class="hover:text-white">Contact and hours</a><a href="../index.html" class="hover:text-white">Home</a>
+            </nav>
+            <div class="mt-3 flex flex-wrap justify-center gap-x-3 gap-y-2 text-xs text-[#A8A09A]">
+                <a href="../privacy/" class="hover:text-white">Privacy Policy</a>
+                <a href="../terms/" class="hover:text-white">Terms of Service</a>
+                <a href="../sms-opt-in/" class="hover:text-white">SMS opt-in</a>
             </div>
             <div class="mt-4 flex justify-center gap-x-5 text-lg">
                 <a href="https://www.instagram.com/reverienailspa" target="_blank" rel="noopener noreferrer" class="hover:text-white" aria-label="Instagram"><i class="fa-brands fa-instagram" aria-hidden="true"></i></a>
                 <a href="https://www.facebook.com/reverienailandspa/" target="_blank" rel="noopener noreferrer" class="hover:text-white" aria-label="Facebook"><i class="fa-brands fa-facebook" aria-hidden="true"></i></a>
+                <a href="https://maps.google.com/?cid=7370468993373574136" target="_blank" rel="noopener noreferrer" class="hover:text-white" aria-label="Google reviews"><i class="fa-brands fa-google" aria-hidden="true"></i></a>
+                <a href="https://www.yelp.com/biz/reverie-nails-and-spa-fort-worth" target="_blank" rel="noopener noreferrer" class="hover:text-white text-sm font-medium">Yelp</a>
             </div>
         </div>
     </footer>
@@ -1018,5 +1030,11 @@
             }
         })();
     </script>
+
+    <div class="mobile-book-bar" role="navigation" aria-label="Call or book">
+        <a href="tel:6822245688">Call</a>
+        <a href="https://book.reverienailstx.com/book">Book ahead</a>
+    </div>
+
 </body>
 </html>

@@ -1,4 +1,28 @@
+# All crawlers may read the public site, including AI assistants.
+# Nothing below is a block. Each named agent is allowed on purpose.
+
 User-agent: *
+Allow: /
+
+User-agent: GPTBot
+Allow: /
+
+User-agent: OAI-SearchBot
+Allow: /
+
+User-agent: ChatGPT-User
+Allow: /
+
+User-agent: PerplexityBot
+Allow: /
+
+User-agent: Google-Extended
+Allow: /
+
+User-agent: ClaudeBot
+Allow: /
+
+User-agent: Bingbot
 Allow: /
 
 Sitemap: https://www.reverienailstx.com/sitemap.xml

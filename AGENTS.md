@@ -49,7 +49,7 @@ Use this everywhere unless Joseph says otherwise:
 - Push live: commit on `main` and `git push origin main` (GitHub Pages).
 
 ## Directory notes (as last audited)
-- **Yelp:** REVERIE NAIL, Fort Worth, no suite; hours match; claimed; weaker rating than Google.
+- **Yelp:** https://www.yelp.com/biz/reverie-nails-and-spa-fort-worth — public name Reverie Nails and Spa as of 2026-10-14. Owner line Joseph A. Suite 101 and city Saginaw were sent to Yelp moderators and were not on the page yet. Do not copy Yelp's city over the salon's own NAP.
 - **Birdeye:** claimed free profile (Joseph Aragon / salon email / salon phone). Hours editor: https://reviews.birdeye.com/claim/register/business-hours/?bid=170093907069001 — last set to salon hours. City field may reject Saginaw (geocoder prefers Fort Worth).
 - **MapQuest:** website wrongly pointed at reveriephotoco.com; support ticket filed from `reverienailandspa@gmail.com` (verify-email already clicked). Paid Yext claim not used.
 - **Apple Maps:** hours/phone/website generally match; Fort Worth; no suite.
