@@ -38,7 +38,7 @@ const menuData = {
           name: "THE CLASSIC",
           duration: "30 min treatment",
           price: 30,
-          description: "Toe-tally Basic! Our standard pedicure consists of your general nail care of trimming, cuticle and callus removal along with relaxing hot towels for the feet.",
+          description: "Toe-tally Basic! Our standard pedicure consists of your general nail care of trimming and cuticle removal along with relaxing hot towels for the feet. Add callus remover for $5.",
           massage: "5min massage"
         },
         {
