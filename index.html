@@ -896,7 +896,7 @@
                 <div class="space-y-4 text-sm">
                         <div class="flex justify-between items-start">
                             <div>
-                                <div class="font-medium">Manicures</div>
+                                <div class="font-medium"><a href="manicures-saginaw-tx/" class="underline hover:text-[#2C2824]">Gel Manicure</a></div>
                                 <div class="text-[#756A62] text-xs"> Basic professional care for your natural nails and surrounding skin. Includes shaping, cuticle work, and optional treatment upgrades. Can be paired with Gel, Dip, Acrylics, Builder Gels, or Gel-X.</div>
                             </div>
                             
@@ -1208,7 +1208,7 @@
 
             </div>
             <div class="mt-12 pt-8 border-t border-white/10 text-center text-xs text-[#B89A94]">
-                <a href="manicures-saginaw-tx/" class="hover:text-white">Manicures in Saginaw</a>
+                <a href="manicures-saginaw-tx/" class="hover:text-white">Gel nails and manicures in Saginaw</a>
                 <span class="mx-2" aria-hidden="true">·</span>
                 <a href="pedicures-saginaw-tx/" class="hover:text-white">Pedicures in Saginaw</a>
                 <span class="mx-2" aria-hidden="true">·</span>
@@ -1494,11 +1494,14 @@
                 displayServices.forEach(service => {
                     const priceDisplay = typeof service.price === 'number' ? '$' + service.price : service.price;
                     const duration = service.duration ? service.duration + ' • ' : '';
+                    const serviceName = (isNailServicesCard && service.name === 'Manicures')
+                        ? '<a href="manicures-saginaw-tx/" class="underline hover:text-[#2C2824]">Gel Manicure</a>'
+                        : service.name;
 
                     itemsHtml += `
                         <div class="flex justify-between items-start">
                             <div>
-                                <div class="font-medium">${service.name}</div>
+                                <div class="font-medium">${serviceName}</div>
                                 <div class="text-[#756A62] text-xs">${duration}${service.massage ? `<br>${service.massage}` : ''}${service.description ? ` ${service.description}` : ''}</div>
                             </div>
                             ${includePrice && priceDisplay ? `<div class="font-medium text-right">${priceDisplay}</div>` : ''}

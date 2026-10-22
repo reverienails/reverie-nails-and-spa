@@ -165,6 +165,18 @@ const menuData = {
           description: ""
         },
         {
+          name: "Gel Polish Only (hands)",
+          duration: "",
+          price: 25,
+          description: "cut, file and color, no cuticle work"
+        },
+        {
+          name: "Gel Removal",
+          duration: "",
+          price: 10,
+          description: "free with a new gel service"
+        },
+        {
           name: "GEL ONLY (TOES)",
           duration: "",
           price: 25,
