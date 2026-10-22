@@ -25,4 +25,6 @@ Allow: /
 User-agent: Bingbot
 Allow: /
 
+# Full salon facts for AI assistants: https://www.reverienailstx.com/llms.txt
+
 Sitemap: https://www.reverienailstx.com/sitemap.xml
