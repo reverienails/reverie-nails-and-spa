@@ -1050,6 +1050,7 @@
                             </div>
                             <h2 class="section-title text-3xl tracking-tight">Gel Manicures</h2>
                         </div>
+                        <p class="text-[#655C54] text-sm mb-4 max-w-3xl leading-relaxed">Basic professional care for your natural nails and surrounding skin. Includes shaping, cuticle work, and optional treatment upgrades. Can be paired with Gel, Dip, Acrylics, Builder Gels, or Gel-X.</p>
                         <p class="text-sm mb-6"><a href="manicures-saginaw-tx/" class="underline hover:text-[#2C2824]">More about gel nails</a></p>
                         
                         <div class="bg-white rounded-3xl border border-[#E5DFD6] overflow-hidden">
@@ -1148,6 +1149,7 @@
                             </div>
                             <h2 class="section-title text-3xl tracking-tight">Dipping Powder</h2>
                         </div>
+                        <p class="text-[#655C54] text-sm mb-6 max-w-3xl leading-relaxed">Single-use sets created from dipping powder. Works on both natural nails and artificial extensions. Capable of delivering everything from solid colors and French tips to beautifully designed sets.</p>
                         
                         <div class="bg-white rounded-3xl border border-[#E5DFD6] overflow-hidden">
                 
@@ -1318,6 +1320,7 @@
                             </div>
                             <h2 class="section-title text-3xl tracking-tight">Acrylic Powder</h2>
                         </div>
+                        <p class="text-[#655C54] text-sm mb-6 max-w-3xl leading-relaxed">Overlays on natural nails or extensions created using nail tips. Made with colored powder (Solar) and can be finished with gel polish. Extremely strong and excel at longer-than-normal lengths. Fully fillable and ideal for French tips and detailed designs.</p>
                         
                         <div class="bg-white rounded-3xl border border-[#E5DFD6] overflow-hidden">
                 
@@ -1379,6 +1382,7 @@
                             </div>
                             <h2 class="section-title text-3xl tracking-tight">Builder Gel</h2>
                         </div>
+                        <p class="text-[#655C54] text-sm mb-4 max-w-3xl leading-relaxed">A thick, self-leveling gel (Builder Gel) or pre-made soft gel tips (Gel-X) cured under UV/LED light. Offers flexible strength with a more natural feel than acrylic. Ideal for longer nails, especially milky, sheer, or dimensional color techniques that benefit from depth and clarity. Fully fillable.</p>
                         <p class="text-sm mb-6"><a href="builder-gel-saginaw-tx/" class="underline hover:text-[#2C2824]">More about builder gel</a></p>
                         
                         <div class="bg-white rounded-3xl border border-[#E5DFD6] overflow-hidden">
@@ -1417,6 +1421,7 @@
                             </div>
                             <h2 class="section-title text-3xl tracking-tight">Gel X</h2>
                         </div>
+                        <p class="text-[#655C54] text-sm mb-4 max-w-3xl leading-relaxed">A thick, self-leveling gel (Builder Gel) or pre-made soft gel tips (Gel-X) cured under UV/LED light. Offers flexible strength with a more natural feel than acrylic. Ideal for longer nails, especially milky, sheer, or dimensional color techniques that benefit from depth and clarity. Fully fillable.</p>
                         <p class="text-sm mb-6"><a href="gel-x-saginaw-tx/" class="underline hover:text-[#2C2824]">More about Gel-X</a></p>
                         
                         <div class="bg-white rounded-3xl border border-[#E5DFD6] overflow-hidden">
@@ -2139,6 +2144,24 @@
                 `;
                 if (category.id === 'pedicures') {
                     html += `<p class="mb-4 text-sm"><a href="pedicures-saginaw-tx/" class="underline hover:text-[#2C2824]">See our pedicures in Saginaw</a>, with times, what's included, and what to book.</p>`;
+                }
+                if (category.id === 'nail-services') {
+                    html += `<p class="text-[#655C54] text-sm mb-4 max-w-3xl leading-relaxed">Basic professional care for your natural nails and surrounding skin. Includes shaping, cuticle work, and optional treatment upgrades. Can be paired with Gel, Dip, Acrylics, Builder Gels, or Gel-X.</p>`;
+                    html += `<p class="text-sm mb-6"><a href="manicures-saginaw-tx/" class="underline hover:text-[#2C2824]">More about gel nails</a></p>`;
+                }
+                if (category.id === 'dipping-powder') {
+                    html += `<p class="text-[#655C54] text-sm mb-6 max-w-3xl leading-relaxed">Single-use sets created from dipping powder. Works on both natural nails and artificial extensions. Capable of delivering everything from solid colors and French tips to beautifully designed sets.</p>`;
+                }
+                if (category.id === 'acrylic-powder') {
+                    html += `<p class="text-[#655C54] text-sm mb-6 max-w-3xl leading-relaxed">Overlays on natural nails or extensions created using nail tips. Made with colored powder (Solar) and can be finished with gel polish. Extremely strong and excel at longer-than-normal lengths. Fully fillable and ideal for French tips and detailed designs.</p>`;
+                }
+                if (category.id === 'builder-gel') {
+                    html += `<p class="text-[#655C54] text-sm mb-4 max-w-3xl leading-relaxed">A thick, self-leveling gel (Builder Gel) or pre-made soft gel tips (Gel-X) cured under UV/LED light. Offers flexible strength with a more natural feel than acrylic. Ideal for longer nails, especially milky, sheer, or dimensional color techniques that benefit from depth and clarity. Fully fillable.</p>`;
+                    html += `<p class="text-sm mb-6"><a href="builder-gel-saginaw-tx/" class="underline hover:text-[#2C2824]">More about builder gel</a></p>`;
+                }
+                if (category.id === 'gel-x') {
+                    html += `<p class="text-[#655C54] text-sm mb-4 max-w-3xl leading-relaxed">A thick, self-leveling gel (Builder Gel) or pre-made soft gel tips (Gel-X) cured under UV/LED light. Offers flexible strength with a more natural feel than acrylic. Ideal for longer nails, especially milky, sheer, or dimensional color techniques that benefit from depth and clarity. Fully fillable.</p>`;
+                    html += `<p class="text-sm mb-6"><a href="gel-x-saginaw-tx/" class="underline hover:text-[#2C2824]">More about Gel-X</a></p>`;
                 }
                 if (category.id === 'luxe-pedicures') {
                     html += `<p class="mb-4 text-sm"><a href="pedicures-saginaw-tx/#luxe" class="underline hover:text-[#2C2824]">Luxe pedicures in Saginaw</a>, from jelly spa to Red Glow.</p>`;
