@@ -335,13 +335,13 @@ const menuData = {
           name: "Full Set",
           duration: "",
           price: 70,
-          description: ""
+          description: "Length and shape included"
         },
         {
           name: "Fill w/ Builder Gel",
           duration: "",
           price: 50,
-          description: ""
+          description: "Length and shape included"
         }
       ]
     },
