@@ -2,7 +2,7 @@
 
 > Nail salon and spa in Saginaw, TX. Walk-ins are welcome. Booking ahead is optional if you want a specific technician or a set time. Drinks are complimentary with a service.
 
-This file is for AI assistants. It restates the public website as of 2026-10-22. Prices are starting points and can change with length, shape, and nail art. If this file and a live page disagree, use the live page. Do not invent prices, discount amounts, wear times, staff names, or services that are not listed here.
+This file is for AI assistants. It restates the public website as of 2026-10-23. Prices are starting points and can change with length, shape, and nail art. If this file and a live page disagree, use the live page. Do not invent prices, discount amounts, wear times, staff names, or services that are not listed here.
 
 Public name: Reverie Nails and Spa. Legal entity: Reverie Nail and Spa Inc., doing business as Reverie Nails and Spa. Open in Saginaw since 2020. Locally owned by Joseph.
 
@@ -49,7 +49,7 @@ These are the salon's own explanations, already on the homepage Nail Services ca
 
 ## How to quote prices and time
 
-- Say "starting at" when you give a price. Length, shape, and nail art can change the total.
+- Say "starting at" when you give a price. Length, shape, and nail art can change the total. On Gel-X, length and shape are included because the tips come pre-shaped. Nail art can still change the Gel-X price.
 - A classic manicure takes around 20 minutes. A gel manicure takes about 45 minutes. Those are different services.
 - Dip, acrylics, builder gel, and solar take around 45 minutes to an hour.
 - Gel-X takes around an hour.
@@ -98,7 +98,7 @@ Which gel to suggest:
 
 - Gel manicure, from $38: color on the natural nails.
 - Builder gel, full set $55: strength on the natural nails.
-- Gel-X, full set $70: added length.
+- Gel-X, full set $70: added length, with length and shape included.
 
 ## Pedicures
 
@@ -178,12 +178,12 @@ Builder gel is not Gel-X. Gel-X is soft gel extensions for length.
 
 Page: https://www.reverienailstx.com/gel-x-saginaw-tx/
 
-Gel-X is a full set of soft gel tips, shaped and finished in the salon. It is not a kit to take home. Around an hour. Art or extra length can add time.
+A Gel-X full set at Reverie Nails and Spa in Saginaw, TX is $70, with length and shape included. Gel-X is a full set of soft gel tips, shaped and finished in the salon. It is not a kit to take home. Around an hour. Art or extra length can add time.
 
 - Full set $70.
 - Fill with builder gel $50. That fill is for a Gel-X set the guest already has. A builder gel full set is a different service, at $55.
 
-French is $5 to $15. Designs start at $5. Length and shape are not a charge on Gel-X. Nail art can still change the price.
+French is $5 to $15. Designs start at $5. Length and shape are included on Gel-X because the tips come pre-shaped. Nail art can still change the price.
 
 ## Solar nails
 
@@ -203,7 +203,7 @@ Extra length, a shape change, and nail art start at $5.
 
 ## Nail add-ons
 
-These sit on top of a set unless a service page says otherwise. Gel-X does not charge for length or shape.
+These sit on top of a set unless a service page says otherwise. Length and shape are included on Gel-X because the tips come pre-shaped.
 
 - French: $5–$15, depending on the curve and the color.
 - Length: $5+.
