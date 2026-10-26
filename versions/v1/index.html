@@ -105,8 +105,25 @@
             box-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.05), 0 4px 6px -4px rgb(0 0 0 / 0.05);
         }
     </style>
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-N12KYJSR0B"></script>
-    <script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-N12KYJSR0B');</script>
+    <script>
+    /* Live site only. Local previews, file://, other hosts, and /versions/ do not load Google Analytics. */
+    (function () {
+      window.dataLayer = window.dataLayer || [];
+      var host = location.hostname;
+      var live = (host === "www.reverienailstx.com" || host === "reverienailstx.com") && location.protocol === "https:" && location.pathname.indexOf("/versions/") !== 0;
+      if (!live) {
+        window.gtag = function () {};
+        return;
+      }
+      window.gtag = function () { dataLayer.push(arguments); };
+      var s = document.createElement("script");
+      s.async = true;
+      s.src = "https://www.googletagmanager.com/gtag/js?id=G-N12KYJSR0B";
+      document.head.appendChild(s);
+      gtag("js", new Date());
+      gtag("config", "G-N12KYJSR0B");
+    })();
+    </script>
     <script defer src="../../assets/js/analytics.js"></script>
 </head>
 <body class="tail-container bg-[#F9F5F0] text-[#3F3A36]">
