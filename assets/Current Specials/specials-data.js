@@ -8,7 +8,11 @@
 // 1. Add or edit specials in the "specials" object below (each has a key like "basic").
 // 2. Set "current" to the key of the special you want right now (e.g. "basic").
 // 3. Each special must have a "folder" that matches its subfolder under assets/Current Specials/.
-// 4. Save and hard refresh the page (Cmd + Shift + R on this Mac).
+// 4. Copy that same wording into the plain HTML inside #specials-banner in index.html.
+//    Google reads that HTML with JavaScript off. The script replaces it on load,
+//    so guests do not see the special twice. If you change only this file, the
+//    no-JavaScript text goes stale.
+// 5. Save and hard refresh the page (Cmd + Shift + R on this Mac).
 //
 // Each special has an image in assets/img/. Set image, imageWidth, and imageHeight
 // when you change the art. The page does not guess filenames.

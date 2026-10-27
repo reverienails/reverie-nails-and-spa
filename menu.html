@@ -4,8 +4,10 @@
     <meta charset="UTF-8">
     <link rel="canonical" href="https://www.reverienailstx.com/menu.html">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Nail Menu in Saginaw, TX | Reverie</title>
-    <meta name="description" content="Full nail menu in Saginaw, TX. Pedicures, manicures, dip, Gel-X, and acrylics. Walk-ins welcome at Reverie.">
+    <title>Nail Salon Prices &amp; Menu in Saginaw, TX | Reverie</title>
+    <meta name="description" content="Every price at Reverie Nails and Spa in Saginaw, TX: pedicures from $30, manicures from $20, gel manicures from $38, dip from $52. Walk-ins welcome.">
+    <meta property="og:title" content="Nail Salon Prices &amp; Menu in Saginaw, TX | Reverie">
+    <meta property="og:description" content="Every price at Reverie Nails and Spa in Saginaw, TX: pedicures from $30, manicures from $20, gel manicures from $38, dip from $52. Walk-ins welcome.">
     <link rel="icon" href="assets/img/favicon-64.png" type="image/png">
     <link rel="preload" href="assets/css/site.css" as="style">
     <link rel="stylesheet" href="assets/css/fonts.css">
@@ -831,6 +833,9 @@
         <div class="max-w-6xl mx-auto px-6 text-center">
             <div class="uppercase tracking-[2px] text-xs font-medium text-[#E85A9C] mb-2">Reverie Nails and Spa</div>
             <h1 class="section-title text-5xl md:text-6xl tracking-tight mb-4">Our menu in Saginaw, TX</h1>
+            <p class="text-lg text-[#655C54] max-w-3xl mx-auto mb-4">
+                Reverie Nails and Spa in Saginaw, TX lists every service and price below: pedicures from $30, manicures from $20, gel from $38 and dip from $52.
+            </p>
             <p class="text-lg text-[#655C54] max-w-md mx-auto">
                 Thoughtful care at our Saginaw salon. Prices are starting points and may vary with what you need.
             </p>
@@ -859,6 +864,7 @@
                             <h2 class="section-title text-3xl tracking-tight">Pedicures</h2>
                         </div>
                         <p class="mb-4 text-sm"><a href="pedicures-saginaw-tx/" class="underline hover:text-[#2C2824]">See our pedicures in Saginaw</a>, with times, what's included, and what to book.</p>
+                        <p class="mb-4 text-sm">Men's pedicures: every pedicure on this menu is available for men at the same price.</p>
                         
                         <div class="bg-white rounded-3xl border border-[#E5DFD6] overflow-hidden">
                 
@@ -2161,6 +2167,9 @@
                 `;
                 if (category.id === 'pedicures') {
                     html += `<p class="mb-4 text-sm"><a href="pedicures-saginaw-tx/" class="underline hover:text-[#2C2824]">See our pedicures in Saginaw</a>, with times, what's included, and what to book.</p>`;
+                    if (category.note) {
+                        html += `<p class="mb-4 text-sm">${category.note}</p>`;
+                    }
                 }
                 if (category.id === 'nail-services') {
                     html += `<p class="text-[#655C54] text-sm mb-4 max-w-3xl leading-relaxed">Basic professional care for your natural nails and surrounding skin. Includes shaping, cuticle work, and optional treatment upgrades. Can be paired with Gel, Dip, Acrylics, Builder Gels, or Gel-X.</p>`;

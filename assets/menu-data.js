@@ -33,6 +33,7 @@ const menuData = {
       id: "pedicures",
       name: "Pedicures",
       icon: "fa-shoe-prints",
+      note: "Men's pedicures: every pedicure on this menu is available for men at the same price.",
       services: [
         {
           name: "THE CLASSIC",
