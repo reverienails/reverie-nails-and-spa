@@ -284,15 +284,15 @@ Walk-ins do not need an appointment. To book ahead: https://book.reverienailstx.
 
 If a guest cannot make an appointment, the site asks them to give as much notice as they can. Repeated no-shows may affect future booking. The website does not list a cancellation fee.
 
-## Appointment texts
+## Text messages
 
 Details: https://www.reverienailstx.com/sms-opt-in/
 
-Texts are appointment confirmations, a manage-appointment link, and reminders. The checkbox on the booking form starts unchecked. Checking it is optional. Consent is not required to book. If the box stays unchecked, no appointment texts are sent for that booking.
+Texts may include appointment confirmations, a manage-appointment link, reminders, appointment change notices, a one-time review request after a visit, and occasional rebooking reminders. They go only to someone who checks the box. The checkbox on the booking form starts unchecked. Checking it is optional. Consent is not required to book. If the box stays unchecked, none of these texts are sent for that booking.
 
-The program does not use keyword text-to-join, paper forms, QR codes, or verbal consent as the way to opt in. Reply STOP to opt out. Reply HELP for help. Reply START only turns texts back on for someone who had already opted in and then stopped. Message frequency varies. Message and data rates may apply.
+The program does not use keyword text-to-join, paper forms, QR codes, or verbal consent as the way to opt in. Reply STOP to opt out. Reply HELP for help. Reply START only turns texts back on for someone who had already opted in and then stopped. Message frequency varies, typically a confirmation and one or two reminders per appointment, one review request per visit, and up to one rebooking reminder per visit. Message and data rates may apply.
 
-Checkbox wording: "I agree to receive appointment confirmation and reminder texts from Reverie Nail and Spa. Message frequency varies. Message and data rates may apply. Reply STOP to opt out, HELP for help. Consent is not required to book."
+Checkbox wording: "I agree to receive text messages from Reverie Nails & Spa about my appointments (confirmations, reminders, changes), plus a one-time review request after my visit and occasional rebooking reminders. Message frequency varies. Message and data rates may apply. Reply STOP to opt out, HELP for help. Consent is not required to book. Privacy Policy | Terms"
 
 ## What the website does not list
 
