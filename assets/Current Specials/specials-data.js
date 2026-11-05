@@ -20,9 +20,29 @@
 const specialsData = {
   // === CHANGE THIS TO SWITCH THE DISPLAYED SPECIAL ===
   // Use the key of the special you want to show right now (e.g. "basic" or "july4")
-  current: "happyHour",
+  current: "lashTrang",
 
   specials: {
+    "lashTrang": {
+      title: 'Lash Special: 25% off for first-time lash clients ✨<br><span class="text-base font-normal text-[#B89A94]">Fuller, fluttery lashes for the holidays 🩷</span>',
+      description: `<p class="mb-2">Treat yourself to fuller, fluttery lashes this season. Trang brings more than 15 years of lash artistry to every set, shaping each one to fit your eyes and your style, from soft and natural to full glam.</p>
+<ul class="list-none pl-0 my-2 space-y-1">
+  <li>✨ First-time lash clients: 25% off</li>
+  <li>💕 Returning lash clients: 15% off</li>
+  <li>📅 Now through Nov 26, by appointment only</li>
+  <li>📲 Book online <a class="underline text-[#E85A9C] hover:text-[#2C2824]" href="https://book.reverienailstx.com/book">book.reverienailstx.com/book</a></li>
+  <li>Or give us a call <a class="underline text-[#E85A9C] hover:text-[#2C2824]" href="tel:6822245688">(682) 224-5688</a></li>
+</ul>
+<p class="mt-2 text-xs text-[#8B7D74]">Good through Nov 26, 2026. Lashes by appointment only. Can't be combined with other discounts or specials.</p>`,
+      folder: 'lash special',
+      image: 'assets/img/special-lash-trang-1600.webp',
+      imageSrcset: 'assets/img/special-lash-trang-800.webp 800w, assets/img/special-lash-trang-1600.webp 1600w',
+      imageWidth: 1600,
+      imageHeight: 919,
+      imageFit: 'contain',
+      imageAlt: 'Full lash extension set by Trang at Reverie Nails & Spa',
+      layout: 'lash'
+    },
     "happyHour": {
       title: 'Your midweek treat, on us ✨<br><span class="text-base font-normal text-[#B89A94]">Slow down, settle in, and make a little time for you 🩷</span>',
       description: `<p class="mb-2">Enjoy 15% OFF ALL services at Reverie, Monday through Thursday before 3 PM.</p>
