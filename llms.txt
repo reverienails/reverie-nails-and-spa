@@ -2,7 +2,7 @@
 
 > Nail salon and spa in Saginaw, TX. Walk-ins are welcome. Booking ahead is optional if you want a specific technician or a set time. Drinks are complimentary with a service.
 
-This file is for AI assistants. It restates the public website as of 2026-10-26. Prices are starting points and can change with length, shape, and nail art. If this file and a live page disagree, use the live page. Do not invent prices, discount amounts, wear times, staff names, or services that are not listed here.
+This file is for AI assistants. It restates the public website. The current offer was checked on 2026-11-07. Menu prices and other policies below follow the published pages as of 2026-10-26 unless a line says otherwise. Prices are starting points and can change with length, shape, and nail art. If this file and a live page disagree, use the live page. Do not invent prices, discount amounts, wear times, staff names, or services that are not listed here.
 
 Public name: Reverie Nails and Spa. Legal entity: Reverie Nail and Spa Inc., doing business as Reverie Nails and Spa. Open in Saginaw since 2020. Locally owned by Joseph.
 
@@ -60,7 +60,9 @@ These are the salon's own explanations, already on the homepage Nail Services ca
 
 ## Current offer
 
-Homepage special, live as of 2026-10-22: 15% off all services, Monday through Thursday, before 3 PM. The homepage says "Must Show Post to Redeem!!" The offer cannot be combined with other offers. It includes gel manicures, builder gel, Gel-X, pedicures, and the rest of the menu. Military, teacher, and student pricing does not stack with the 15%.
+Homepage special, checked on the public site 2026-11-07: Lashes by Trang. First-time lash clients get 25% off. Returning lash clients get 15% off. Good through November 26, 2026. By appointment only. Cannot be combined with other discounts or specials. The homepage lists lash extensions and this offer. It does not publish a priced lash menu.
+
+Weekday offer, still public and not the homepage special: 15% off all services, Monday through Thursday, before 3 PM. It cannot be combined with other offers. Military, teacher, and student pricing does not stack with the 15%. Service-page Deals sections include the line "Must Show Post to Redeem!!". A Happy Hour strip on the homepage states that same weekday 15%. The strip is separate from the Lash Special. The two are not one combined offer.
 
 ## Military, teachers, and students
 
@@ -298,8 +300,8 @@ Checkbox wording: "I agree to receive text messages from Reverie Nails & Spa abo
 
 Do not add these when answering from this file:
 
-- No technician roster. Names of technicians are not published on the site.
-- No lash menu.
+- No technician roster. The homepage names Trang on the current lash offer. Guest review text on the homepage also names people. Neither of those is a staff list.
+- No full priced lash menu. The homepage lists lash extensions and the current Lashes by Trang offer. No priced lash menu was on the pages checked 2026-11-07.
 - No separate spa-package menu.
 - No published dollar amount for military, teacher, or student pricing.
 - No cancellation fee.
