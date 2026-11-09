@@ -53,6 +53,7 @@ These are the salon's own explanations, already on the homepage Nail Services ca
 - A classic manicure takes around 20 minutes. A gel manicure takes about 45 minutes. Those are different services.
 - Dip, acrylics, builder gel, and solar take around 45 minutes to an hour.
 - Gel-X takes around an hour.
+- A lash full set or a lash fill takes about an hour. Appointments are recommended for lashes.
 - Art, length, or a French tip can add time. If a service will run longer, the salon says so when the guest sits down.
 - Pedicures run from 30 minutes for the Classic to 70+ minutes for Diamond VIP and Red Glow.
 - A gel manicure usually holds for 2 to 3 weeks when the guest looks after it. That is what the salon tells guests. It is not a guarantee.
@@ -60,7 +61,7 @@ These are the salon's own explanations, already on the homepage Nail Services ca
 
 ## Current offer
 
-Homepage special, checked on the public site 2026-11-07: Lashes by Trang. First-time lash clients get 25% off. Returning lash clients get 15% off. Good through November 26, 2026. By appointment only. Cannot be combined with other discounts or specials. The homepage lists lash extensions and this offer. It does not publish a priced lash menu.
+Homepage special, checked on the public site 2026-11-07: Lashes by Trang. First-time lash clients get 25% off. Returning lash clients get 15% off. Good through November 26, 2026. By appointment only. Cannot be combined with other discounts or specials. The standing lash menu is on https://www.reverienailstx.com/lash-extensions-saginaw-tx/. Full set from $130. Fill from $60. Appointments recommended. That page is separate from this dated offer.
 
 Weekday offer, still public and not the homepage special: 15% off all services, Monday through Thursday, before 3 PM. It cannot be combined with other offers. Military, teacher, and student pricing does not stack with the 15%. Service-page Deals sections include the line "Must Show Post to Redeem!!". A Happy Hour strip on the homepage states that same weekday 15%. The strip is separate from the Lash Special. The two are not one combined offer.
 
@@ -205,6 +206,21 @@ Pink-and-white sets, color sets, and ombre. Around 45 minutes to an hour. Solar 
 
 Extra length, a shape change, and nail art start at $5.
 
+## Lashes
+
+Page: https://www.reverienailstx.com/lash-extensions-saginaw-tx/
+
+Individual lash extensions, placed one by one. About an hour. Appointments are recommended. Prices are starting points and can go higher.
+
+- Lash full set from $130. This is the first set.
+- Lash fill from $60. This is for lashes the guest already has.
+
+The artist goes over care before the guest leaves. The page does not publish a water rule or a fill interval.
+
+Active lash artists are listed on that page from the booking system, with a photo and a short bio when those are saved. That list is only the people who do lashes. It is not a roster of the whole salon. Book lashes at https://book.reverienailstx.com/book?category=lashes. A named artist link on the page opens the book with that person selected.
+
+Through November 26, 2026, first-time lash clients get 25% off and returning lash clients get 15% off. That offer cannot be combined with other discounts. Take that sentence off the lash page after November 26, 2026.
+
 ## Nail add-ons
 
 These sit on top of a set unless a service page says otherwise. Length and shape are included on Gel-X because the tips come pre-shaped.
@@ -300,8 +316,7 @@ Checkbox wording: "I agree to receive text messages from Reverie Nails & Spa abo
 
 Do not add these when answering from this file:
 
-- No technician roster. The homepage names Trang on the current lash offer. Guest review text on the homepage also names people. Neither of those is a staff list.
-- No full priced lash menu. The homepage lists lash extensions and the current Lashes by Trang offer. No priced lash menu was on the pages checked 2026-11-07.
+- No full technician roster. The lash page lists only the active people who offer lashes, pulled from the booking system. The homepage names Trang on the current lash offer. Guest review text on the homepage also names people. Other technicians are not listed.
 - No separate spa-package menu.
 - No published dollar amount for military, teacher, or student pricing.
 - No cancellation fee.
@@ -329,6 +344,7 @@ Yelp's public name is Reverie Nails and Spa. If a directory shows a different su
 - https://www.reverienailstx.com/builder-gel-saginaw-tx/
 - https://www.reverienailstx.com/gel-x-saginaw-tx/
 - https://www.reverienailstx.com/solar-nails-saginaw-tx/
+- https://www.reverienailstx.com/lash-extensions-saginaw-tx/
 - https://www.reverienailstx.com/about/
 - https://www.reverienailstx.com/faq/
 - https://www.reverienailstx.com/contact/

@@ -693,7 +693,7 @@
                 <div class="desk-nav hidden md:flex items-center gap-x-5 text-sm font-medium">
                     <a href="#experience" class="nav-link nav-serif text-[#2C2824]">The Experience</a>
                     <a href="#services" class="nav-link nav-serif text-[#2C2824]">Services</a>
-                    <a href="pedicures-saginaw-tx/" class="nav-link nav-serif text-[#2C2824]">Pedicures</a>
+                    <a href="pedicures-saginaw-tx/" class="nav-link nav-serif text-[#2C2824]">Pedicures</a><a href="lash-extensions-saginaw-tx/" class="nav-link nav-serif text-[#2C2824]">Lashes</a>
                     <a href="#gallery" class="nav-link nav-serif text-[#2C2824]">Gallery</a>
                     <a href="#testimonials" class="nav-link nav-serif text-[#2C2824]">Community</a>
                     <a href="https://book.reverienailstx.com/book" class="nav-link nav-serif text-[#2C2824]">Book</a>
@@ -736,7 +736,7 @@
         <div class="px-6 py-4 flex flex-col gap-y-3 text-sm font-medium">
             <a href="#experience" class="py-1 nav-serif">The Experience</a>
             <a href="#services" class="py-1 nav-serif">Services</a>
-            <a href="pedicures-saginaw-tx/" class="py-1 nav-serif">Pedicures</a>
+            <a href="pedicures-saginaw-tx/" class="py-1 nav-serif">Pedicures</a><a href="lash-extensions-saginaw-tx/" class="py-1 nav-serif">Lashes</a>
             <a href="#gallery" class="py-1 nav-serif">Gallery</a>
             <a href="#testimonials" class="py-1 nav-serif">Community</a>
             <a href="tel:6822245688" class="py-1 nav-serif">Call (682) 224-5688</a>
@@ -1194,7 +1194,7 @@
                     
                         <div class="flex justify-between items-start">
                             <div>
-                                <div class="font-medium">Builder Gels &amp; Gel-X</div>
+                                <div class="font-medium"><a href="builder-gel-saginaw-tx/" class="underline hover:text-[#2C2824]">Builder Gel</a> &amp; <a href="gel-x-saginaw-tx/" class="underline hover:text-[#2C2824]">Gel-X</a></div>
                                 <div class="text-[#756A62] text-xs"> A thick, self-leveling gel (Builder Gel) or pre-made soft gel tips (Gel-X) cured under UV/LED light. Offers flexible strength with a more natural feel than acrylic. Ideal for longer nails, especially milky, sheer, or dimensional color techniques that benefit from depth and clarity. Fully fillable.</div>
                             </div>
                             
@@ -1229,7 +1229,7 @@
                     
                         <div class="flex justify-between items-start">
                             <div>
-                                <div class="font-medium">Lashes</div>
+                                <div class="font-medium"><a href="lash-extensions-saginaw-tx/" class="underline hover:text-[#2C2824]">Lashes</a></div>
                                 <div class="text-[#756A62] text-xs"> Beautiful individual lash extensions that enhance your natural lashes for a fuller, more dramatic look.</div>
                             </div>
                             
@@ -1274,6 +1274,8 @@
                         <a href="dip-powder-saginaw-tx/" class="underline hover:text-[#2C2824]">Dip powder</a>
                         <a href="gel-x-saginaw-tx/" class="underline hover:text-[#2C2824]">Gel-X</a>
                         <a href="acrylics-saginaw-tx/" class="underline hover:text-[#2C2824]">Acrylics</a>
+                        <a href="builder-gel-saginaw-tx/" class="underline hover:text-[#2C2824]">Builder gel</a>
+                        <a href="lash-extensions-saginaw-tx/" class="underline hover:text-[#2C2824]">Lashes</a>
                         <a href="faq/" class="underline hover:text-[#2C2824]">FAQ</a>
                         <a href="contact/" class="underline hover:text-[#2C2824]">Hours and map</a>
                     </nav>
@@ -1491,6 +1493,10 @@
                 <a href="gel-x-saginaw-tx/" class="hover:text-white">Gel-X in Saginaw</a>
                 <span class="mx-2" aria-hidden="true">·</span>
                 <a href="acrylics-saginaw-tx/" class="hover:text-white">Acrylics in Saginaw</a>
+                <span class="mx-2" aria-hidden="true">·</span>
+                <a href="builder-gel-saginaw-tx/" class="hover:text-white">Builder gel in Saginaw</a>
+                <span class="mx-2" aria-hidden="true">·</span>
+                <a href="lash-extensions-saginaw-tx/" class="hover:text-white">Lash extensions in Saginaw</a>
                 <span class="mx-2" aria-hidden="true">·</span>
                 <a href="about/" class="hover:text-white">About Reverie</a>
                 <span class="mx-2" aria-hidden="true">·</span>
@@ -1770,6 +1776,8 @@
                     const duration = service.duration ? service.duration + ' • ' : '';
                     const serviceName = (isNailServicesCard && service.name === 'Manicures')
                         ? '<a href="manicures-saginaw-tx/" class="underline hover:text-[#2C2824]">Gel Manicure</a>'
+                        : (isNailServicesCard && service.name === 'Builder Gels & Gel-X')
+                        ? '<a href="builder-gel-saginaw-tx/" class="underline hover:text-[#2C2824]">Builder Gel</a> &amp; <a href="gel-x-saginaw-tx/" class="underline hover:text-[#2C2824]">Gel-X</a>'
                         : service.name;
 
                     itemsHtml += `
@@ -1874,11 +1882,14 @@
                 displayServices.forEach(service => {
                     const priceDisplay = typeof service.price === 'number' ? '$' + service.price : service.price;
                     const duration = service.duration ? service.duration + ' • ' : '';
+                    const serviceName = service.name === 'Lashes'
+                        ? '<a href="lash-extensions-saginaw-tx/" class="underline hover:text-[#2C2824]">Lashes</a>'
+                        : service.name;
 
                     itemsHtml += `
                         <div class="flex justify-between items-start">
                             <div>
-                                <div class="font-medium">${service.name}</div>
+                                <div class="font-medium">${serviceName}</div>
                                 <div class="text-[#756A62] text-xs">${duration}${service.massage ? `<br>${service.massage}` : ''}${service.description ? ` ${service.description}` : ''}</div>
                             </div>
                             ${priceDisplay ? `<div class="font-medium text-right">${priceDisplay}</div>` : ''}
