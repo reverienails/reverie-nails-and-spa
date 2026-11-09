@@ -234,6 +234,9 @@
                         if (!name) return;
                         var card = document.createElement('article');
                         card.className = 'artist-card';
+                        card.setAttribute('data-tech-id', member.id);
+                        // Guest reviews of this technician can be added inside this card later.
+                        // Keep them separate from the name, the bio, and the photo.
                         var photo = typeof member.photoUrl === 'string' ? member.photoUrl : '';
                         if (photo.indexOf(book + '/api/tech-photos/') === 0) {
                             var img = document.createElement('img');
