@@ -38,6 +38,12 @@ At Reverie, skill meets everyday care. Technicians are encouraged to build real 
 
 There is no separate spa-package menu. The longer pedicures are the spa side: massage, hot stones, paraffin, and the luxe menu.
 
+## Team
+
+Page: https://www.reverienailstx.com/our-team/
+
+Active technicians who are switched on for the website. A card shows a photo or an initial, the name, a short bio when one is saved, and the services that person offers, such as Gel-X, builder gel, pedicures, or lashes. Book with that person opens https://book.reverienailstx.com/book with them already chosen. Names are loaded from the booking system and are not listed in this file. Inactive technicians stay off the page.
+
 ## What each nail service is
 
 These are the salon's own explanations, already on the homepage Nail Services card and on the menu.
@@ -217,7 +223,7 @@ Individual lash extensions, placed one by one. About an hour. Appointments are r
 
 The artist goes over care before the guest leaves. The page does not publish a water rule or a fill interval.
 
-Active lash artists are listed on that page from the booking system, with a photo and a short bio when those are saved. That list is only the people who do lashes. It is not a roster of the whole salon. Book lashes at https://book.reverienailstx.com/book?category=lashes. A named artist link on the page opens the book with that person selected.
+Active lash artists are listed on that page from the booking system, with a photo and a short bio when those are saved. That list is only the people who do lashes. The whole team is at https://www.reverienailstx.com/our-team/. Book lashes at https://book.reverienailstx.com/book?category=lashes. A named artist link on the page opens the book with that person selected.
 
 Through November 26, 2026, first-time lash clients get 25% off and returning lash clients get 15% off. That offer cannot be combined with other discounts. Take that sentence off the lash page after November 26, 2026.
 
@@ -316,7 +322,7 @@ Checkbox wording: "I agree to receive text messages from Reverie Nails & Spa abo
 
 Do not add these when answering from this file:
 
-- No full technician roster. The lash page lists only the active people who offer lashes, pulled from the booking system. The homepage names Trang on the current lash offer. Guest review text on the homepage also names people. Other technicians are not listed.
+- The Meet Our Team page (https://www.reverienailstx.com/our-team/) lists active technicians who are switched on for the website. Names, photos, bios, and specialties come from the booking system and are not copied into this file. Inactive technicians, and anyone switched off, stay off the page. The homepage names Trang on the current lash offer. Guest review text on the homepage also names people.
 - No separate spa-package menu.
 - No published dollar amount for military, teacher, or student pricing.
 - No cancellation fee.
