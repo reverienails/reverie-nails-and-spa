@@ -104,8 +104,8 @@ const specialsData = {
       imageFit: 'contain'
     },
     "basic": {
-      title: 'Military • Teacher • Student Discounts',
-      description: 'We proudly offer special pricing every day for military, teachers, and students. Just ask for details!',
+      title: 'Military • Veteran • Family • Teacher • Student',
+      description: 'Special pricing every day for active-duty military, veterans, and their immediate families, plus teachers and students. Just mention it when you book.',
       tag: 'Everyday',
       folder: 'basic',
       image: 'assets/img/special-everyday-800.webp',
