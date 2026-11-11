@@ -22,6 +22,7 @@ Use this everywhere unless Joseph says otherwise:
 - **Positioning:** Walk-ins first. No appointment required. Booking is a **plus** (specific tech, skip the wait, get in quicker) — not “highly recommended.”
 - Instagram: https://www.instagram.com/reverienailspa (`@reverienailspa`)
 - Facebook: https://www.facebook.com/reverienailandspa/
+- TikTok: https://www.tiktok.com/@reverienailspa (`@reverienailspa`). Link and icon only. Do not embed TikTok's script.
 
 ## Accounts (do not dump passwords)
 - **Google Business owner:** `reverienailandspa@gmail.com` (display name Tina Nguyen). GBP lives on this account (`authuser=1` when both are signed in).

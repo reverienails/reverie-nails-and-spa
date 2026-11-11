@@ -335,6 +335,7 @@ Do not add these when answering from this file:
 - Google: https://maps.google.com/?cid=7370468993373574136
 - Instagram: https://www.instagram.com/reverienailspa
 - Facebook: https://www.facebook.com/reverienailandspa/
+- TikTok: https://www.tiktok.com/@reverienailspa
 - Yelp: https://www.yelp.com/biz/reverie-nails-and-spa-fort-worth
 
 Yelp's public name is Reverie Nails and Spa. If a directory shows a different suite or city, use the address at the top of this file.
