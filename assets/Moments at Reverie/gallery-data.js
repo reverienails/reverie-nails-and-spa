@@ -12,7 +12,7 @@ const galleryImages = [
     srcset: 'assets/img/photo-2-400.webp 400w, assets/img/photo-2-800.webp 800w, assets/img/photo-2-1080.webp 1080w',
     width: 1080,
     height: 1350,
-    alt: 'Nail work done in house at Reverie Nails and Spa'
+    alt: 'Square nails with a hot-pink French tip and white flowers, done in house at Reverie Nails and Spa in Saginaw, TX'
   },
   {
     src: 'assets/img/photo-3-1080.webp',
@@ -68,7 +68,7 @@ const galleryImages = [
     srcset: 'assets/img/photo-10-400.webp 400w, assets/img/photo-10-800.webp 800w, assets/img/photo-10-1080.webp 1080w',
     width: 1080,
     height: 1350,
-    alt: 'Nail work done in house at Reverie Nails and Spa'
+    alt: 'Almond nails with navy and light-blue swirls, a butterfly wing, and a small blue flower with a gold center, done in house at Reverie Nails and Spa in Saginaw, TX'
   },
   {
     src: 'assets/img/photo-11-1080.webp',

@@ -42,7 +42,7 @@ There is no separate spa-package menu. The longer pedicures are the spa side: ma
 
 Page: https://www.reverienailstx.com/our-team/
 
-Active technicians who are switched on for the website. A card shows a photo or an initial, the name, a short bio when one is saved, and the services that person offers, such as Gel-X, builder gel, pedicures, or lashes. Book with that person opens https://book.reverienailstx.com/book with them already chosen. Names are loaded from the booking system and are not listed in this file. Inactive technicians stay off the page.
+Active technicians who are switched on for the website are named on that page, with the services each person offers. A card shows a photo or an initial, the name, a short bio when one is saved, and the services that person offers, such as Gel-X, builder gel, pedicures, or lashes. Book with that person opens https://book.reverienailstx.com/book with them already chosen. The browser can replace that list from the booking system when the request works. This file does not repeat the roster. Inactive technicians stay off the page.
 
 ## What each nail service is
 
