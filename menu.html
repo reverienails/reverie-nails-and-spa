@@ -22,7 +22,7 @@
             --accent-pink: #E85A9C;
             --rose-gold: #B89A94;
             --charcoal: #2C2824;
-            --warm-taupe: #756A62;
+            --warm-taupe: #72675F;
             --soft-gold: #C9A57E;
         }
 
@@ -56,7 +56,7 @@
             transition: color 0.2s ease;
         }
         .nav-link:hover {
-            color: #E85A9C;
+            color: #B13F75;
         }
 
         /* Ensure section titles (h2) are visible below sticky logo/nav + Book Now area + category sub-nav when jumping from external links like homepage "See full..." buttons */
@@ -658,7 +658,8 @@
     <link rel="stylesheet" href="assets/css/site.css">
     <link rel="stylesheet" href="assets/css/nav-fit.css">
     <script>
-    /* Live site only. Local previews, file://, other hosts, and /versions/ do not load Google Analytics. */
+    /* Live site only. Local previews, file://, other hosts, and /versions/ do not load Google Analytics.
+       The measurement script loads after the page, so it does not compete with the first paint. */
     (function () {
       window.dataLayer = window.dataLayer || [];
       var host = location.hostname;
@@ -668,12 +669,18 @@
         return;
       }
       window.gtag = function () { dataLayer.push(arguments); };
-      var s = document.createElement("script");
-      s.async = true;
-      s.src = "https://www.googletagmanager.com/gtag/js?id=G-N12KYJSR0B";
-      document.head.appendChild(s);
-      gtag("js", new Date());
-      gtag("config", "G-N12KYJSR0B");
+      function loadGa() {
+        if (window.__reverieGa) return;
+        window.__reverieGa = true;
+        var s = document.createElement("script");
+        s.async = true;
+        s.src = "https://www.googletagmanager.com/gtag/js?id=G-N12KYJSR0B";
+        (document.body || document.head).appendChild(s);
+        gtag("js", new Date());
+        gtag("config", "G-N12KYJSR0B");
+      }
+      if (document.readyState === "complete") loadGa();
+      else window.addEventListener("load", loadGa);
     })();
     </script>
     <script defer src="assets/js/analytics.js"></script>
@@ -780,7 +787,7 @@
                 
                 <!-- Logo -->
                 <a href="index.html" class="flex items-center gap-x-3">
-                    <img src="assets/img/logo-240.webp" alt="Reverie Nails and Spa Logo" width="240" height="177" class="h-[42px] w-auto object-contain" loading="lazy" decoding="async">
+                    <img src="assets/img/logo-240.webp" alt="Reverie Nails and Spa Logo" width="240" height="177" class="h-[42px] w-auto object-contain" decoding="async">
                     <div>
                         <div class="font-semibold tracking-tight text-xl">Reverie</div>
                         <div class="text-[10px] text-[#756A62] -mt-1 tracking-[1px]">NAILS AND SPA</div>
@@ -833,6 +840,7 @@
         </div>
     </div>
 
+    <main id="main">
     <!-- Menu Header -->
     <section class="pt-12 pb-8 bg-white border-b border-[#E5DFD6]">
         <div class="max-w-6xl mx-auto px-6 text-center">
@@ -2259,6 +2267,8 @@
 
         renderFullMenu();
     </script>
+
+    </main>
 
     <footer class="bg-[#2C2824] text-[#EDE9E3] py-10">
         <div class="max-w-6xl mx-auto px-6 text-center text-sm">

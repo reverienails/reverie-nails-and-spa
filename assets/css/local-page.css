@@ -11,7 +11,7 @@ h1, h2, h3, .section-title {
 }
 .section-title { letter-spacing: -0.03em; line-height: 1.05; }
 .nav-link { transition: color 0.2s ease; }
-.nav-link:hover { color: #E85A9C; }
+.nav-link:hover { color: #B13F75; }
 .btn-primary { background-color: #2C2824; color: #fff; }
 .btn-primary:hover { background-color: #B89A94; color: #2C2824; }
 .btn-secondary { background-color: #fff; color: #2C2824; border: 1px solid #D4C9BD; }

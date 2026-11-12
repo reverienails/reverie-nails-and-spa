@@ -35,10 +35,10 @@ const specialsData = {
 </ul>
 <p class="mt-2 text-xs text-[#8B7D74]">Good through Nov 26, 2026. Lashes by appointment only. Can't be combined with other discounts or specials.</p>`,
       folder: 'lash special',
-      image: 'assets/img/special-lash-trang-1600.webp',
-      imageSrcset: 'assets/img/special-lash-trang-800.webp 800w, assets/img/special-lash-trang-1600.webp 1600w',
-      imageWidth: 1600,
-      imageHeight: 919,
+      image: 'assets/img/special-lash-trang-1280.webp',
+      imageSrcset: 'assets/img/special-lash-trang-640.webp 640w, assets/img/special-lash-trang-960.webp 960w, assets/img/special-lash-trang-1280.webp 1280w, assets/img/special-lash-trang-1600.webp 1600w',
+      imageWidth: 1280,
+      imageHeight: 735,
       imageFit: 'contain',
       imageAlt: 'Full lash extension set by Trang at Reverie Nails & Spa',
       layout: 'lash'

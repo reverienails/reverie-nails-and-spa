@@ -28,7 +28,8 @@
     </style>
     <link rel="stylesheet" href="assets/css/site.css">
     <script>
-    /* Live site only. Local previews, file://, other hosts, and /versions/ do not load Google Analytics. */
+    /* Live site only. Local previews, file://, other hosts, and /versions/ do not load Google Analytics.
+       The measurement script loads after the page, so it does not compete with the first paint. */
     (function () {
       window.dataLayer = window.dataLayer || [];
       var host = location.hostname;
@@ -38,17 +39,24 @@
         return;
       }
       window.gtag = function () { dataLayer.push(arguments); };
-      var s = document.createElement("script");
-      s.async = true;
-      s.src = "https://www.googletagmanager.com/gtag/js?id=G-N12KYJSR0B";
-      document.head.appendChild(s);
-      gtag("js", new Date());
-      gtag("config", "G-N12KYJSR0B");
+      function loadGa() {
+        if (window.__reverieGa) return;
+        window.__reverieGa = true;
+        var s = document.createElement("script");
+        s.async = true;
+        s.src = "https://www.googletagmanager.com/gtag/js?id=G-N12KYJSR0B";
+        (document.body || document.head).appendChild(s);
+        gtag("js", new Date());
+        gtag("config", "G-N12KYJSR0B");
+      }
+      if (document.readyState === "complete") loadGa();
+      else window.addEventListener("load", loadGa);
     })();
     </script>
     <script defer src="assets/js/analytics.js"></script>
 </head>
 <body class="bg-[#EDE9E3] text-[#2C2824]">
+    <main id="main">
     <div class="max-w-xl mx-auto px-6 py-24 text-center">
         <h1 class="section-title text-4xl tracking-tight mb-4">Online booking</h1>
         <p class="text-[#655C54] mb-4">
@@ -66,5 +74,6 @@
             Or call <a href="tel:6822245688" class="underline hover:text-[#2C2824]">(682) 224-5688</a>
         </p>
     </div>
+    </main>
 </body>
 </html>

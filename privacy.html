@@ -28,18 +28,19 @@
             line-height: 1.05;
         }
         .nav-link { transition: color 0.2s ease; }
-        .nav-link:hover { color: #E85A9C; }
+        .nav-link:hover { color: #B13F75; }
         .legal-prose h2 { font-size: 1.35rem; margin-top: 2.25rem; margin-bottom: 0.75rem; }
         .legal-prose p, .legal-prose li { color: #4A433C; line-height: 1.7; }
         .legal-prose p + p { margin-top: 0.85rem; }
         .legal-prose ul { list-style: disc; padding-left: 1.25rem; margin: 0.75rem 0; }
         .legal-prose li { margin: 0.35rem 0; }
-        .legal-prose a { color: #C84A7E; text-decoration: underline; }
+        .legal-prose a { color: #B13F75; text-decoration: underline; }
     </style>
     <link rel="stylesheet" href="assets/css/site.css">
     <link rel="stylesheet" href="assets/css/nav-fit.css">
     <script>
-    /* Live site only. Local previews, file://, other hosts, and /versions/ do not load Google Analytics. */
+    /* Live site only. Local previews, file://, other hosts, and /versions/ do not load Google Analytics.
+       The measurement script loads after the page, so it does not compete with the first paint. */
     (function () {
       window.dataLayer = window.dataLayer || [];
       var host = location.hostname;
@@ -49,12 +50,18 @@
         return;
       }
       window.gtag = function () { dataLayer.push(arguments); };
-      var s = document.createElement("script");
-      s.async = true;
-      s.src = "https://www.googletagmanager.com/gtag/js?id=G-N12KYJSR0B";
-      document.head.appendChild(s);
-      gtag("js", new Date());
-      gtag("config", "G-N12KYJSR0B");
+      function loadGa() {
+        if (window.__reverieGa) return;
+        window.__reverieGa = true;
+        var s = document.createElement("script");
+        s.async = true;
+        s.src = "https://www.googletagmanager.com/gtag/js?id=G-N12KYJSR0B";
+        (document.body || document.head).appendChild(s);
+        gtag("js", new Date());
+        gtag("config", "G-N12KYJSR0B");
+      }
+      if (document.readyState === "complete") loadGa();
+      else window.addEventListener("load", loadGa);
     })();
     </script>
     <script defer src="assets/js/analytics.js"></script>
@@ -65,7 +72,7 @@
         <div class="max-w-6xl mx-auto px-6">
             <div class="flex justify-between items-center h-20">
                 <a href="index.html" class="flex items-center gap-x-3">
-                    <img src="assets/img/logo-240.webp" alt="Reverie Nails and Spa Logo" width="240" height="177" class="h-[42px] w-auto object-contain" loading="lazy" decoding="async">
+                    <img src="assets/img/logo-240.webp" alt="Reverie Nails and Spa Logo" width="240" height="177" class="h-[42px] w-auto object-contain" decoding="async">
                     <div>
                         <div class="font-semibold tracking-tight text-xl">Reverie</div>
                         <div class="text-[10px] text-[#756A62] -mt-1 tracking-[1px]">NAILS AND SPA</div>

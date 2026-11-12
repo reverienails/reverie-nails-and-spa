@@ -42,7 +42,8 @@
         }
     </style>
     <script>
-    /* Live site only. Local previews, file://, other hosts, and /versions/ do not load Google Analytics. */
+    /* Live site only. Local previews, file://, other hosts, and /versions/ do not load Google Analytics.
+       The measurement script loads after the page, so it does not compete with the first paint. */
     (function () {
       window.dataLayer = window.dataLayer || [];
       var host = location.hostname;
@@ -52,12 +53,18 @@
         return;
       }
       window.gtag = function () { dataLayer.push(arguments); };
-      var s = document.createElement("script");
-      s.async = true;
-      s.src = "https://www.googletagmanager.com/gtag/js?id=G-N12KYJSR0B";
-      document.head.appendChild(s);
-      gtag("js", new Date());
-      gtag("config", "G-N12KYJSR0B");
+      function loadGa() {
+        if (window.__reverieGa) return;
+        window.__reverieGa = true;
+        var s = document.createElement("script");
+        s.async = true;
+        s.src = "https://www.googletagmanager.com/gtag/js?id=G-N12KYJSR0B";
+        (document.body || document.head).appendChild(s);
+        gtag("js", new Date());
+        gtag("config", "G-N12KYJSR0B");
+      }
+      if (document.readyState === "complete") loadGa();
+      else window.addEventListener("load", loadGa);
     })();
     </script>
     <script defer src="../assets/js/analytics.js"></script>
