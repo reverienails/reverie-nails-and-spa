@@ -310,13 +310,21 @@ If a guest cannot make an appointment, the site asks them to give as much notice
 
 ## Text messages
 
-Details: https://www.reverienailstx.com/sms-opt-in/
+https://book.reverienailstx.com/book and https://book.reverienailstx.com/embed each show two separate SMS checkboxes. Both are optional. Both start unchecked. Neither is required to book.
 
-Texts may include appointment confirmations, a manage-appointment link, reminders, appointment change notices, a one-time review request after a visit, and occasional rebooking reminders. They go only to someone who checks the box. The checkbox on the booking form starts unchecked. Checking it is optional. Consent is not required to book. If the box stays unchecked, none of these texts are sent for that booking.
+Checkbox 1 is appointment texts: confirmations, reminders, changes, and a one-time review request after the visit. Those texts go only to someone who checks checkbox 1. Message frequency varies.
 
-The program does not use keyword text-to-join, paper forms, QR codes, or verbal consent as the way to opt in. Reply STOP to opt out. Reply HELP for help. Reply START only turns texts back on for someone who had already opted in and then stopped. Message frequency varies, typically a confirmation and one or two reminders per appointment, one review request per visit, and up to one rebooking reminder per visit. Message and data rates may apply.
+Checkbox 2 is marketing texts: rebooking reminders, rewards updates, specials, and promotions, up to 4 messages per month. Those texts go only to someone who checks checkbox 2.
 
-Checkbox wording: "I agree to receive text messages from Reverie Nails & Spa about my appointments (confirmations, reminders, changes), plus a one-time review request after my visit and occasional rebooking reminders. Message frequency varies. Message and data rates may apply. Reply STOP to opt out, HELP for help. Consent is not required to book. Privacy Policy | Terms"
+The form does not use keyword text-to-join, paper forms, QR codes, or verbal consent as the way to opt in. Reply STOP to opt out of all texts. Reply HELP for help. The salon number is (682) 224-5688. Message and data rates may apply.
+
+Checkbox 1 wording: "I agree to receive text messages from Reverie Nails & Spa about my appointments (confirmations, reminders, changes) and a one-time review request after my visit. Message frequency varies. Message and data rates may apply. Reply STOP to opt out, HELP for help. Consent is not required to book."
+
+Checkbox 2 wording: "I agree to receive marketing texts from Reverie Nails & Spa, including rebooking reminders, rewards updates, specials, and promotions. Up to 4 messages per month. Message and data rates may apply. Reply STOP to opt out, HELP for help. Consent is not required to book."
+
+Privacy Policy, updated November 11, 2026: https://www.reverienailstx.com/privacy
+Terms of Service, updated November 11, 2026: https://www.reverienailstx.com/terms
+Opt-in page: https://www.reverienailstx.com/sms-opt-in/
 
 ## What the website does not list
 
